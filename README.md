@@ -1,2 +1,4 @@
 # mdsl-corp-site
-MDSL Corporate Site
+doza.org
+
+This page left intentionally blank.
