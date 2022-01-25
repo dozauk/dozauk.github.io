@@ -1,0 +1,799 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var qmsLogin = '<a href="quote/accesslogin.jsp" style="font-family: raleMed, Arial, Helvetica, sans-serif; font-size: 8pt; color:black;">Quote Management Carrier Login</a>';
+var companyLink = '<a href="https://www.mdsl.com" target="_blank" style="font-family: raleMed, Arial, Helvetica, sans-serif; font-size: 8pt; color:black;">Telesoft.com</a>';
+var companyLinkHref = 'https://www.mdsl.com';
+var companyLinkName = 'Telesoft.com';
+var customerPortalLink = '<a href="http://my.telesoft.com" target="_blank" style="font-family: raleMed, Arial, Helvetica, sans-serif; font-size: 8pt; color:black;">Customer Portal</a>';
+var customerPortalLinkHref = 'http://my.telesoft.com';
+var customerPortalLinkName = 'Customer Portal';
+var contactLink = '<a href="https://www.mdsl.com/contact-us" target="_blank" style="font-family: raleMed, Arial, Helvetica, sans-serif; font-size: 8pt; color:black;">Contact</a>';
+var contactLinkHref = 'https://www.mdsl.com/contact-us';
+var contactLinkName = 'Contact';
+var aboutLink = '<a href="javascript:showAbout()" style="font-family: raleMed, Arial, Helvetica, sans-serif; font-size: 8pt; color:black;">About</a>';
+
+//console.log("customerPortalLinkHref"+customerPortalLinkHref);
+
+var maintModeOn = false;
+
+var useBrowserWarningStr = 'false';
+
+var loginOpaquePercent = 1.0;
+
+
+var yLang = 'English (United Kingdom)';
+
+var twebVerNumber = 'Version: 1.1.14';
+var twebBldInfo = 'Build: ${BUILD_NUMBER} Created on: Thu Oct 28 14:12:05 MST 2021';
+
+var loginErrorType = '0';
+
+//function Update(ccid, cccode, ccdesc) {return true;}
+if ( (window) && (window.name != '_AA') ) {
+    if ( (parent) && (parent.name != window.name) ) {
+        if ( (window.name == 'entries') || (window.name == 'menu')) parent.location = 'accesslogin.jsp?errorType='+loginErrorType;
+    } else if ( (opener) && (opener.name != window.name) && (window.name != 'box') ) {
+        opener.location = 'accesslogin.jsp?errorType='+loginErrorType;
+        self.close();
+    }
+}
+
+</script><html>
+<head>
+<link rel="shortcut icon" href="favicon.ico"/>
+<title>Connect Login Screen</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- ####### Include Meta tags to make pages always expire, NEEDED for security ####### -->
+<META HTTP-EQUIV="expires" CONTENT="Mon, 01 Jan 1996 23:59:59 GMT">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+
+  <link rel="stylesheet" type="text/css" href="TelMasterWeb.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="Tsft/build/production/Tsft/classic/resources/Tsft-all.css"/>
+  <link rel="stylesheet" type="text/css" href="Tsft/build/production/Tsft/resources/css/webfonts.css"/>
+  <link rel="stylesheet" type="text/css" href="Tsft/build/production/Tsft/resources/css/animate.css"/>
+  <link rel="stylesheet" type="text/css" href="Tsft/build/production/Tsft/resources/css/primeTheme.css"/>
+  <!--link rel="stylesheet" type="text/css" href="Tsft/build/development/Tsft/resources/Tsft-all.css"/-->
+  
+  <style type="text/css">
+  .login-title {font-family: raleMed, Arial, Helvetica, sans-serif; font-weight:bold; font-size: 16pt; color:#FFFFFF;}
+  *:not(.fa):not(.x-message-box-icon):not(.x-fa):not(.x-tool-close):not(.x-tool-img):not(.x-form-trigger) {font-family: raleMed, Arial, Helvetica, sans-serif !important;}
+  
+    div[class*="x-tool"]{
+      font-family: fontAwesome !important;
+    }
+  
+  .ts-product-logo{
+  
+    width:100%;
+    height:100%;
+    max-width:100%; 
+    max-height:100%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    padding:30px;
+  }
+  .ts-product-logo-img{
+      margin:auto;
+      display: block;
+      background-repeat:no-repeat;
+      background-position: center;
+      width: 100%;
+      max-width: 774px;
+      height: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  
+  }
+  
+  .ts-login-container-outer{
+      -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.33),0px 0px 3px 0px rgba(0, 0, 0, 0.3),0px 0px 59px 0px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.33),0px 0px 3px 0px rgba(0, 0, 0, 0.3),0px 0px 59px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.33),0px 0px 3px 0px rgba(0, 0, 0, 0.3),0px 0px 59px 0px rgba(0, 0, 0, 0.4);
+      background: #fff;
+      border-radius:4px;
+  }
+  .ts-login-form .x-panel-header, .x-panel-body-default{
+      border:none !important;
+      border-left:none !important;
+      border-top:none !important;
+      border-bottom:none !important;
+      border-right:none !important;
+      border-width:0 !important;
+  }
+  
+  .ts-login-form .x-panel-header .x-title-text{
+      text-align:center !important;
+  }
+  .ts-form-btn-xl,
+  .x-window .x-form-item+.x-btn,
+  .x-window .x-form-item+.x-btn+.x-btn,
+  .x-window .x-form-item+.x-btn+.x-btn+.x-btn,
+  .x-window .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn,
+  .x-window .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn+.x-btn,
+  .x-window .x-form-item+.x-btn.x-btn-focus,
+  .x-window .x-form-item+.x-btn+.x-btn.x-btn-focus,
+  .x-window .x-form-item+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .x-window .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .x-window .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .x-window .x-table-layout-cell .x-btn,
+  .x-window .x-table-layout-cell .x-btn+.x-btn,
+  .x-window .x-table-layout-cell .x-btn+.x-btn+.x-btn,
+  .x-window .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn,
+  .x-window .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn+.x-btn,
+  .x-window .x-table-layout-cell .x-btn.x-btn-focus,
+  .x-window .x-table-layout-cell .x-btn+.x-btn.x-btn-focus,
+  .x-window .x-table-layout-cell .x-btn+.x-btn+.x-btn.x-btn-focus,
+  .x-window .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .x-window .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-form-item+.x-btn,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-form-item+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-form-item+.x-btn+.x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn+.x-btn,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus,
+  .sencha-dash-right-main-container .x-table-layout-cell .x-btn+.x-btn+.x-btn+.x-btn+.x-btn.x-btn-focus {
+      height: 24px;
+      min-width: unset;
+      padding:5px 7px 7px 7px;
+  }
+  
+  .ts-login-sign-in-btn{
+  
+  }
+  .sencha-dash-right-main-container { 
+  background: url('style/bg.jpg') no-repeat center center fixed !important; 
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+.ts-product-logo-container{
+  height:340;
+  width:375;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  padding:20px;
+}
+.ts-login-logo-img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.ts-header-text .x-title-text{
+  padding:0 0 0 3px !important;
+  font-weight:300;
+  font-size:16px;
+}
+.ts-login-message h1{
+  line-height:25px
+}
+.errorLg{
+  font-weight: normal;
+}
+.sencha-dash-dash-headerbar{
+  padding:0 0 0 0;
+}
+.sencha-dash-right-main-container .x-form-item-label-inner-default{
+    color:rgba(0, 0, 0, 0) !important;
+}
+  </style>
+
+<script type="text/javascript" src="Tsft/ext/build/ext-all.js"></script>
+
+<script type="text/javascript">
+var slocs = new Array();
+var myloc = '';
+slocs[0] = ['Afrikaans (Namibia)','normal'];slocs[1] = ['Afrikaans (South Africa)','normal'];slocs[2] = ['Aghem (Cameroon)','normal'];slocs[3] = ['Akan (Ghana)','normal'];slocs[4] = ['Albanian (Albania)','normal'];slocs[5] = ['Albanian (Kosovo)','normal'];slocs[6] = ['Albanian (Macedonia)','normal'];slocs[7] = ['Amharic (Ethiopia)','normal'];slocs[8] = ['Arabic (Algeria)','normal'];slocs[9] = ['Arabic (Bahrain)','normal'];slocs[10] = ['Arabic (Chad)','normal'];slocs[11] = ['Arabic (Comoros)','normal'];slocs[12] = ['Arabic (Djibouti)','normal'];slocs[13] = ['Arabic (Egypt)','normal'];slocs[14] = ['Arabic (Eritrea)','normal'];slocs[15] = ['Arabic (Iraq)','normal'];slocs[16] = ['Arabic (Israel)','normal'];slocs[17] = ['Arabic (Jordan)','normal'];slocs[18] = ['Arabic (Kuwait)','normal'];slocs[19] = ['Arabic (Lebanon)','normal'];slocs[20] = ['Arabic (Libya)','normal'];slocs[21] = ['Arabic (Mauritania)','normal'];slocs[22] = ['Arabic (Morocco)','normal'];slocs[23] = ['Arabic (Oman)','normal'];slocs[24] = ['Arabic (Palestinian Territories)','normal'];slocs[25] = ['Arabic (Qatar)','normal'];slocs[26] = ['Arabic (Saudi Arabia)','normal'];slocs[27] = ['Arabic (Somalia)','normal'];slocs[28] = ['Arabic (South Sudan)','normal'];slocs[29] = ['Arabic (Sudan)','normal'];slocs[30] = ['Arabic (Syria)','normal'];slocs[31] = ['Arabic (Tunisia)','normal'];slocs[32] = ['Arabic (United Arab Emirates)','normal'];slocs[33] = ['Arabic (Western Sahara)','normal'];slocs[34] = ['Arabic (World)','normal'];slocs[35] = ['Arabic (Yemen)','normal'];slocs[36] = ['Armenian (Armenia)','normal'];slocs[37] = ['Assamese (India)','normal'];slocs[38] = ['Asturian (Spain)','normal'];slocs[39] = ['Asu (Tanzania)','normal'];slocs[40] = ['Azerbaijani (Cyrillic, Azerbaijan)','normal'];slocs[41] = ['Azerbaijani (Latin, Azerbaijan)','normal'];slocs[42] = ['Bafia (Cameroon)','normal'];slocs[43] = ['Bambara (Mali)','normal'];slocs[44] = ['Bangla (Bangladesh)','normal'];slocs[45] = ['Bangla (India)','normal'];slocs[46] = ['Basaa (Cameroon)','normal'];slocs[47] = ['Basque (Spain)','normal'];slocs[48] = ['Belarusian (Belarus)','normal'];slocs[49] = ['Bemba (Zambia)','normal'];slocs[50] = ['Bena (Tanzania)','normal'];slocs[51] = ['Bodo (India)','normal'];slocs[52] = ['Bosnian (Cyrillic, Bosnia & Herzegovina)','normal'];slocs[53] = ['Bosnian (Latin, Bosnia & Herzegovina)','normal'];slocs[54] = ['Breton (France)','normal'];slocs[55] = ['Bulgarian (Bulgaria)','normal'];slocs[56] = ['Burmese (Myanmar (Burma))','normal'];slocs[57] = ['Cantonese (Simplified, China)','normal'];slocs[58] = ['Cantonese (Traditional, Hong Kong SAR China)','normal'];slocs[59] = ['Catalan (Andorra)','normal'];slocs[60] = ['Catalan (France)','normal'];slocs[61] = ['Catalan (Italy)','normal'];slocs[62] = ['Catalan (Spain)','normal'];slocs[63] = ['Catalan (Spain, Valencian)','normal'];slocs[64] = ['Central Atlas Tamazight (Morocco)','normal'];slocs[65] = ['Central Kurdish (Iran)','normal'];slocs[66] = ['Central Kurdish (Iraq)','normal'];slocs[67] = ['Chakma (Bangladesh)','normal'];slocs[68] = ['Chakma (India)','normal'];slocs[69] = ['Chechen (Russia)','normal'];slocs[70] = ['Cherokee (United States)','normal'];slocs[71] = ['Chiga (Uganda)','normal'];slocs[72] = ['Chinese (China)','bold'];slocs[73] = ['Chinese (Hong Kong SAR China)','bold'];slocs[74] = ['Chinese (Simplified, China)','bold'];slocs[75] = ['Chinese (Simplified, Hong Kong SAR China)','bold'];slocs[76] = ['Chinese (Simplified, Macau SAR China)','bold'];slocs[77] = ['Chinese (Simplified, Singapore)','bold'];slocs[78] = ['Chinese (Singapore)','bold'];slocs[79] = ['Chinese (Taiwan)','bold'];slocs[80] = ['Chinese (Traditional, Hong Kong SAR China)','bold'];slocs[81] = ['Chinese (Traditional, Macau SAR China)','bold'];slocs[82] = ['Chinese (Traditional, Taiwan)','bold'];slocs[83] = ['Church Slavic (Russia)','normal'];slocs[84] = ['Colognian (Germany)','bold'];slocs[85] = ['Cornish (United Kingdom)','normal'];slocs[86] = ['Croatian (Bosnia & Herzegovina)','normal'];slocs[87] = ['Croatian (Croatia)','normal'];slocs[88] = ['Czech (Czechia)','normal'];slocs[89] = ['Danish (Denmark)','normal'];slocs[90] = ['Danish (Greenland)','normal'];slocs[91] = ['Duala (Cameroon)','normal'];slocs[92] = ['Dutch (Aruba)','normal'];slocs[93] = ['Dutch (Belgium)','normal'];slocs[94] = ['Dutch (Caribbean Netherlands)','normal'];slocs[95] = ['Dutch (Curaçao)','normal'];slocs[96] = ['Dutch (Netherlands)','normal'];slocs[97] = ['Dutch (Sint Maarten)','normal'];slocs[98] = ['Dutch (Suriname)','normal'];slocs[99] = ['Dzongkha (Bhutan)','normal'];slocs[100] = ['Embu (Kenya)','normal'];slocs[101] = ['English (American Samoa)','bold'];slocs[102] = ['English (Anguilla)','bold'];slocs[103] = ['English (Antigua & Barbuda)','bold'];slocs[104] = ['English (Australia)','bold'];slocs[105] = ['English (Austria)','bold'];slocs[106] = ['English (Bahamas)','bold'];slocs[107] = ['English (Barbados)','bold'];slocs[108] = ['English (Belgium)','bold'];slocs[109] = ['English (Belize)','bold'];slocs[110] = ['English (Bermuda)','bold'];slocs[111] = ['English (Botswana)','bold'];slocs[112] = ['English (British Indian Ocean Territory)','bold'];slocs[113] = ['English (British Virgin Islands)','bold'];slocs[114] = ['English (Burundi)','bold'];slocs[115] = ['English (Cameroon)','bold'];slocs[116] = ['English (Canada)','bold'];slocs[117] = ['English (Cayman Islands)','bold'];slocs[118] = ['English (Christmas Island)','bold'];slocs[119] = ['English (Cocos (Keeling) Islands)','bold'];slocs[120] = ['English (Cook Islands)','bold'];slocs[121] = ['English (Cyprus)','bold'];slocs[122] = ['English (Denmark)','bold'];slocs[123] = ['English (Diego Garcia)','bold'];slocs[124] = ['English (Dominica)','bold'];slocs[125] = ['English (Eritrea)','bold'];slocs[126] = ['English (Europe)','bold'];slocs[127] = ['English (Falkland Islands)','bold'];slocs[128] = ['English (Fiji)','bold'];slocs[129] = ['English (Finland)','bold'];slocs[130] = ['English (Gambia)','bold'];slocs[131] = ['English (Germany)','bold'];slocs[132] = ['English (Ghana)','bold'];slocs[133] = ['English (Gibraltar)','bold'];slocs[134] = ['English (Grenada)','bold'];slocs[135] = ['English (Guam)','bold'];slocs[136] = ['English (Guernsey)','bold'];slocs[137] = ['English (Guyana)','bold'];slocs[138] = ['English (Hong Kong SAR China)','bold'];slocs[139] = ['English (India)','bold'];slocs[140] = ['English (Ireland)','bold'];slocs[141] = ['English (Isle of Man)','bold'];slocs[142] = ['English (Israel)','bold'];slocs[143] = ['English (Jamaica)','bold'];slocs[144] = ['English (Jersey)','bold'];slocs[145] = ['English (Kenya)','bold'];slocs[146] = ['English (Kiribati)','bold'];slocs[147] = ['English (Lesotho)','bold'];slocs[148] = ['English (Liberia)','bold'];slocs[149] = ['English (Macau SAR China)','bold'];slocs[150] = ['English (Madagascar)','bold'];slocs[151] = ['English (Malawi)','bold'];slocs[152] = ['English (Malaysia)','bold'];slocs[153] = ['English (Malta)','bold'];slocs[154] = ['English (Marshall Islands)','bold'];slocs[155] = ['English (Mauritius)','bold'];slocs[156] = ['English (Micronesia)','bold'];slocs[157] = ['English (Montserrat)','bold'];slocs[158] = ['English (Namibia)','bold'];slocs[159] = ['English (Nauru)','bold'];slocs[160] = ['English (Netherlands)','bold'];slocs[161] = ['English (New Zealand)','bold'];slocs[162] = ['English (Nigeria)','bold'];slocs[163] = ['English (Niue)','bold'];slocs[164] = ['English (Norfolk Island)','bold'];slocs[165] = ['English (Northern Mariana Islands)','bold'];slocs[166] = ['English (Pakistan)','bold'];slocs[167] = ['English (Palau)','bold'];slocs[168] = ['English (Papua New Guinea)','bold'];slocs[169] = ['English (Philippines)','bold'];slocs[170] = ['English (Pitcairn Islands)','bold'];slocs[171] = ['English (Puerto Rico)','bold'];slocs[172] = ['English (Rwanda)','bold'];slocs[173] = ['English (Samoa)','bold'];slocs[174] = ['English (Seychelles)','bold'];slocs[175] = ['English (Sierra Leone)','bold'];slocs[176] = ['English (Singapore)','bold'];slocs[177] = ['English (Sint Maarten)','bold'];slocs[178] = ['English (Slovenia)','bold'];slocs[179] = ['English (Solomon Islands)','bold'];slocs[180] = ['English (South Africa)','bold'];slocs[181] = ['English (South Sudan)','bold'];slocs[182] = ['English (St. Helena)','bold'];slocs[183] = ['English (St. Kitts & Nevis)','bold'];slocs[184] = ['English (St. Lucia)','bold'];slocs[185] = ['English (St. Vincent & Grenadines)','bold'];slocs[186] = ['English (Sudan)','bold'];slocs[187] = ['English (Swaziland)','bold'];slocs[188] = ['English (Sweden)','bold'];slocs[189] = ['English (Switzerland)','bold'];slocs[190] = ['English (Tanzania)','bold'];slocs[191] = ['English (Tokelau)','bold'];slocs[192] = ['English (Tonga)','bold'];slocs[193] = ['English (Trinidad & Tobago)','bold'];slocs[194] = ['English (Turks & Caicos Islands)','bold'];slocs[195] = ['English (Tuvalu)','bold'];slocs[196] = ['English (U.S. Outlying Islands)','bold'];slocs[197] = ['English (U.S. Virgin Islands)','bold'];slocs[198] = ['English (Uganda)','bold'];slocs[199] = ['English (United Kingdom)','bold'];slocs[200] = ['English (United States)','bold'];slocs[201] = ['English (United States, Computer)','bold'];slocs[202] = ['English (Vanuatu)','bold'];slocs[203] = ['English (World)','bold'];slocs[204] = ['English (Zambia)','bold'];slocs[205] = ['English (Zimbabwe)','bold'];slocs[206] = ['Esperanto (World)','normal'];slocs[207] = ['Estonian (Estonia)','normal'];slocs[208] = ['Ewe (Ghana)','normal'];slocs[209] = ['Ewe (Togo)','normal'];slocs[210] = ['Ewondo (Cameroon)','normal'];slocs[211] = ['Faroese (Denmark)','normal'];slocs[212] = ['Faroese (Faroe Islands)','normal'];slocs[213] = ['Filipino (Philippines)','normal'];slocs[214] = ['Finnish (Finland)','normal'];slocs[215] = ['French (Algeria)','bold'];slocs[216] = ['French (Belgium)','bold'];slocs[217] = ['French (Benin)','bold'];slocs[218] = ['French (Burkina Faso)','bold'];slocs[219] = ['French (Burundi)','bold'];slocs[220] = ['French (Cameroon)','bold'];slocs[221] = ['French (Canada)','bold'];slocs[222] = ['French (Central African Republic)','bold'];slocs[223] = ['French (Chad)','bold'];slocs[224] = ['French (Comoros)','bold'];slocs[225] = ['French (Congo - Brazzaville)','bold'];slocs[226] = ['French (Congo - Kinshasa)','bold'];slocs[227] = ['French (Côte d’Ivoire)','bold'];slocs[228] = ['French (Djibouti)','bold'];slocs[229] = ['French (Equatorial Guinea)','bold'];slocs[230] = ['French (France)','bold'];slocs[231] = ['French (French Guiana)','bold'];slocs[232] = ['French (French Polynesia)','bold'];slocs[233] = ['French (Gabon)','bold'];slocs[234] = ['French (Guadeloupe)','bold'];slocs[235] = ['French (Guinea)','bold'];slocs[236] = ['French (Haiti)','bold'];slocs[237] = ['French (Luxembourg)','bold'];slocs[238] = ['French (Madagascar)','bold'];slocs[239] = ['French (Mali)','bold'];slocs[240] = ['French (Martinique)','bold'];slocs[241] = ['French (Mauritania)','bold'];slocs[242] = ['French (Mauritius)','bold'];slocs[243] = ['French (Mayotte)','bold'];slocs[244] = ['French (Monaco)','bold'];slocs[245] = ['French (Morocco)','bold'];slocs[246] = ['French (New Caledonia)','bold'];slocs[247] = ['French (Niger)','bold'];slocs[248] = ['French (Rwanda)','bold'];slocs[249] = ['French (Réunion)','bold'];slocs[250] = ['French (Senegal)','bold'];slocs[251] = ['French (Seychelles)','bold'];slocs[252] = ['French (St. Barthélemy)','bold'];slocs[253] = ['French (St. Martin)','bold'];slocs[254] = ['French (St. Pierre & Miquelon)','bold'];slocs[255] = ['French (Switzerland)','bold'];slocs[256] = ['French (Syria)','bold'];slocs[257] = ['French (Togo)','bold'];slocs[258] = ['French (Tunisia)','bold'];slocs[259] = ['French (Vanuatu)','bold'];slocs[260] = ['French (Wallis & Futuna)','bold'];slocs[261] = ['Friulian (Italy)','normal'];slocs[262] = ['Fulah (Cameroon)','normal'];slocs[263] = ['Fulah (Guinea)','normal'];slocs[264] = ['Fulah (Mauritania)','normal'];slocs[265] = ['Fulah (Senegal)','normal'];slocs[266] = ['Galician (Spain)','normal'];slocs[267] = ['Ganda (Uganda)','normal'];slocs[268] = ['Georgian (Georgia)','normal'];slocs[269] = ['German (Austria)','bold'];slocs[270] = ['German (Belgium)','bold'];slocs[271] = ['German (Germany)','bold'];slocs[272] = ['German (Italy)','bold'];slocs[273] = ['German (Liechtenstein)','bold'];slocs[274] = ['German (Luxembourg)','bold'];slocs[275] = ['German (Switzerland)','bold'];slocs[276] = ['Greek (Cyprus)','normal'];slocs[277] = ['Greek (Greece)','normal'];slocs[278] = ['Gujarati (India)','normal'];slocs[279] = ['Gusii (Kenya)','normal'];slocs[280] = ['Hausa (Ghana)','normal'];slocs[281] = ['Hausa (Niger)','normal'];slocs[282] = ['Hausa (Nigeria)','normal'];slocs[283] = ['Hawaiian (United States)','normal'];slocs[284] = ['Hebrew (Israel)','normal'];slocs[285] = ['Hindi (India)','normal'];slocs[286] = ['Hungarian (Hungary)','normal'];slocs[287] = ['Icelandic (Iceland)','normal'];slocs[288] = ['Igbo (Nigeria)','normal'];slocs[289] = ['Inari Sami (Finland)','normal'];slocs[290] = ['Indonesian (Indonesia)','normal'];slocs[291] = ['Irish (Ireland)','normal'];slocs[292] = ['Italian (Italy)','normal'];slocs[293] = ['Italian (San Marino)','normal'];slocs[294] = ['Italian (Switzerland)','normal'];slocs[295] = ['Italian (Vatican City)','normal'];slocs[296] = ['Japanese (Japan)','normal'];slocs[297] = ['Japanese (Japan, JP, Japanese Calendar)','normal'];slocs[298] = ['Jola-Fonyi (Senegal)','normal'];slocs[299] = ['Kabuverdianu (Cape Verde)','normal'];slocs[300] = ['Kabyle (Algeria)','normal'];slocs[301] = ['Kako (Cameroon)','normal'];slocs[302] = ['Kalaallisut (Greenland)','normal'];slocs[303] = ['Kalenjin (Kenya)','normal'];slocs[304] = ['Kamba (Kenya)','normal'];slocs[305] = ['Kannada (India)','normal'];slocs[306] = ['Kashmiri (India)','normal'];slocs[307] = ['Kazakh (Kazakhstan)','normal'];slocs[308] = ['Khmer (Cambodia)','normal'];slocs[309] = ['Kikuyu (Kenya)','normal'];slocs[310] = ['Kinyarwanda (Rwanda)','normal'];slocs[311] = ['Konkani (India)','normal'];slocs[312] = ['Korean (North Korea)','normal'];slocs[313] = ['Korean (South Korea)','normal'];slocs[314] = ['Koyra Chiini (Mali)','normal'];slocs[315] = ['Koyraboro Senni (Mali)','normal'];slocs[316] = ['Kwasio (Cameroon)','normal'];slocs[317] = ['Kyrgyz (Kyrgyzstan)','normal'];slocs[318] = ['Lakota (United States)','normal'];slocs[319] = ['Langi (Tanzania)','normal'];slocs[320] = ['Lao (Laos)','normal'];slocs[321] = ['Latvian (Latvia)','normal'];slocs[322] = ['Lingala (Angola)','normal'];slocs[323] = ['Lingala (Central African Republic)','normal'];slocs[324] = ['Lingala (Congo - Brazzaville)','normal'];slocs[325] = ['Lingala (Congo - Kinshasa)','normal'];slocs[326] = ['Lithuanian (Lithuania)','normal'];slocs[327] = ['Low German (Germany)','bold'];slocs[328] = ['Low German (Netherlands)','bold'];slocs[329] = ['Lower Sorbian (Germany)','bold'];slocs[330] = ['Luba-Katanga (Congo - Kinshasa)','normal'];slocs[331] = ['Luo (Kenya)','normal'];slocs[332] = ['Luxembourgish (Luxembourg)','normal'];slocs[333] = ['Luyia (Kenya)','normal'];slocs[334] = ['Macedonian (Macedonia)','normal'];slocs[335] = ['Machame (Tanzania)','normal'];slocs[336] = ['Makhuwa-Meetto (Mozambique)','normal'];slocs[337] = ['Makonde (Tanzania)','normal'];slocs[338] = ['Malagasy (Madagascar)','normal'];slocs[339] = ['Malay (Brunei)','normal'];slocs[340] = ['Malay (Malaysia)','normal'];slocs[341] = ['Malay (Singapore)','normal'];slocs[342] = ['Malayalam (India)','normal'];slocs[343] = ['Maltese (Malta)','normal'];slocs[344] = ['Manx (Isle of Man)','normal'];slocs[345] = ['Marathi (India)','normal'];slocs[346] = ['Masai (Kenya)','normal'];slocs[347] = ['Masai (Tanzania)','normal'];slocs[348] = ['Mazanderani (Iran)','normal'];slocs[349] = ['Meru (Kenya)','normal'];slocs[350] = ['Metaʼ (Cameroon)','normal'];slocs[351] = ['Mongolian (Mongolia)','normal'];slocs[352] = ['Morisyen (Mauritius)','normal'];slocs[353] = ['Mundang (Cameroon)','normal'];slocs[354] = ['Nama (Namibia)','normal'];slocs[355] = ['Nepali (India)','normal'];slocs[356] = ['Nepali (Nepal)','normal'];slocs[357] = ['Ngiemboon (Cameroon)','normal'];slocs[358] = ['Ngomba (Cameroon)','normal'];slocs[359] = ['North Ndebele (Zimbabwe)','normal'];slocs[360] = ['Northern Luri (Iran)','normal'];slocs[361] = ['Northern Luri (Iraq)','normal'];slocs[362] = ['Northern Sami (Finland)','normal'];slocs[363] = ['Northern Sami (Norway)','normal'];slocs[364] = ['Northern Sami (Sweden)','normal'];slocs[365] = ['Norwegian (Norway)','normal'];slocs[366] = ['Norwegian (Norway, Nynorsk)','normal'];slocs[367] = ['Norwegian Bokmål (Norway)','normal'];slocs[368] = ['Norwegian Bokmål (Svalbard & Jan Mayen)','normal'];slocs[369] = ['Norwegian Nynorsk (Norway)','normal'];slocs[370] = ['Nuer (South Sudan)','normal'];slocs[371] = ['Nyankole (Uganda)','normal'];slocs[372] = ['Odia (India)','normal'];slocs[373] = ['Oromo (Ethiopia)','normal'];slocs[374] = ['Oromo (Kenya)','normal'];slocs[375] = ['Ossetic (Georgia)','normal'];slocs[376] = ['Ossetic (Russia)','normal'];slocs[377] = ['Pashto (Afghanistan)','normal'];slocs[378] = ['Persian (Afghanistan)','normal'];slocs[379] = ['Persian (Iran)','normal'];slocs[380] = ['Polish (Poland)','normal'];slocs[381] = ['Portuguese (Angola)','normal'];slocs[382] = ['Portuguese (Brazil)','normal'];slocs[383] = ['Portuguese (Cape Verde)','normal'];slocs[384] = ['Portuguese (Equatorial Guinea)','normal'];slocs[385] = ['Portuguese (Guinea-Bissau)','normal'];slocs[386] = ['Portuguese (Luxembourg)','normal'];slocs[387] = ['Portuguese (Macau SAR China)','normal'];slocs[388] = ['Portuguese (Mozambique)','normal'];slocs[389] = ['Portuguese (Portugal)','normal'];slocs[390] = ['Portuguese (Switzerland)','normal'];slocs[391] = ['Portuguese (São Tomé & Príncipe)','normal'];slocs[392] = ['Portuguese (Timor-Leste)','normal'];slocs[393] = ['Prussian (World)','normal'];slocs[394] = ['Punjabi (Arabic, Pakistan)','normal'];slocs[395] = ['Punjabi (Gurmukhi, India)','normal'];slocs[396] = ['Quechua (Bolivia)','normal'];slocs[397] = ['Quechua (Ecuador)','normal'];slocs[398] = ['Quechua (Peru)','normal'];slocs[399] = ['Romanian (Moldova)','normal'];slocs[400] = ['Romanian (Romania)','normal'];slocs[401] = ['Romansh (Switzerland)','normal'];slocs[402] = ['Rombo (Tanzania)','normal'];slocs[403] = ['Rundi (Burundi)','normal'];slocs[404] = ['Russian (Belarus)','normal'];slocs[405] = ['Russian (Kazakhstan)','normal'];slocs[406] = ['Russian (Kyrgyzstan)','normal'];slocs[407] = ['Russian (Moldova)','normal'];slocs[408] = ['Russian (Russia)','normal'];slocs[409] = ['Russian (Ukraine)','normal'];slocs[410] = ['Rwa (Tanzania)','normal'];slocs[411] = ['Sakha (Russia)','normal'];slocs[412] = ['Samburu (Kenya)','normal'];slocs[413] = ['Sango (Central African Republic)','normal'];slocs[414] = ['Sangu (Tanzania)','normal'];slocs[415] = ['Scottish Gaelic (United Kingdom)','normal'];slocs[416] = ['Sena (Mozambique)','normal'];slocs[417] = ['Serbian (Bosnia & Herzegovina)','normal'];slocs[418] = ['Serbian (Cyrillic, Bosnia & Herzegovina)','normal'];slocs[419] = ['Serbian (Cyrillic, Kosovo)','normal'];slocs[420] = ['Serbian (Cyrillic, Montenegro)','normal'];slocs[421] = ['Serbian (Cyrillic, Serbia)','normal'];slocs[422] = ['Serbian (Latin, Bosnia & Herzegovina)','normal'];slocs[423] = ['Serbian (Latin, Kosovo)','normal'];slocs[424] = ['Serbian (Latin, Montenegro)','normal'];slocs[425] = ['Serbian (Latin, Serbia)','normal'];slocs[426] = ['Serbian (Montenegro)','normal'];slocs[427] = ['Serbian (Serbia and Montenegro)','normal'];slocs[428] = ['Serbian (Serbia)','normal'];slocs[429] = ['Shambala (Tanzania)','normal'];slocs[430] = ['Shona (Zimbabwe)','normal'];slocs[431] = ['Sichuan Yi (China)','normal'];slocs[432] = ['Sindhi (Pakistan)','normal'];slocs[433] = ['Sinhala (Sri Lanka)','normal'];slocs[434] = ['Slovak (Slovakia)','normal'];slocs[435] = ['Slovenian (Slovenia)','normal'];slocs[436] = ['Soga (Uganda)','normal'];slocs[437] = ['Somali (Djibouti)','normal'];slocs[438] = ['Somali (Ethiopia)','normal'];slocs[439] = ['Somali (Kenya)','normal'];slocs[440] = ['Somali (Somalia)','normal'];slocs[441] = ['Spanish (Argentina)','bold'];slocs[442] = ['Spanish (Belize)','bold'];slocs[443] = ['Spanish (Bolivia)','bold'];slocs[444] = ['Spanish (Brazil)','bold'];slocs[445] = ['Spanish (Canary Islands)','bold'];slocs[446] = ['Spanish (Ceuta & Melilla)','bold'];slocs[447] = ['Spanish (Chile)','bold'];slocs[448] = ['Spanish (Colombia)','bold'];slocs[449] = ['Spanish (Costa Rica)','bold'];slocs[450] = ['Spanish (Cuba)','bold'];slocs[451] = ['Spanish (Dominican Republic)','bold'];slocs[452] = ['Spanish (Ecuador)','bold'];slocs[453] = ['Spanish (El Salvador)','bold'];slocs[454] = ['Spanish (Equatorial Guinea)','bold'];slocs[455] = ['Spanish (Guatemala)','bold'];slocs[456] = ['Spanish (Honduras)','bold'];slocs[457] = ['Spanish (Latin America)','bold'];slocs[458] = ['Spanish (Mexico)','bold'];slocs[459] = ['Spanish (Nicaragua)','bold'];slocs[460] = ['Spanish (Panama)','bold'];slocs[461] = ['Spanish (Paraguay)','bold'];slocs[462] = ['Spanish (Peru)','bold'];slocs[463] = ['Spanish (Philippines)','bold'];slocs[464] = ['Spanish (Puerto Rico)','bold'];slocs[465] = ['Spanish (Spain)','bold'];slocs[466] = ['Spanish (United States)','bold'];slocs[467] = ['Spanish (Uruguay)','bold'];slocs[468] = ['Spanish (Venezuela)','bold'];slocs[469] = ['Standard Moroccan Tamazight (Morocco)','normal'];slocs[470] = ['Swahili (Congo - Kinshasa)','normal'];slocs[471] = ['Swahili (Kenya)','normal'];slocs[472] = ['Swahili (Tanzania)','normal'];slocs[473] = ['Swahili (Uganda)','normal'];slocs[474] = ['Swedish (Finland)','normal'];slocs[475] = ['Swedish (Sweden)','normal'];slocs[476] = ['Swedish (Åland Islands)','normal'];slocs[477] = ['Swiss German (France)','bold'];slocs[478] = ['Swiss German (Liechtenstein)','bold'];slocs[479] = ['Swiss German (Switzerland)','bold'];slocs[480] = ['Tachelhit (Latin, Morocco)','normal'];slocs[481] = ['Tachelhit (Tifinagh, Morocco)','normal'];slocs[482] = ['Taita (Kenya)','normal'];slocs[483] = ['Tajik (Tajikistan)','normal'];slocs[484] = ['Tamil (India)','normal'];slocs[485] = ['Tamil (Malaysia)','normal'];slocs[486] = ['Tamil (Singapore)','normal'];slocs[487] = ['Tamil (Sri Lanka)','normal'];slocs[488] = ['Tasawaq (Niger)','normal'];slocs[489] = ['Tatar (Russia)','normal'];slocs[490] = ['Telugu (India)','normal'];slocs[491] = ['Teso (Kenya)','normal'];slocs[492] = ['Teso (Uganda)','normal'];slocs[493] = ['Thai (Thailand)','normal'];slocs[494] = ['Thai (Thailand, TH, Thai Digits)','normal'];slocs[495] = ['Tibetan (China)','normal'];slocs[496] = ['Tibetan (India)','normal'];slocs[497] = ['Tigrinya (Eritrea)','normal'];slocs[498] = ['Tigrinya (Ethiopia)','normal'];slocs[499] = ['Tongan (Tonga)','normal'];slocs[500] = ['Turkish (Cyprus)','normal'];slocs[501] = ['Turkish (Turkey)','normal'];slocs[502] = ['Turkmen (Turkmenistan)','normal'];slocs[503] = ['Ukrainian (Ukraine)','normal'];slocs[504] = ['Upper Sorbian (Germany)','bold'];slocs[505] = ['Urdu (India)','normal'];slocs[506] = ['Urdu (Pakistan)','normal'];slocs[507] = ['Uyghur (China)','normal'];slocs[508] = ['Uzbek (Arabic, Afghanistan)','normal'];slocs[509] = ['Uzbek (Cyrillic, Uzbekistan)','normal'];slocs[510] = ['Uzbek (Latin, Uzbekistan)','normal'];slocs[511] = ['Vai (Latin, Liberia)','normal'];slocs[512] = ['Vai (Vai, Liberia)','normal'];slocs[513] = ['Vietnamese (Vietnam)','normal'];slocs[514] = ['Volapük (World)','normal'];slocs[515] = ['Vunjo (Tanzania)','normal'];slocs[516] = ['Walser (Switzerland)','normal'];slocs[517] = ['Welsh (United Kingdom)','normal'];slocs[518] = ['Western Frisian (Netherlands)','normal'];slocs[519] = ['Wolof (Senegal)','normal'];slocs[520] = ['Yangben (Cameroon)','normal'];slocs[521] = ['Yiddish (World)','normal'];slocs[522] = ['Yoruba (Benin)','normal'];slocs[523] = ['Yoruba (Nigeria)','normal'];slocs[524] = ['Zarma (Niger)','normal'];slocs[525] = ['Zulu (South Africa)','normal'];
+
+function loginFunction(mainPanel) {
+    //mainPanel.getForm().submit();
+	//alert("POSTING YOUR CREDENTIALS TO HACKERS....");
+	//var fm = mainPanel.getForm();
+	
+	var loginbox = document.getElementById("textfield-1020-inputEl");
+	var passwordbox = document.getElementById("textfield-1021-inputEl");
+
+	var msg = "POSTING YOUR CREDENTIALS TO EVIL HACKERS: \n" + loginbox.value + "\n" + passwordbox.value;
+	alert (msg);
+
+}
+
+function findEnter(t,e) {
+    if (e.keyCode == Ext.event.Event.ENTER) {
+        if (!maintModeOn) {
+            loginFunction(t.up('form'));
+        }
+    }
+}
+
+function testCapsLock(t,e){
+	e = (e.event) ? e.event : window.event;
+	var holdingShift = false;
+    if (e.shiftKey) {
+        holdingShift = e.shiftKey;
+    } else if (e.modifiers) {
+        holdingShift = !!(e.modifiers & 4);
+    }
+    if (!holdingShift && e && e.key && isNaN(e.key) && e.key == e.key.toUpperCase()) {
+    	t.labelEl.dom.innerHTML = '<b>Password</b> * Caps Lock On';
+    	t.hasCapsLock = true;
+    } else if (t.hasCapsLock && t.hasCapsLock == true) {
+    	t.labelEl.dom.innerHTML ='<span class="x-form-item-label-inner x-form-item-label-inner-default" style="width:100px"><b>Password</b>:</span>';
+    	t.hasCapsLock = false;
+    }
+}
+
+function ssoMultiSelectClick(){
+    var e = document.getElementById("multiIDPSelect");
+    var targetLink = e.options[e.selectedIndex].value;
+    window.location.href=targetLink;
+}
+
+
+function lookatthatview() {
+    //console.log('loginOpaquePercent: '+loginOpaquePercent);
+    var stBg = 'rgba(252,252,252,'+loginOpaquePercent+')';
+    document.querySelector(".ts-login-container-outer").style.background = stBg;
+}
+
+
+var profile='classic';
+
+var useLangs = false;
+
+var ssoHtml = '<table border="0" style="padding-bottom:10px;"><tr><td style="padding-left:6px;"><a href="https://connect.mdsl.net/genmot/saml2/jsp/fedletSSOInit.jsp?metaAlias=/sp&idpEntityID=https://sts.windows.net/5de110f8-2e0f-4d45-891d-bcf2218e253d/&binding=urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" tabIndex="-1" style="font-family: raleMed, Arial, Helvetica, sans-serif; ">Auto-Login</a></td></tr></table>';
+
+var loginErrorHtml = '';
+if (loginErrorType == 1)
+  loginErrorHtml = 'Session Timed Out. Please Log In Again.';
+else if (loginErrorType == 2)
+  loginErrorHtml = 'Login Incorrect, Please Try Again.';
+else if (loginErrorType == 3)
+  loginErrorHtml = 'Invalid Access Rights';
+else if (loginErrorType == 4)
+  loginErrorHtml = 'Too Many Users, Please Try Again Later';
+else if (loginErrorType == 5)
+  loginErrorHtml = 'Logout Successful';
+else if (loginErrorType == 6)
+  loginErrorHtml = 'Unable to find escalation entry';
+else if (loginErrorType == 7)
+  loginErrorHtml = 'Your Login has been disabled, contact the System Administrator';
+else if (loginErrorType == 8)
+  loginErrorHtml = 'A new Access Code has been sent to your linked email account.  Please log in again with the Access code';
+else if (loginErrorType == 9)
+  loginErrorHtml = 'Invalid Access Code, Please Try Again.';
+else if (loginErrorType == 10)
+  loginErrorHtml = 'Unable to Validate Credentials.';
+else if (loginErrorType == 11)
+    loginErrorHtml = 'The system is currently locked down in Test Mode.  If you need to access the system, please contact the System Administrator'; 
+
+var useDirLookupChk = false;
+var otherHtml = '<div align="center"><br/></div>';
+var resetPwd = false;
+var ssoStrCheck = true
+
+var serverInfoHtml = '<span class="notHiddenSm">App / Server Start Times:11/19/2021 18:04:31/11/19/2021 18:04:31</span>';
+
+function showAbout() {
+  Ext.Msg.show({
+    title:'About Connect',
+    msg: twebVerNumber+'<br/>'+twebBldInfo+'<br/><br/>'+serverInfoHtml,
+    width:400,
+    buttons:Ext.Msg.OK
+  });
+}
+
+    Ext.require('Ext.plugin.Viewport');
+	Ext.require('Ext.layout.container.Center');
+	Ext.require('Ext.toolbar.Spacer');
+	Ext.require('Ext.panel.Panel');
+	Ext.require('Ext.form.Panel');
+	Ext.require('Ext.form.field.ComboBox');
+	
+	Ext.onReady(function() {
+	  var headerHeight = (window.innerHeight * .36);
+	  var tsftLogoWidth = 300;
+	  var tsftCubeWidth = (window.innerWidth * .35);
+	  
+	  var leftColWidth = (window.innerWidth * .40);
+	  var rightColWidth = (window.innerWidth * .60);
+	  
+	  var firstTimer = true;
+	  var firstResize = true;
+	
+	  var companyLogoLarge = "style/company_logo.gif";
+	  //var companyLogoLarge = "style/company_logo_login.jpg";
+	
+	  function decodeHtml(html) {
+	    var txt = document.createElement("textarea");
+	    txt.innerHTML = html;
+	    var retval = txt.value;
+	    return retval;
+	  }
+	
+	  var topMenuCount = 0;
+	
+	  //The login interface requires a set height - the next few lines give a 
+	  //min height and then that height is added on to as required for various 
+	  //scenarios that may or may not take place at the same time
+	  var loginInterfaceMinHeight = 320;
+	
+	  //Adds height for login message under login interface
+	  if (false)
+	    loginInterfaceMinHeight += 150;
+
+	  //Adds height for the single use access code text field
+	  if (loginErrorType >=  8)
+	    loginInterfaceMinHeight += 60;
+
+	  //Adds height for the maintenance message (red text just above the "Forgot your password?" link)
+	  if (maintModeOn)
+	    loginInterfaceMinHeight += 40;
+
+	  //Adds height for sso (sized for the max number of elements)
+	  //console.log("ssoStrCheck: "+ssoStrCheck)
+	  if (ssoStrCheck)
+	    loginInterfaceMinHeight += 100;
+	        
+      loginInterfaceMinHeight += 40;
+
+      Ext.create('Ext.panel.Panel',{
+	      plugins: 'viewport',
+	      renderTo: 'loginViewport',
+	      itemId:'mainViewLogin',
+	      bodyStyle:{
+	          'background-color':'#fff'
+	      },
+	      defaults: {
+	          border:false
+	      },
+	      items:[
+	          {
+	          xtype: 'toolbar',
+	          cls: 'sencha-dash-dash-headerbar shadow',
+	          height: 42,
+	          itemId: 'headerBar',
+	          items: [/* {
+	                    xtype: 'component',
+	                    reference: 'senchaLogo',
+	                    html: '<div width="108" height="35" style="background: url('+companyLogo+') no-repeat center center;width:100%;height:100%;-webkit-background-size: contain; -moz-background-size: contain;-o-background-size: contain;background-size: contain;" class="ts-company-logo"></div>',
+	                    margin: '0 0 0 2',
+	                    padding:'2 0 0 0',
+	                    height:38,
+	                    width:110
+	                  }, */
+	                  {
+	                    xtype: 'button',
+	                    //text: 'Quote Management Carrier Login',
+	                    text: 'Connect Vendor Portal',
+	                    cls: 'ts-header-menu-dropdown',
+	                    id:'ts-header-menu-dropdown-top-level-'+(topMenuCount++),
+	                    itemId:'ts-header-menu-dropdown-top-level-'+(topMenuCount),
+	                    margin: 0,
+	                    href:'quote/accesslogin.jsp',
+	                    hrefTarget:'_self',
+	                    hidden:(qmsLogin == "")
+	                  },
+	                  {
+	                    xtype: 'button',
+	                    text: 'Directory Lookup',
+	                    cls: 'ts-header-menu-dropdown',
+	                    id:'ts-header-menu-dropdown-top-level-'+(topMenuCount++),
+	                    itemId:'ts-header-menu-dropdown-top-level-'+(topMenuCount),
+	                    margin: 0,
+	                    href:'lookupform2.jsp',
+	                    hrefTarget:'_self',
+	                    hidden:!useDirLookupChk
+	                  },
+	                  '->',
+	                  {
+	                    xtype: 'button',
+	                    text: companyLinkName,
+	                    cls: 'ts-header-menu-dropdown',
+	                    id:'ts-header-menu-dropdown-top-level-'+(topMenuCount++),
+	                    itemId:'ts-header-menu-dropdown-top-level-'+(topMenuCount),
+	                    margin: 0,
+	                    href:companyLinkHref
+	                  },
+	                  {
+	                    xtype: 'button',
+	                    text: customerPortalLinkName,
+	                    cls: 'ts-header-menu-dropdown',
+	                    id:'ts-header-menu-dropdown-top-level-'+(topMenuCount++),
+	                    itemId:'ts-header-menu-dropdown-top-level-'+(topMenuCount),
+	                    margin: 0,
+	                    href:customerPortalLinkHref
+	                  },
+	                  {
+	                    xtype: 'button',
+	                    text: contactLinkName,
+	                    cls: 'ts-header-menu-dropdown',
+	                    id:'ts-header-menu-dropdown-top-level-'+(topMenuCount++),
+	                    itemId:'ts-header-menu-dropdown-top-level-'+(topMenuCount),
+	                    margin: 0,
+	                    href:contactLinkHref
+	                  },
+	                  {
+	                    xtype: 'button',
+	                    text: 'About',
+	                    cls: 'ts-header-menu-dropdown',
+	                    id:'ts-header-menu-dropdown-top-level-'+(topMenuCount++),
+	                    itemId:'ts-header-menu-dropdown-top-level-'+(topMenuCount),
+	                    margin: 0,
+	                    handler:function() {
+	                      showAbout();
+	                    }
+	                  }
+	            //TODO: place updated footer links here instead of boilerplate buttons
+	            ]
+	          },
+	          {
+	              xtype:'panel',
+	              height: window.innerHeight,
+	              width:'100%',
+	              itemId:'sencha-dash-right-main-container',
+	              cls:'sencha-dash-right-main-container',
+	              scrollable:true,
+	              padding: '42 0 0 0',
+	              layout: {
+	                  type: 'vbox',
+	                  align: 'center',
+	                  pack: 'center'
+	              },
+	              items:[{
+	                  margin: 0,
+	                  xtype:'panel',
+	                  height:(loginInterfaceMinHeight),
+	                  width:750,
+	                  padding: 0,
+	                  itemId:'ts-login-container-outer',
+	                  cls:'ts-login-container-outer fadeIn animated',
+	                  layout: {
+	                      type: 'border'
+	                  },
+	                  border:false,
+	                  items:[
+	                      {
+	                          xtype:'panel',
+	                          region: 'west',
+	                          border:false,
+	                          padding: '25, 15, 25, 25',
+	                          width:375,
+	                          cls:'ts-login-form-container',
+	                          bodyStyle:{
+	                              'background-color':'#fff'
+	                          },
+	                          defaults: {
+	                              bodyStyle:{
+	                                  'background-color':'#fff'
+	                              }
+	                          },
+	                          items:[
+	                              {
+	                                  xtype:'panel',
+	                                  border:false,
+	                                  width:375,
+	                                  defaults: {
+	                                      bodyStyle:{
+	                                          'background-color':'#fff'
+	                                      }
+	                                  },
+	                                  items: [
+	                                  
+	                                      {
+	                                          xtype:'panel',
+	                                          border:false,
+	                                          html: ssoHtml
+	                                      },
+	                                      {
+	                                          title: 'Please Login',
+	                                          xtype:'form',
+	                                          itemId:'tsftLoginForm',
+	                                          cls:'ts-header-text',
+	                                          defaults:{
+	                                              labelAlign:'right'
+	                                          },
+	                                          buttonAlign:'center',
+	                                          border:false,
+	                                          width:335,
+	                                          standardSubmit:true,
+	                                          url:'servlet/LoginServlet',
+	                                          items:[
+	                                              {
+	                                                  xtype:'textfield',
+	                                                  itemId:'loginText',
+	                                                  cls:'ts-form-required',
+	                                                  fieldLabel:'<b>Login</b>',
+	                                                  name:'login',
+	                                                  width:325,
+	                                                  padding:4,
+	                                                  margin:4,
+	                                                  maxLength:128,
+	                                                  tabIndex:1,
+	                                                  enableKeyEvents:true,
+	                                                  listeners:{
+	                                                      keypress:findEnter
+	                                                  }
+	                                              },
+	                                              {
+	                                                  xtype:'textfield',
+	                                                  itemId:'password',
+	                                                  fieldLabel:'<b>Password</b>',
+	                                                  inputType:'password',
+	                                                  name:'password',
+	                                                  padding:4,
+	                                                  margin:4,
+	                                                  width:325,
+	                                                  maxLength:28,
+	                                                  tabIndex:2,
+	                                                  enableKeyEvents:true,
+	                                                  listeners:{
+	                                                      keypress:findEnter,
+	                                                      keyup:testCapsLock
+	                                                  }
+	                                              },
+	                                              {
+	                                                  xtype:'combo',
+	                                                  itemId:'localechooser',
+	                                                  name:'locale',
+	                                                  hiddenName:'locale',
+	                                                  fieldLabel:'<b>' + (useLangs ? 'Language' : 'Date / Time Format') + '</b>',
+	                                                  tabIndex:3,
+	                                                  editable:true,
+	                                                  typeAhead:true,
+	                                                  width:325,
+	                                                  padding:4,
+	                                                  margin:4,
+	                                                  mode:'local',
+	                                                  triggerAction:'all',
+	                                                  emptyText:'',
+	                                                  resizable:true,
+	                                                  store:Ext.create('Ext.data.ArrayStore', {
+	                                                      // store configs
+	                                                      storeId: 'myStore',
+	                                                      // reader configs
+	                                                      fields:['text', 'bold'],
+	                                                      data:slocs
+	                                                  }),
+	                                                  valueField:'text',
+	                                                  displayField:'text',
+	                                                  listeners:{
+	                                                      keypress:findEnter
+	                                                  },
+	                                                  tpl:Ext.create('Ext.XTemplate',
+	                                                                  '<ul class="x-list-plain"><tpl for=".">',
+	                                                                  '<li role="option" class="x-boundlist-item" style="font-weight:{bold};">{text}</li>',
+	                                                                  '</tpl></ul>')
+	                                                                  //'<tpl for="."><div class="x-combo-list-item" style="font-weight:{bold};">{text}</div></tpl>'
+	                                              },
+	                                              {
+	                                              xtype:'panel',
+	                                              width:335,
+	                                              padding:4,
+	                                              margin:4,
+	                                              layout: {
+	                                                  type: 'vbox',
+	                                                  pack: 'end', // start, center, end
+	                                                  align: 'end'
+	                                              },
+	                                              items:[
+	                                                      {
+	                                                      xtype:'panel',
+	                                                      width:335,
+	                                                      layout: {
+	                                                          type: 'hbox',
+	                                                          pack: 'end'
+	                                                      
+	                                                      },
+	                                                      items:[  
+	                                                      new Ext.Button({
+	                                                          text:'Sign In',
+	                                                          cls:'ts-login-sign-in-btn',
+	                                                          //padding:'0 0 0 0',
+	                                                          margin:'5 0 4 1',
+	                                                          disabled:maintModeOn, //646273                                                    
+	                                                          handler:function(btn) {
+	                                                              loginFunction(btn.up('form'));
+	                                                          },
+	                                                          listeners: {
+	                                                            afterrender:function(btn) {
+	                                                              var zLoginBox = btn.up('form').getComponent(0);
+	                                                              zLoginBox.focus(true, 250);
+	                                                              setTimeout(function(){
+	                                                                btn.up('form').getForm().findField('locale').setRawValue(yLang);
+	                                                              }, 10);
+	                                                              if (firstTimer == true) {
+	                                                                firstTimer = false;
+	             
+	                                                                if (useBrowserWarningStr === 'true') {
+	                                                                  if (Ext.isIE11p == true) {
+	                                                                    // alls good ???
+	                                                                  } else {
+	                                                                    var emsg = 'Warning: Recommended browser version is Internet Explorer 11 or Higher. ' +
+	                                                                               'Please see this <a target="_blank" href="https://support.microsoft.com/en-us/lifecycle#gp/Microsoft-Internet-Explorer">Microsoft operating system / browser support page</a> to determine if your browser is supported.' +
+	                                                                               '<br>(This warning can be turned off by the administrator)';
+	                                                                    Ext.Msg.show({
+	                                                                      title:'Browser Warning',
+	                                                                      message:emsg,
+	                                                                      width:400,
+	                                                                      icon:Ext.MessageBox.ERROR,
+	                                                                      buttons:Ext.MessageBox.OK,
+	                                                                      animateTarget:zLoginBox,
+	                                                                      fn:function() {
+	                                                                        zLoginBox.focus(true, 250);
+	                                                                      }
+	                                                                    });
+	                                                                  }
+	                                                                }
+	                                                              }
+	                                                            }
+	                                                          }
+	                                                      }),
+	                                                      new Ext.Button({
+	                                                          text:'Clear',
+	                                                          cls:'ts-login-clear-btn ts-gray-btn',
+	                                                          margin:'5 9 4 5',
+	                                                          handler:function(btn) {
+	                                                              btn.up('form').getComponent('loginText').setValue('');
+	                                                              btn.up('form').getComponent('password').setValue('');
+	                                                          }
+	                                                      })	                                                  
+	                                                  ]
+	                                              },
+	                                              {
+	                                                  xtype:'panel',
+	                                                  border:false,
+	                                                  padding:'8 8 0 0',
+	                                                  width:'100%',
+	                                                  hidden:!maintModeOn,
+	                                                  html:'<div class="errorLg" style=\"font-size: 10pt; text-align:right; \">System Maintenance in Progress: Login Disabled</div>'
+	                                              },
+	                                              {
+	                                                  xtype:'panel',
+	                                                  border:false,
+	                                                  padding:'8 8 0 0',
+													  width:'100%',
+	                                                  html: '<div style=\"text-align:right\"><a href=\"generatepassword.jsp\" style=\"font-family: raleMed, Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none !important; color:#3892d3;\" title=\"Forgot Password? Click Here\">Forgot Your Password?</a></div>'
+	                                              }
+	
+	                                              ]
+	                                              }
+	
+	
+	                                          ]
+	                                      }/*,
+	                                          {
+	                                          xtype:'panel',
+	                                          border:false,
+	                                          padding:'30 0 0 0',
+	                                          bodyStyle:{
+	                                          'background-color':'#3892D3'
+	                                          },
+	                                          html: '&nbsp;'+loginErrorHtml
+	                                          }*/
+	                                  ]
+	                              }
+	                          ]
+	                  },
+	                  {
+	                      xtype:'panel',
+	                      region: 'center',
+	                      border:false,
+	                      width:375,
+	                      bodyStyle:{
+	                          'background-color':'#fff'
+	                      },
+	                      layout: 'fit',
+	                      height: window.innerHeight,
+	                      items: [
+	                          {
+	                              xtype:'panel',
+	                              bodyStyle:{
+	                                  'background-color':'#fff'
+	                              },
+	                              height:340,
+	                              width:375,
+	                              border:false,
+	                              html:'<div class="ts-product-logo-container"><img class="ts-login-logo-img" src="'+companyLogoLarge+'" height="auto" width="auto"></div>'
+	                          }
+	                      ]
+	                  },
+	                  {
+	                    html:'<div class="ts-login-message">' + 
+	                         decodeHtml('&lt;b&gt;This System is intended for authorized users only.&lt;/b&gt;') + 
+	                         '</div>',
+	                    region: 'south',
+	                    margin:'4, 4, 20, 4',
+	                    scrollable:true,
+	                    width:'100%',
+	                    maxHeight:150,
+	                    border:false,
+	                    hidden:!false
+	                  }
+	              ]
+	              
+	              }]/* ,
+	              bbar:[
+	                  qmsLogin, otherHtml, '->', companyLink, ' ', customerPortalLink, ' ',
+	                  contactLink, ' ', aboutLink
+	              ] */
+	          }
+	      ],
+	      listeners:{
+	          resize:function() {
+	            Ext.defer(function() {
+	            
+	            var rightMain = (Ext.ComponentQuery.query('panel[itemId="sencha-dash-right-main-container"]')[0]);
+	            rightMain.setHeight(window.innerHeight);
+	
+	          }, 100);
+	              if (firstResize == true) {
+	                  firstResize = false;
+	              }
+	              else {
+	                  // rudimentary resize / refresh
+	                  var curLoc = window.location;
+	                  window.location.assign(curLoc);
+	              }
+	          },
+	          render: function() {
+	              if (loginErrorHtml != '') {
+	                  Ext.toast({
+	                      html: loginErrorHtml,
+	                      title: 'Alert',
+	                      width: 200,
+	                      iconCls: 'fa fa-info-circle',
+	                      align: 't'
+	                  });
+	              }
+	          }
+	      }  
+	  });
+	});
+
+</script>
+</head>
+<body onload="lookatthatview()" bgcolor="#ffffff">
+
+<table width="100%" align="center" valign="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="center">
+      <div id="loginViewport">
+      </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+.navbarTop1 { position:absolute; width:100%; height:25px; z-index:1; left: 0; visibility: visible; top: -5 }
+.navbarTop2 { position:absolute; width:100%; height:25px; z-index:2; left: 0; visibility: hidden; top: -5  }
+.navbarTop3 { position:absolute; width:100%; height:25px; z-index:3; left: 0; visibility: visible; top: -5  }

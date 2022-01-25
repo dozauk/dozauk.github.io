@@ -1,0 +1,4463 @@
+.sencha-dash-right-main-container .x-grid-cell,
+.sencha-dash-right-main-container .x-grid .x-grid-cell,
+.sencha-dash-right-main-container .x-grid .x-grid-cell-inner,
+.x-window .x-grid-cell,
+.x-window .x-grid .x-grid-cell,
+.x-window .x-grid .x-grid-cell-inner{
+    font-family: 'Roboto Mono', raleMed, arial, sans-serif;
+}
+
+.x-body {
+    background: #fff !important;
+}
+.ts-new-ui-update.x-body {
+    background: #f5f5f5 !important;
+}
+
+a{
+    text-decoration:none;
+    color:#2a9af5;
+    transition:color 300ms ease-in-out;
+}
+
+a:hover{
+    color:#1070be;
+}
+
+.x-grid-header-ct .x-box-inner {
+    background: #fff;
+}
+
+.x-window .x-grid-header-ct:hover .x-column-header,
+.sencha-dash-right-main-container .x-grid-header-ct:hover .x-column-header {
+    border-right: 1px solid #d0d0d0;
+}
+
+/* alternate row colors here */
+
+.x-window .x-grid-item-over.x-grid-item,
+.x-window .x-grid-item-over.x-grid-item-alt,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell {
+    background: #b5dbf4 !important;
+}
+
+.x-window .x-grid-cell-first.x-grid-cell-row-checker .x-grid-cell-inner::before,
+.sencha-dash-right-main-container .x-grid-cell-first.x-grid-cell-row-checker .x-grid-cell-inner::before {
+  
+}
+
+.x-responsivecolumn {
+}
+
+/*red button - used to warn people, get their attention*/
+.x-window .x-btn.ts-red-btn,
+.x-window .x-btn-default-small.ts-red-btn,
+.x-window .x-btn.x-btn-focus.ts-red-btn,
+.sencha-dash-right-main-container .x-btn.ts-red-btn,
+.sencha-dash-right-main-container .x-btn-default-small.ts-red-btn,
+.sencha-dash-right-main-container .x-btn.x-btn-focus.ts-red-btn {
+    background: #f14b3e !important;
+    -webkit-box-shadow: 0 2px 0 #b91f13 !important;
+    -moz-box-shadow: 0 2px 0 #b91f13 !important;
+    box-shadow: 0 2px 0 #b91f13 !important;
+}
+
+.x-window .x-btn.ts-red-btn:hover,
+.x-window .x-btn-default-small.ts-red-btn:hover,
+.x-window .x-btn.x-btn-focus.ts-red-btn:hover,
+.sencha-dash-right-main-container .x-btn.ts-red-btn:hover,
+.sencha-dash-right-main-container .x-btn-default-small.ts-red-btn:hover,
+.sencha-dash-right-main-container .x-btn.x-btn-focus.ts-red-btn:hover {
+    background: #cb3024 !important;
+    -webkit-box-shadow: 0 2px 0 #b91f13 !important;
+    -moz-box-shadow: 0 2px 0 #b91f13 !important;
+    box-shadow: 0 2px 0 #b91f13 !important;
+}
+
+* {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.x-btn-inner-default-toolbar-small {
+    font: normal 14px/16px 'raleMed', 'Open Sans', Arial, sans-serif;
+}
+
+.x-window .x-btn,
+.x-window .x-btn-default-small,
+.x-window .x-btn.x-btn-focus,
+.sencha-dash-right-main-container .x-btn,
+.sencha-dash-right-main-container .x-btn-default-small,
+.sencha-dash-right-main-container .x-btn.x-btn-focus {
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    background: #3892d3;
+    border: none !important;
+    -webkit-box-shadow: 0 2px 0 #3174a4 !important;
+    -moz-box-shadow: 0 2px 0 #3174a4 !important;
+    box-shadow: 0 2px 0 #3174a4 !important;
+    color: #fff !important;
+}
+
+.sencha-dash-dash-headerbar {
+    background: #fff !important;
+    color: #fff !important;
+    padding-left: 0px !important;
+}
+
+.sencha-dash-dash-headerbar .x-btn-inner-default-toolbar-small,
+.sencha-dash-dash-headerbar .x-toolbar-item .fa,
+.sencha-dash-dash-headerbar .x-toolbar-item .x-fa,
+.sencha-dash-dash-headerbar .x-toolbar-item [class*="ion-"] {
+    color: #2484c6 !important;
+}
+
+.x-window .x-box-inner,
+.sencha-dash-right-main-container .x-box-inner {
+    /*min-height: 32px; Added to stop buttons from getting cut off on the bottom - removed because of an issue with some toolbars appearing too large and covering the content below (Manage>Mobility Services)*/
+}
+
+.x-window .todo-list .x-panel-header,
+.sencha-dash-right-main-container .todo-list .x-panel-header {
+    color: #688092;
+    padding: 6px 2px !important;
+    height: 36px;
+}
+
+.x-window .todo-list,
+.x-window .todo-list .x-panel-body,
+.x-window .x-panel-body,
+.sencha-dash-right-main-container .todo-list,
+.sencha-dash-right-main-container .todo-list .x-panel-body,
+.sencha-dash-right-main-container .x-panel-body {
+    background: #fff !important;
+}
+
+/*Header Section with buttons or form elements*/
+
+.x-window .panel-header-with-elements,
+.sencha-dash-right-main-container .panel-header-with-elements {
+    height: 32px;
+}
+
+.x-window .panel-header-with-elements .x-field.x-form-item-no-label,
+.sencha-dash-right-main-container .panel-header-with-elements .x-field.x-form-item-no-label {
+    height: 30px;
+}
+
+.x-window .x-panel-header .x-btn-wrap-default-toolbar-small.x-btn-arrow-right::after, .sencha-dash-right-main-container .x-panel-header .x-btn-wrap-default-toolbar-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn-inner-default-small,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn .x-btn-icon-el,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn-inner,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container  .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-window .ts-custom-link-style-btns-container .x-btn-inner-default-small,
+.x-window .ts-custom-link-style-btns-container .x-btn .x-btn-icon-el,
+.x-window .ts-custom-link-style-btns-container .x-btn-inner,
+.x-window .ts-custom-link-style-btns-container  .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-form-item .x-btn .x-btn-inner,
+.x-window .x-panel-header .x-btn .x-btn-icon-el,
+.x-window .x-panel-header .x-btn-inner,
+.x-window .x-panel-header .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-window .x-window-header .x-btn .x-btn-icon-el,
+.x-window .x-window-header .x-btn-inner,
+.x-window .x-window-header .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-window .panel-header-with-elements .x-btn .x-btn-icon-el,
+.x-window .panel-header-with-elements .x-btn-inner,
+.x-window .panel-header-with-elements .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .x-panel-header .x-btn .x-btn-icon-el,
+.sencha-dash-right-main-container .x-panel-header .x-btn-inner,
+.sencha-dash-right-main-container .x-panel-header .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn .x-btn-icon-el,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn-inner,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn-wrap-default-small.x-btn-arrow-right::after {
+    color: #3892d3 !important;
+}
+
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn:hover .x-btn-inner-default-small,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn:hover .x-btn-icon-el,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn:hover .x-btn-inner,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-window .ts-custom-link-style-btns-container .x-btn:hover .x-btn-inner-default-small,
+.x-window .ts-custom-link-style-btns-container .x-btn:hover .x-btn-icon-el,
+.x-window .ts-custom-link-style-btns-container .x-btn:hover .x-btn-inner,
+.x-window .ts-custom-link-style-btns-container .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-form-item .x-btn:hover .x-btn-inner,
+.x-window .x-panel-header .x-btn:hover .x-btn-icon-el,
+.x-window .x-panel-header .x-btn:hover .x-btn-inner,
+.x-window .x-panel-header .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-window .x-window-header .x-btn:hover .x-btn-icon-el,
+.x-window .x-window-header .x-btn:hover .x-btn-inner,
+.x-window .x-window-header .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.x-window .panel-header-with-elements .x-btn:hover .x-btn-icon-el,
+.x-window .panel-header-with-elements .x-btn:hover .x-btn-inner,
+.x-window .panel-header-with-elements .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .x-panel-header .x-btn:hover .x-btn-icon-el,
+.sencha-dash-right-main-container .x-panel-header .x-btn:hover .x-btn-inner,
+.sencha-dash-right-main-container .x-panel-header .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn:hover .x-btn-icon-el,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn:hover .x-btn-inner,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn:hover .x-btn-wrap-default-small.x-btn-arrow-right::after {
+    color: #16527d !important;
+    transition: color 0.2s ease-in-out !important;
+}
+
+.x-window .x-tool-img,
+.sencha-dash-right-main-container .x-tool-img {
+    color: #444b52;
+    background: transparent !important;
+}
+
+.x-window .x-panel-header-title-default,
+.x-window .x-panel-header-title-default-framed,
+.sencha-dash-right-main-container .x-panel-header-title-default,
+.sencha-dash-right-main-container .x-panel-header-title-default-framed {
+    color: #688092;
+    line-height: 21px;
+    margin-left: 2px !important;
+}
+
+.sencha-dash-right-main-container .x-field:not(.x-form-type-radio),
+.x-window .x-field:not(.x-form-type-radio),
+.x-window .x-field.x-form-type-text:not(.ts-slider-container),
+.sencha-dash-right-main-container .x-field.x-form-type-text:not(.ts-slider-container),
+.x-window .x-field.x-form-type-password,
+.sencha-dash-right-main-container .x-field.x-form-type-password,
+.x-window .x-field.x-form-type-password,
+.sencha-dash-right-main-container .x-field.x-form-type-password {
+    border: 1px solid #d1d1d1;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.17), 0px 2px 5px 0px rgba(0, 0, 0, 0);
+}
+
+.x-window .x-form-item-label-right,
+.sencha-dash-right-main-container .x-form-item-label-right {
+    text-align: left;
+    clear: left !important;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    width: 100% !important;
+}
+
+.x-window .x-form-item-body:not(.x-form-textarea-body):not(.x-slider-ct-horz):not(.x-ts-form-check-switch):not(.x-form-checkboxgroup-body), .sencha-dash-right-main-container .x-form-item-body:not(.x-form-textarea-body):not(.x-slider-ct-horz):not(.x-ts-form-check-switch):not(.x-form-checkboxgroup-body) {
+    clear: left !important;
+    float: left;
+    vertical-align: unset;
+    height: 10px !important;
+    overflow: hidden;
+}
+
+.x-window .x-form-item-body.x-form-textarea-body,
+.sencha-dash-right-main-container .x-form-item-body.x-form-textarea-body {
+    clear: left !important;
+    float: left;
+    vertical-align: unset;
+    height: 100%;
+    overflow: hidden;
+}
+
+.x-form-item-body.x-html-editor-wrap{
+    float:none !important;
+}
+
+.x-window .x-html-editor-container{
+    border:none !important;
+}
+
+.x-window .x-form-text-wrap,
+.x-window .x-form-text-field-body,
+.sencha-dash-right-main-container .x-form-text-wrap,
+.sencha-dash-right-main-container .x-form-text-field-body {
+    width: auto;
+}
+
+.x-window .x-form-text-field-body,
+.sencha-dash-right-main-container .x-form-text-field-body {
+    min-height: 26px;
+}
+
+.x-window .x-panel-body-default,
+.sencha-dash-right-main-container .x-panel-body-default {
+    background: transparent !important;
+}
+
+.x-window .info-card-item .x-panel-body-default,
+.sencha-dash-right-main-container .info-card-item .x-panel-body-default {
+    background: #fff;
+}
+
+.x-window .x-form-item-hidden,
+.sencha-dash-right-main-container .x-form-item-hidden {
+    display: none !important;
+}
+
+.x-window .x-form-text,
+.sencha-dash-right-main-container .x-form-text {
+    height: 100%;
+}
+
+/*cutting the flab from the tabs*/
+
+.x-window .x-tab-bar-docked-top .x-tab-default, .sencha-dash-right-main-container .x-tab-bar-docked-top .x-tab-default {
+    /*top: 8px !important;*/
+}
+
+.x-window .x-tab-default:hover,
+.sencha-dash-right-main-container .x-tab-default:hover {
+    background: transparent !important;
+}
+
+.x-window .x-tab-default.x-tab-active,
+.sencha-dash-right-main-container .x-tab-default.x-tab-active {
+    background: transparent !important;
+    color: #3892d3 !important;
+}
+
+.x-window .x-tab-focus.x-tab-default,
+.sencha-dash-right-main-container .x-tab-focus.x-tab-default {
+    outline: none !important;
+    outline-width: 0 !important;
+}
+
+.x-window .x-tab-default:hover .x-tab-inner,
+.sencha-dash-right-main-container .x-tab-default:hover .x-tab-inner {
+    background: transparent !important;
+}
+
+.x-window .x-tab-bar-default,
+.sencha-dash-right-main-container .x-tab-bar-default {
+    background-color: transparent !important;
+    border: 2px solid #e9ebed !important;
+    border-width: 0 0 2px 0 !important;
+    outline: none !important;
+    outline-width: 0 !important;
+}
+
+.x-window .x-tab-inner-default,
+.sencha-dash-right-main-container .x-tab-inner-default {
+    font: 100 15px/16px 'raleMed', 'Open Sans', Arial, sans-serif !important;
+    background: transparent !important;
+    color: #688092 !important;
+    padding: 0 0 2px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.x-window .x-tab-active.x-tab-default .x-tab-inner,
+.sencha-dash-right-main-container .x-tab-active.x-tab-default .x-tab-inner {
+    border: 2px solid #3892d3;
+    border-width: 0 0 2px 0;
+    color: #3892d3 !important;
+}
+
+.x-tab-bar-default>.x-tab-bar-body-default {
+    padding: 8px 4px 0 0 !important;
+}
+
+/*pulled this out of main.scss*/
+
+body {
+    font: normal 12px/16px 'raleMed', 'Open Sans', Arial, sans-serif;
+}
+
+body .x-window input,
+body .sencha-dash-right-main-container input {
+    font: normal 12px/16px 'raleMed', 'Open Sans', Arial, sans-serif;
+}
+
+.x-window .x-form-item-label-inner-default,
+.sencha-dash-right-main-container .x-form-item-label-inner-default {
+    font: bold 12px/16px 'raleMed', 'Open Sans', Arial, sans-serif !important;
+}
+
+.x-window .x-form-item-label-inner-default b,
+.x-window .x-form-item-label-inner-default strong,
+.sencha-dash-right-main-container .x-form-item-label-inner-default b,
+.sencha-dash-right-main-container .x-form-item-label-inner-default strong {
+    color: #dd712a;
+}
+
+.x-window .x-form-item-label-inner-default b:after,
+.x-window .x-form-item-label-inner-default strong:after,
+.sencha-dash-right-main-container .x-form-item-label-inner-default b:after,
+.sencha-dash-right-main-container .x-form-item-label-inner-default strong:after {
+    content: " *";
+}
+
+.x-window .x-form-item-label-inner-default b b:after,
+.x-window .x-form-item-label-inner-default strong strong:after,
+.sencha-dash-right-main-container .x-form-item-label-inner-default b b:after,
+.sencha-dash-right-main-container .x-form-item-label-inner-default strong strong:after {
+    content: "";
+}
+
+.x-form-text-default {
+    padding: 0 10px 4px;
+}
+
+.x-form-item-label-default {
+    min-height: 18px !important;
+    color: #404040;
+}
+
+.x-btn,
+.x-btn-default-small {
+    font: 100 14px/16px 'raleMed', 'Open Sans', Arial, sans-serif !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.x-window .x-btn:hover:not(.x-form-file-btn),
+.x-btn-default-small:hover:not(.x-form-file-btn),
+.sencha-dash-right-main-container .x-btn:hover:not(.x-form-file-btn),
+.x-btn-default-small:hover:not(.x-form-file-btn) {
+    background: #3dabe4 !important;
+}
+
+.x-window .x-form-text.x-form-text-default,
+.sencha-dash-right-main-container .x-form-text.x-form-text-default {
+    padding: 0 6px 0 6px !important;
+    min-height: 18px !important;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.x-window .x-form-trigger-wrap,
+.x-window .x-form-trigger-wrap-default,
+.x-form-trigger-wrap-focus,
+.sencha-dash-right-main-container .x-form-trigger-wrap,
+.sencha-dash-right-main-container .x-form-trigger-wrap-default,
+.x-form-trigger-wrap-focus {
+    border: none !important;
+}
+
+.x-window .x-form-item-label,
+.sencha-dash-right-main-container .x-form-item-label {
+    padding: 0 0 0 6px !important;
+}
+
+.x-grid-row-checker,
+.x-field.x-form-type-text *,
+.x-field.x-form-type-text,
+.x-field.x-form-type-password *,
+.x-field.x-form-type-password  {
+    cursor: pointer;
+}
+
+.x-form-readonly,
+.x-field.x-form-type-password.x-form-readonly *,
+.x-field.x-form-type-password.x-form-readonly,
+.x-field.x-form-type-text.x-form-readonly *,
+.x-field.x-form-type-text.x-form-readonly {
+    cursor: default;
+}
+
+/*removed css controlled margins from every field regardless of 
+their container's update status, this was causing 
+issues before the update where ext wasn't aware of the added space
+updated margins have been added in overrides - form - base js*/
+.x-window .x-field,
+.sencha-dash-right-main-container .x-field {
+    transition: border-color 200ms ease-in-out !important;
+    transition: box-shadow 200ms ease-in-out !important;
+}
+
+.x-window .x-panel-header,
+.sencha-dash-right-main-container .x-panel-header {
+    background: transparent;
+    color: #688092;
+    border-bottom: 1px solid rgba(0, 0, 0, 0) !important;
+    border-left: none;
+    border-right: none;
+    padding: 0 !important;
+    height: 26px;
+    margin: 0 0 8px 0;
+}
+
+.leftNavCls,
+.x-toolbar-text span {
+    background: transparent !important;
+    color: #688092 !important;
+}
+
+.x-window .x-btn-inner-default-small,
+.x-window .x-btn-inner-default-toolbar-small,
+.sencha-dash-right-main-container .x-btn-inner-default-small,
+.sencha-dash-right-main-container .x-btn-inner-default-toolbar-small {
+    color: #fff !important;
+    font: 100 14px/16px 'raleMed', 'Open Sans', Arial, sans-serif !important;
+}
+
+.x-window .x-btn-wrap-default-toolbar-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .x-btn-wrap-default-toolbar-small.x-btn-arrow-right::after {
+    color: #fff !important;
+    content: '\f107' !important;
+}
+
+.x-window .x-grid,
+.x-window .x-grid .x-grid-cell-inner,
+.sencha-dash-right-main-container .x-grid,
+.sencha-dash-right-main-container .x-grid .x-grid-cell-inner {
+    font: normal 13px/16px 'Roboto Mono', raleMed, arial, sans-serif !important;
+    letter-spacing:-0.3px;
+}
+
+.x-window .x-grid .x-column-header,
+.sencha-dash-right-main-container .x-grid .x-column-header{
+    font: normal 13px/16px raleMed, arial, sans-serif !important;
+}
+
+.x-window .x-btn .x-btn-icon-el,
+.sencha-dash-right-main-container .x-btn .x-btn-icon-el {
+    color: #fff;
+}
+
+.x-window .x-btn-icon-el.x-btn-icon-el-navigation-small,
+.sencha-dash-right-main-container .x-btn-icon-el.x-btn-icon-el-navigation-small {
+    color: #3892d3;
+    background: transparent;
+}
+
+.x-window .x-btn.leftNavBtnCls.x-unselectable,
+.sencha-dash-right-main-container .x-btn.leftNavBtnCls.x-unselectable {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.x-window .x-toolbar-item.x-btn-menu-active,
+.sencha-dash-right-main-container .x-toolbar-item.x-btn-menu-active {
+    background: #3174a4 !important;
+}
+
+.x-window .x-grid-header-ct,
+.sencha-dash-right-main-container .x-grid-header-ct {
+    border-top: none;
+}
+
+.x-grid-body tr .x-grid-cell-inner {
+    padding: 6px 4px !important;
+    font: normal 13px/normal 'Roboto Mono', raleMed, arial, sans-serif !important;
+}
+
+.x-window .x-grid-item-alt,
+.sencha-dash-right-main-container .x-grid-item-alt {
+    background: #f7f7f7;
+}
+
+.x-window .x-grid-item,
+.x-window .x-grid-item-alt,
+.sencha-dash-right-main-container .x-grid-item,
+.sencha-dash-right-main-container .x-grid-item-alt {
+    
+}
+
+.x-grid-cell-inner-row-numberer {
+    background: transparent !important;
+}
+
+.dashboard-todo-list .x-grid-body tr .x-grid-cell-inner {
+    padding: 7px 4px !important;
+}
+
+.x-grid-with-row-lines .x-grid-item {
+    border-width: 0 0 1px 0;
+    border-color: #e9ebed;
+}
+
+.x-window .x-column-header,
+.sencha-dash-right-main-container .x-column-header {
+    border-right: 1px solid #cfcfcf;
+    background: transparent;
+}
+
+.x-window .x-grid-body,
+.sencha-dash-right-main-container .x-grid-body {
+    border-top-color: #e9ebed;
+    background: #fff;
+}
+
+.x-window .x-grid-item-selected,
+.x-window .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item,
+.sencha-dash-right-main-container .x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item {
+    /*border-top-color: #3892d3 !important;
+    border-bottom-color: red !important;*/
+}
+
+.x-window .x-grid-item-selected:first-child,
+.x-window .x-grid-with-row-lines .x-grid-item-selected:first-child,
+.sencha-dash-right-main-container .x-grid-item-selected:first-child,
+.sencha-dash-right-main-container .x-grid-with-row-lines .x-grid-item-selected:first-child {
+    /*border-top:1px solid #3892d3 !important;*/
+}
+
+.x-window .x-grid-item,
+.sencha-dash-right-main-container .x-grid-item {
+    border-left: 4px solid rgba(0, 0, 0, 0) !important;
+}
+
+.x-window .x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-item-selected {
+    border-left: 4px solid #3892d3 !important;
+    border-left-width: 4px;
+    border-left-color: #3892d3;
+}
+
+.x-window .x-grid-with-col-lines .x-grid-cell,
+.sencha-dash-right-main-container .x-grid-with-col-lines .x-grid-cell {
+    border-right: 1px solid #fff;
+}
+
+/* alternate row colors here */
+
+.x-grid-with-col-lines .x-grid-item-selected .x-grid-cell,
+.x-grid-with-col-lines .x-grid-item-selected:first-child * {
+    border-right: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.dashboard-todo-list .x-grid-with-col-lines .x-grid-item-selected .x-grid-cell,
+.dashboard-todo-list .x-grid-with-col-lines .x-grid-item-selected:first-child * {
+    border-right: 0px solid rgba(255, 255, 255, 0) !important;
+}
+
+.x-grid-item.x-grid-item-red .x-grid-cell {
+    background: #f14b3e !important;
+}
+
+.x-grid-item.x-grid-item-selected .x-grid-cell {
+    background: #e5f1f9;
+}
+
+.x-window .x-grid-with-col-lines:hover .x-grid-cell,
+.sencha-dash-right-main-container .x-grid-with-col-lines:hover .x-grid-cell,
+.x-grid-item.x-grid-item-selected .x-grid-cell {
+    border-right: 1px solid rgba(255, 255, 255, 0);
+}
+.x-window .x-grid-with-col-lines .ts-colored-cell.x-grid-cell
+.x-window .x-grid-with-col-lines:hover .ts-colored-cell.x-grid-cell,
+.sencha-dash-right-main-container .x-grid-with-col-lines:hover .ts-colored-cell.x-grid-cell
+.sencha-dash-right-main-container .x-grid-with-col-lines .ts-colored-cell.x-grid-cell,
+.x-grid-item.x-grid-item-selected .ts-colored-cell.x-grid-cell {
+    border-right: none;
+}
+.x-window .x-grid-with-col-lines:hover .ts-colored-cell.x-grid-cell,
+.sencha-dash-right-main-container .x-grid-with-col-lines:hover .ts-colored-cell.x-grid-cell,
+.x-grid-item.x-grid-item-selected .ts-colored-cell.x-grid-cell {
+    border-right: none;
+}
+.x-grid-with-col-lines .x-grid-item-selected .x-grid-cell{
+    border-width: 0 1px 0 0 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.x-form-item-default {
+    position: relative;
+}
+
+.x-toolbar-footer {
+    background: transparent !important;
+}
+
+#newGuideTool{
+    border-top:1px solid #bfbfbf !important;
+    /*background: #DDDDDD !important;*/
+}
+
+.x-window .x-form-text-field-body-default,
+.sencha-dash-right-main-container .x-form-text-field-body-default {
+    min-width: 0 !important;
+}
+
+/*loaaaading*/
+
+.x-mask-msg {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+.loader-container {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.769);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin: -110px;
+    width: 257px;
+    height: 226px;
+    box-shadow: inset 0 0 90px 6px black;
+}
+
+.loader,
+.loader__figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    overflow: visible;
+    padding-top: 5.625em;
+    height: 0;
+    width: 5.625em;
+}
+
+.loader__figure {
+    height: 0;
+    width: 0;
+    box-sizing: border-box;
+    border: 0 solid #fff;
+    border-radius: 50%;
+    -webkit-animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader__label {
+    float: left;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0.6em 0 0 50%;
+    font-size: 0.875em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    color: white;
+    white-space: nowrap;
+    -webkit-animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@-webkit-keyframes loader-figure {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    30% {
+        height: 5.625em;
+        width: 5.625em;
+        border-width: 2.8125em;
+        opacity: 1;
+    }
+    100% {
+        height: 5.625em;
+        width: 5.625em;
+        border-width: 0;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes loader-figure {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    30% {
+        height: 5.625em;
+        width: 5.625em;
+        border-width: 2.8125em;
+        opacity: 1;
+    }
+    100% {
+        height: 5.625em;
+        width: 5.625em;
+        border-width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes loader-figure {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    30% {
+        height: 5.625em;
+        width: 5.625em;
+        border-width: 2.8125em;
+        opacity: 1;
+    }
+    100% {
+        height: 5.625em;
+        width: 5.625em;
+        border-width: 0;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes loader-label {
+    0% {
+        opacity: 0.35;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.35;
+    }
+}
+
+@-moz-keyframes loader-label {
+    0% {
+        opacity: 0.35;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.35;
+    }
+}
+
+@keyframes loader-label {
+    0% {
+        opacity: 0.35;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.35;
+    }
+}
+
+.loader-element {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.loader-element .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.loader-element .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #EFEFFA;
+}
+
+.loader-element .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #EFEFFA;
+}
+
+.loader-element .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #EFEFFA;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+/*End loaaaading*/
+
+/*Domnodeinserted alternative css - required to run this method, see Chris Fryant for details before editing this*/
+
+@keyframes nodeInserted {
+    from {
+        outline-color: #fff;
+    }
+    to {
+        outline-color: #000;
+    }
+}
+
+/*alt for elements that will only be added ONCE*/
+@keyframes nodeInsertedAlt {
+    from {
+        outline-color: #fff;
+    }
+    to {
+        outline-color: #000;
+    }
+}
+@keyframes nodeInsertedAlt2 {
+    from {
+        outline-color: #fff;
+    }
+    to {
+        outline-color: #000;
+    }
+}
+@keyframes nodeInsertedAlt3 {
+    from {
+        outline-color: #fff;
+    }
+    to {
+        outline-color: #000;
+    }
+}
+
+/*Add your Selectors here AT THE END of all other selectors*/
+
+.x-form-invalid-field,
+.x-mask-loading,
+.x-form-item-label-inner,
+.x-panel-header,
+.x-form-trigger-wrap-invalid, 
+#loadmask-3000, 
+#main-view-side-menu, 
+#accountsetup-1981-body,
+.x-grid-item .x-grid-item-focused,
+.ts-miniMask-container {
+    animation-duration: 0.01s;
+    animation-name: nodeInserted;
+}
+
+#ts-user-menu-settings-link-log-in {
+    animation-duration: 0.01s;
+    animation-name: nodeInsertedAlt;
+}
+
+#ts-user-menu-settings-link-game {
+    animation-duration: 0.01s;
+    animation-name: nodeInsertedAlt2;
+}
+
+.ts-company-logo {
+    animation-duration: 0.01s;
+    animation-name: nodeInsertedAlt3;
+}
+
+/*End Domnodeinserted alternative css*/
+
+/*collapse top and collapse bottom - change from triangles to chevron type shapes - gasp!*/
+
+.x-tool-collapse-top::before {
+    content: '\f106' !important;
+}
+
+.x-tool-expand-bottom::before {
+    content: '\f107' !important;
+}
+
+.x-tool-close::before {
+    content: '\f2d7' !important;
+    font-family: ionicons;
+}
+
+/*the extravaganza ends, and everyone is sad*/
+
+/* fix for radio buttons and checkgroups on secondary items */
+
+.x-window .x-form-type-checkbox .x-form-item.x-form-item-no-label>.x-form-item-label,
+.x-window .x-form-type-radio .x-form-item.x-form-item-no-label>.x-form-item-label,
+.sencha-dash-right-main-container .x-form-type-checkbox .x-form-item.x-form-item-no-label>.x-form-item-label,
+.sencha-dash-right-main-container .x-form-type-radio .x-form-item.x-form-item-no-label>.x-form-item-label {
+    display: block;
+    visibility: hidden;
+}
+
+.ts-navigation-tag,
+.ts-navigation-date {
+    flex: 1;
+    text-align: left;
+}
+
+.ts-navigation-date {
+    padding-left: 7px;
+}
+
+.ts-navigationhistory .x-menu-item-text {
+    display: flex;
+}
+
+/* begin temp stuff, this needs to be removed or moved to main.scss before ui update depending on what it is */
+
+.ts-navigation-date {
+    padding-left: 7px;
+    color: #96a1a9 !important;
+}
+
+/* end temp stuff*/
+
+/* replacing nodata image with new one since it's in like 8million places hardcoded */
+
+img[src*="nodata.jpg"] {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAADhCAMAAADWI1hXAAAAbFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0Iv+qAAAAI3RSTlMA6e4K9OD520YRkHyKGJqD0bt1Tm8rXFY2PiJqymSow7Wgr8BOM/MAABHESURBVHgB7J2LQuI6EIb7/52ZULlYLiCCgO68/zseuQSoB6TUCrvAt7AtJKb5nJZOYq3J3ZOm9+u+VM+GL4PnVnPQfH5uNlut595q7flzrdlsPjd7veXL3ufic7l8a7VcFS7ZrMXSXqweSz9LlhVardV7rdhu/PrBsvqBduOb23bXm9q2+7m2rBvb+ezv07rd5mqDsd3VJl6G6UH1l3kQv2XMnXm3kXxlnNMFJHg1wN8EAMXcfT4rmrfc3Yhbh2Lq1kl34lnXXRUgAd4sWBGM/p4lkYX7GwECCsVtPtbqpIVgsojmfwwwLFEQN4rI2j2ogfKxNh8ZiVxBEiBuGJJ0VQv00dI8hauCm6Lb1Y4LkoRjqf7serTibakTRMAKseckSRe+NlWsUQWXgOD6sV7bUCzZ/YvEtyPb+ofhuqVYkacVdhTqF7vD+DLWWHtHR9DyNHl1EoKd2qb5Y5tEpGJ5BMe3c5Sq/dpEFNhWo3gjaRqK6kaAYCS2XtjUEZVDXTn7+1GSr/VJfts1KXyrSW8m7wbqXitKqgKKG0MVIhstEvB5EhRUbNVJmokZpYhtkcN8Lf5a3w6zqx+XZTm83Yj9r18EhNER6nmiWLIzd1VCfz/q+gkuQdyWSVCSUV00CQYwqpNsttN2mmTpBWmnS7IS1U6QfVfWoawU1+oBn+ogdvhTcrN0nBBEGO5I/ckJ8k7Vca/qrTtXv9Nj/YR653bVO/ccderdqgN4qD/UH+oP9Yf6Q/1O1Hm/OfxD/aH+UL9ldX1E/a9UTyfjl9F0sH15H+rt197HQinu4hvl9lNvnN74BFU67s1p7i5igCCquxs+ppPK6gT+YvU0SYeDrriTBEDuqWfiQnd2B5NbVE/GLZoTNGjAkp16ClAAcWFreHPqw64boSthgMJ99QwAFVCYe7dxU+rDjjkKP/CG7h/rJEAhKYTbfHIj6mmSDsRBgWo0/7LDD0UIgFClwJzN9Krq4+Z8/tTqzOfz1mzyE/f+wh2AglsAsBh1cnscKNzf+nWqp2fuo77E1v+/Z9XNW+qGtRmJHYVjnSAUJBQggjk6V4t6m9hAmHq3snmXS3AIQXujTkEBkrJIkvQaszTpyPa6AQ+VtLNkqHK2ugIkaWiUjjpYY9SbslNXUqrt8a8wO2q+2+EnB6JON/RLRr1e9Z5jSwBsUsW84Y5AEifU24fUVdz711Bv7tRVSQ6rxNxtZYFT6tmhOgTMR1dQH9heFyicVIt5jqPwiHpclaAQf7m8+mynTlCkfbb5hEaAerY6dyuB3iijzjrVp3vqClY41mFUAvxOvX1QnQCgagpCPC2lTkSoP5yqGDgiBMizo/7GJfgOQ5asaIMgDkEipGVSmj31UKu6MDt/NFVC/VhKs4P0j0ur24/UX92jeZmoi+AYdJ9eVr0nP1FPg2NnXuLkJjiKOtqXVf9R1FvRvKw6QRyD/uefOdbToRMnxQlqYeT2jXvjkurTKuqRdyfPUj9UW+NS4W/ZP6I+MqqEc9RF8A0BaFZUR+UdPsKz1IOrlol6uWOdBIzpP6H+4iSkNnUQKjb7J9S7riRLqWdl1AGl5/+C+tgFalpKvV1GXQG49y/2M7deZfWOK0Gtb4dXJcT/fK+OSurpeDwcfj4mr+P0qPqkrHlKVxpwrvpRuH7YsH71UdeX0N2tO/5x1EdOwgDUpQ4SBLxZu/okDjTUIPI2jOpWUf3DQYBBz1Bvf6suEgT07vfqer76wvfreedIStMuaZ6iQA3Dlwizun8EkR9WH1RUH3sF9XYZde/Xra4n1XFOItusoj6REur2VF09TQ4RojrBPfWeVVOfV4p6GXV/q1s9r1c9j+pnfcKXURdmte7wx9W9knqbVkG9VNTpr5dRr3isvzp/Sx0+rVn9bavOgnq1bG7k+nvqz3VH3QACPPEJ3y77Ae/cgC271wUKE1TkafVOzcOXkupZ+QscSqIwRHVKGfV5zerhsPq0mvofP3jvGH4hRj05S71br3p6QD39iboW9SKH1Aw7dZRQf6tZPf+qnqVp5ZNb+uZnINY+J4f3/HeP9Y9lzL9TzwbN59YnT62nwTj5Sn/6ssdoSf+Tl+Vz/83PZX80nSZXVX878jFnh9WzjkfMdZbUQMlsjnZl9ebuBnaqru3LqUPy9CInt54U1WNKA8Me3qxFvS2A4gT0t5pnacIR9cMpTQr5DXUYeFp9fhn1wSXVM3oZ9eerZnM1q0dMyuzws5rVS0WdO3X7Xj2tFHVQ5LR6v2Z1PSuRbfN79fZ80d3w/uf9/b3bXXRXi+7y+bn6+fori/c/oOIUlOHxK6jqVB9UU09zmK+xuOLm32FuUmbkZnlas3o4S31CfquezGXvfqIiJLhBCBy6NSVhhJ4Ou7/XfWnBW5kdnhv1tBB1Hpg9eHEAK0vUBBUAqd6q+1f33878hN+p6yH1iXFdVp/6elPwUb3qx7O5I+oq30c9yV0JKIEa3ZVqzK6tzu+iHn8lgaDWp06C6n+SC6kPjqljBw+lNK8ugKBGSAPoL9dWB0+op7kDrNUcBBxZcvkdnsUc/oR6Mq1ZfXdyrls9HFZvHlM3bOAR9cxJARQ1ofGCyXLqNQxfDl9akJ2OevLhgOdETRhIeDg1A8761P2Iup1UnzhJoi5IVXr/lHp9E1TT6urJ3AFDXagh+FtydfW0jPrQqVKfOgHv/4Z6Xr968iQg6oIa05kLqQ+OqKuUUG+LK+pC1Hz4K+rBABTUv7tkMFOWUE9mhvqwXd/rV+cZ6iijnnRrDLtrUkK9xlkaO57SlFBPLf6CH1EVrjxcfFxCvf5Zmp16yZQmMnIxFagHVMWUqha8l9SoXn34Ulo9aREELQgqIqugqM+T31J/q1s90nUGAoIfQHqellDHJaKuVlY97TpyGH5AgGs7KaWOX1cvc16PZLkLqu/wDIDrOLm4eq/SVEWRdvAAoioWHMPk2uqspJ6036y6uqmxYF779fDBSAFIAaGyO68rBIFGBBo4SdaQpJgAIAFvJd+SvhMgoSIBJL6DZFwBNQhlMfzdW/J0PU6aG3UXxhdhUAqhRAge0t3Flbq2UBP4y8lukUqDAqfVsURNQaUFfkyS31V/cRdAFUAuHuI3OtvcOEqpdLPtV/fchKRQEbzMmafnDjXmaznFUf9YIApDEGv9/o2YOuorzNzCLIkMc6cvoTs6WRJ5Nt+Sl9kjX4OIkuDK/TRCqpKNS9yDajiazabT6cto1i8Esd8cTKez0aD/8prs0RhNp6PPL3lp9tOyXXNABXrSnSShwf0jSy+gHkmPv1HDLQbdBCilTve3/g3dYHEEP/XnYnWjbmilt3VbzZ7STh7uJOW5fXN3FE1euuYuxBpl8Q+JUmHu+fGbydafzV2S4XPuLiIEyLUxIAQgIm6hFTP2m1KPjHvdXNbnUgEAMV8iebczypLkRtUj7ca0Ne/moJgJkS/mT4PGce36c/hrk7Ynw/F4OGln6ePvuf1AnQ/1h/rjT9481B/qt6pOPtQf6g/1h/ojpfl3eag/1B/qD/WH+kM9RyBIBaCgtW5ZXamIhGXUwfWDUPjHTWdzSiKiCUDGp8Ly7FbN04ULTLGBUR3rJ8n5oNFojMfjxiH6/X7jKKuyr+X91yO1X1+Ptnt8G8U6r0u+Fox3bRfaHb17AMg9dSVj3AlC3HyJ+Y0hLoFU2/uY6xqAlbqu1NevoKgJbkDkMu0SXxCogETE3pYHP5SAUgmQhIJiLG5itTy29d0Rw82bxQqI8CAn2t3nsDYLAEfbDRDFBv9Ieg4qABUQAcq1RVEdW/
+RAH3dFhH7dJglAVWN9FDnZbuRAu0fKFOD/21UCRuzUm8nECbUguBOUpAD0bHVzXAsg7gQqmZv6YnkFlFGJu4EASfVB8knwHCp35E5ZBn3J2DzH3ahTid3vhTXFGe5GHUr33u4O/XY/6oRbJ5qv3HEvqBdvnTHSjTy/5AIkVBU7yF1x8d1VNSVUt1mRAgwkFaVREsSOmAzFfhwj9legQUH+L/Xhes0co6RA1sndnOB+AsfdmsRV8msyWUg6sa2PCHGO+so8Nre3jO1+zfh2/Sj25GsqSoDi7qHVTr7S7s3f4HvYbs28MuZuRkNZQlCneZFS/TA/BRed5k68QDYcj78ZH/eXNF7XnBpPv76Ol3VeX15G/f5TeXUS3myMh431UDsuIv248VVfPntzvL9rXjcs35qkycWZuaAkCvoouR1GHlASgj67JXVDaRQ+vamon6U+uCH1qRMlIdRn6S2pa2l1oY3uc4cPB4/19J/UTieN184Zn/CEtcbtLP0n3dP2ZNyYDppPH++LXClGSkBp1ACBhnzxp9N6no0a40n215tnw/6s1Zl3c+wnwSCpPCPqCjNSLKangnzx3mnNXtt/Z6T7g85CJfoKCUAB8uzxi2lxPp/m7qsn8u581sj+pmC/PL1xFSOJgymoxLGU0gJRGsVSXbGCYhrHzRSKL8GiM/sr4p8OFnQ3wYUg6OZ8u/65f0p3KCC4GKSI0PPBdUM+cncjcUkIVRDu/au6NxFCgPCS9iRUNSifr6o+cMZP8UuhK3u6evPK6lAacUFIAqTSe1cfkpHQS6qLEIDKlSdzmk4FVaG4KCTozWurL4EGgNw76PkLsiuE64Vcex6r54AqVtLx/xWon227JAC79rE+g9KMAGT7LajXnPzfqgKkypWn8Ia5mypENs5QAGS9sV7ZqmKf4I5hcl33ubqZqkAVILeBr1Gdm4M75nIB7m6tSXJt2oN3mLvI/s7OLTVnMgJx9zBvDtPkb6Ddf57niAP1IvUoSxyxmn1q91cBz/6eKbiXZuc9h9m6h3WpU2TVogj/a99udxvVmQCO/+2JYybUvEAMhJekZO//Hp81tKjSSs+no5OzUn4SYmyPiqa2JYRbVxfXLir/URqzqSyes7E/j0XPpzRvyXH6bL8KS9f+aSNF53O69mo3Z2v847Mor1kU/g6iIWbdtbwU67OevUuL9v+fER+/IOOrua7v9+Lj2t+GoCL8xURkHOOQjp27qWma67XJ87z8Lc9T87eu67Pht/F1tb69vb29vUngi3II7DSAgoAohyNZfjaVJBwDAQXGIy0cP0RAj6epgvISFxcQsEogu5tffkIEoDPGVPeOTb1uqelFxZ6Ado4oO70XQD8LiDxzgbwGGKuRoQoiAnCtQ4BwdvZUNaNIlQkwlukV0CuvsJ7vgNqb0PoFwvMuJH0tMM05QDRGBaB5jCTFaeJbtFZgNDcgmBZwLsW3M4y/AjtvMmDwAdqqg3NGspYILyFyacwCmAExPcDoWgHoK4DORZCPy7MjaZ6wVdCZAEKS74PFCvReoJvLAogOggls+rq8AzGNh2cDNgNNj+c1BIq2rUfE3MiswncN0NUkjwVRN/QzAlxqRWD51KpnF9ywVEBmAmxr/7kMLkA0AzenbOopnre+wP6gU09S5CC8xiWnXsGI9BZAta++SleA9YK2HjEDoE0NEOYuLE8BQXWqCf4GVBOasqKLWndofKgMW+mpb+TzCnG21rgewQ8iIIVz1l8Cr7BOaYnjb/QGEGg+AeRr1j8aoW6gKEFoHgDZaWQwCiDU+T53FHe6CsgfQlcJw1mIFtj69h00noKSzQvYrXTSgg/KK6SSpHmoiQxWRVKxT0C0rUn8pNGnY1irCtMDoDC2+mVygBCs9dbZoEQzfi6g+/+ctRJM3Bc4SLV98ctSDpDXiGsRoLiC8BKyThDqi4+ouyoQfCcIdDNAZgfyT0DmDtgWfDwNQFshKjRPAL8Aj9zGrz3PZSWzMBoB0d4osK7cDEC+wrkFhEujvEqRK0RzDjBVizKsT1CF/g40pgc3AOQzUNbHVtA0BD47BjvzAN3nsTdhsIE08wgfOQg3o9EGaOsFbAsQyu6FpZcArYkSWFZv/RUiwHIyJ1tMaTsIINFksDwQqTqS8q7Qzgjo6AcYTKuoiSRuGbZZn431hQkk1TT49MG7RMLJOetqnidnzvPIv0/QIzwCPVrHqB6RgCA/89EjFHRPQAHZ7j8Gj0gFJVHlZZREEeFb+I7lKxAOCKDAHzcgHB2I8kfFejTlH/wLyv8BEcX094JvtUsAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    width: 250px !important;
+    /* Width of new image */
+    height: 225px !important;
+    /* Height of new image */
+    padding-left: 250px !important;
+    /* Equal to width of new image */
+}
+
+/* menu hover */
+
+.ts-header-menu-dropdown:hover .x-btn-inner-default-toolbar-small {
+    color: #134d7e !important;
+    transition: color 300ms ease-in-out !important;
+}
+
+.ts-header-menu-dropdown:hover .x-btn-wrap-default-toolbar-small.x-btn-split-right::after,
+.ts-header-menu-dropdown:hover .x-btn-inner-default-toolbar-small.x-btn-split-right::after {
+    color: #134d7e !important;
+    transition: color 300ms ease-in-out !important;
+}
+
+.ts-header-menu-dropdown .x-btn-inner-default-toolbar-small {
+    font-size: 14px !important;
+}
+
+/* menu active */
+
+.x-window .x-field:hover:not(.ts-form-item-invalid):not(.x-form-readonly),
+.x-window .x-field.x-field-focus:not(.ts-form-item-invalid):not(.x-form-readonly),
+.sencha-dash-right-main-container .x-field:hover:not(.ts-form-item-invalid):not(.x-form-readonly),
+.sencha-dash-right-main-container .x-field.x-field-focus:not(.ts-form-item-invalid):not(.x-form-readonly) {
+    border-color: #3892d3 !important;
+    transition: border-color 300ms ease-in-out !important;
+}
+
+.ts-active-menu-item .x-btn-inner-default-toolbar-small {
+    color: #134d7e !important;
+}
+
+.ts-active-menu-item .x-btn-wrap-default-toolbar-small.x-btn-split-right::after,
+.ts-active-menu-item .x-btn-inner-default-toolbar-small.x-btn-split-right::after {
+    color: #134d7e !important;
+}
+
+.x-btn-icon-el-header-small {
+    color: #2484c6 !important;
+}
+
+.ts-header-menu-dropdown .x-btn-wrap-default-toolbar-small.x-btn-split-right::after,
+.x-btn-inner-default-toolbar-small {
+    color: #2484c6 !important;
+}
+
+.ts-header-menu-dropdown.x-btn-default-toolbar-small{
+    padding:5px 7px 7px 7px;
+}
+
+.x-window .x-field:hover:not(.ts-form-item-invalid):not(.x-form-readonly):not(.x-form-type-radio),
+.x-window .x-field.x-field-focus:not(.ts-form-item-invalid):not(.x-form-readonly):not(.x-form-type-radio),
+.sencha-dash-right-main-container .x-field:hover:not(.ts-form-item-invalid):not(.x-form-readonly):not(.x-form-type-radio),
+.sencha-dash-right-main-container .x-field.x-field-focus:not(.ts-form-item-invalid):not(.x-form-readonly):not(.x-form-type-radio) {
+    border-color: #3892d3 !important;
+    transition: border-color 300ms ease-in-out !important;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.14);
+}
+
+.ts-container-spacer {
+    margin-top: 14px !important;
+}
+
+/* misc ui bug fixes */
+
+.x-window .x-btn-wrap-default-toolbar-small.x-btn-split-right::after,
+.sencha-dash-right-main-container .x-btn-wrap-default-toolbar-small.x-btn-split-right::after {
+    color: #fff;
+}
+
+.x-btn-inner-default-toolbar-small:hover,
+.x-btn-menu-active {
+    color: #fff !important;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.x-window .x-panel .x-btn-wrap-default-toolbar-small.x-btn-split-right>.x-btn-button,
+.sencha-dash-right-main-container .x-panel .x-btn-wrap-default-toolbar-small.x-btn-split-right>.x-btn-button {
+    padding-right: 10px;
+}
+
+.x-window .x-btn.x-btn-disabled.x-btn-default-toolbar-small,
+.sencha-dash-right-main-container .x-btn.x-btn-disabled.x-btn-default-toolbar-small {
+    
+}
+
+.ts-form-item-invalid {
+    border-color: #cf4c35 !important;
+}
+
+.ts-form-item-invalid * {
+    border-color: #cf4c35 !important;
+}
+
+/* modal container */
+
+.x-window {
+    border: none !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+    padding: 6px !important;
+}
+
+/* modal specific styles */
+
+.x-mask {
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.x-window {
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    border-radius: 9px;
+    border: none;
+    padding-top: 4px !important;
+    padding-right: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 4px !important;
+}
+
+.x-window .x-window-header {
+    background: transparent;
+    border: none;
+    padding-top: 5px;
+    padding-left: 9px !important;
+}
+
+.x-window .x-title-text {
+    color: #688092;
+    margin: 0;
+}
+
+.x-window .x-window-header-default-top .x-tool-close {
+    margin: 0 0 0 -6px;
+    padding: 0;
+}
+
+.ts-full-width-btn {
+    width: 100% !important;
+    left: 4px !important;
+}
+
+.x-window .x-toolbar {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+.x-window .x-box-inner {
+    overflow: visible;
+}
+
+/* global overrides */
+
+.x-form-item-body-default.x-form-checkboxgroup-body {
+    padding: 0 0px;
+}
+
+.x-window .x-panel-default-outer-border-bl,
+.x-window .x-panel-default-outer-border-b, 
+.x-window .x-panel-default-outer-border-l,
+.x-window .x-panel-default-outer-border-r,
+.x-window .x-panel-default-outer-border-rl,
+.x-window .x-panel-default-outer-border-rb,
+.x-window .x-panel-default-outer-border-rbl,
+.x-window .x-panel-default-outer-border-t,
+.x-window .x-panel-default-outer-border-tl,
+.x-window .x-panel-default-outer-border-tb,
+.x-window .x-panel-default-outer-border-tbl,
+.x-window .x-panel-default-outer-border-tr,
+.x-window .x-panel-default-outer-border-trl,
+.x-window .x-panel-default-outer-border-trb,
+.x-window .x-panel-default-outer-border-trbl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-bl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-b, 
+.sencha-dash-right-main-container .x-panel-default-outer-border-l,
+.sencha-dash-right-main-container .x-panel-default-outer-border-r,
+.sencha-dash-right-main-container .x-panel-default-outer-border-rl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-rb,
+.sencha-dash-right-main-container .x-panel-default-outer-border-rbl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-t,
+.sencha-dash-right-main-container .x-panel-default-outer-border-tl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-tb,
+.sencha-dash-right-main-container .x-panel-default-outer-border-tbl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-tr,
+.sencha-dash-right-main-container .x-panel-default-outer-border-trl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-trb,
+.sencha-dash-right-main-container .x-panel-default-outer-border-trbl,
+.x-panel-default-outer-border-bl,
+.x-panel-default-outer-border-b, 
+.x-panel-default-outer-border-l,
+.x-panel-default-outer-border-r,
+.x-panel-default-outer-border-rl,
+.x-panel-default-outer-border-rb,
+.x-panel-default-outer-border-rbl,
+.x-panel-default-outer-border-t,
+.x-panel-default-outer-border-tl,
+.x-panel-default-outer-border-tb,
+.x-panel-default-outer-border-tbl,
+.x-panel-default-outer-border-tr,
+.x-panel-default-outer-border-trl,
+.x-panel-default-outer-border-trb,
+.x-panel-default-outer-border-trbl {
+    border-left-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-width: 0px !important;
+}
+
+.x-window .x-panel-default-outer-border-trl,
+.x-window .x-panel-default-outer-border-rbl,
+.x-window  .x-panel-default-outer-border-trbl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-trl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-rbl,
+.sencha-dash-right-main-container .x-panel-default-outer-border-trbl {
+    border-width: 0px !important;
+}
+
+.sencha-dash-right-main-container {}
+
+.sencha-dash-right-main-container .x-panel-default-outer-border-rbl,
+.window .x-panel-default-outer-border-rbl {
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-width: 0 !important;
+}
+
+.x-panel-default-outer-border-trl {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-width: 0 !important;
+}
+
+/* 653997 - calendar buttons fix */
+
+.x-monthpicker-buttons .x-btn,
+.x-datepicker-footer .x-btn {
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    background: #3892d3;
+    border: none !important;
+    -webkit-box-shadow: 0 2px 0 #3174a4 !important;
+    -moz-box-shadow: 0 2px 0 #3174a4 !important;
+    box-shadow: 0 2px 0 #3174a4 !important;
+    color: #fff !important;
+}
+
+.x-monthpicker-buttons .x-btn:hover,
+.x-datepicker-footer .x-btn:hover {
+    background: #3dabe4 !important;
+}
+
+.x-monthpicker-buttons .x-btn-inner,
+.x-datepicker-footer .x-btn-inner {
+    color: #fff !important;
+}
+.x-monthpicker-buttons .x-btn:hover .x-btn-inner,
+.x-datepicker-footer .x-btn:hover .x-btn-inner {
+    color: #fff !important;
+}
+
+.x-panel-default-framed {
+    border-width: 0 !important;
+}
+
+/* dropdown buttons in the upper left - fix for them turning blue on hover (default from original theme) */
+
+.sencha-dash-right-main-container .x-btn-inner-default-toolbar-small:hover,
+.sencha-dash-right-main-container .x-btn-menu-active {
+    color: #fff !important;
+}
+
+.x-panel-header-default-framed-top {
+    border-width: 0;
+    border: none !important;
+}
+
+/* dropdowns within title bars should now fit automatically (they still need the align: Begin layout fix or they will not look right) */
+ .x-panel-header .x-field .x-form-item-label-inner-default{
+	width: 100px;
+	height: 20px;
+}
+
+.x-panel-header .x-field {
+	margin:0 !important;
+	height:25px;
+}
+
+.x-panel-header .x-form-item *{
+  line-height: 13px !important;
+}
+
+.x-panel-header .x-field input {
+	font: normal 11px/11px 'raleMed', Arial, sans-serif;
+}
+
+.x-panel-header .x-field .x-form-text-field-body{
+	min-height: 7px;
+}
+
+.x-panel-header .x-field .x-form-text.x-form-text-default{
+	padding: 0 6px 0 6px !important;
+	min-height: 8px !important;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.x-panel-header .x-field .x-form-item-label-default {
+    min-height: 6px !important;
+}
+
+.x-panel-header .x-field .x-form-item-label {
+	padding: 0 0 0 3px !important;
+	height:12px !important;
+}
+
+.x-panel-header .x-form-item-no-label{
+	padding:3px 0 0 0 !important;
+}
+
+.x-panel-header .x-form-item-no-label .x-form-trigger-default{
+  line-height: 15px !important;
+}
+
+.x-panel-header .switch{
+    height:15px;
+    width: 48px;
+}
+.x-panel-header .ts-switch-container .switch-handle{
+    width:13px;
+    height:13px;
+}
+.x-panel-header .ts-switch-container .switch-label{
+    font-size:10px;
+}
+.x-panel-header .ts-switch-container .switch-label:before{
+    right:5px;
+}
+.x-panel-header .ts-switch-container .switch-label:after{
+    left:5px;
+}
+.x-panel-header .ts-switch-container .switch-input[aria-checked='true'] ~ .switch-handle {
+  left: 35px !important;
+}
+
+/* end dropdowns within title bars fix */
+
+/* fix for textareas not filling their containers */
+.x-window .x-form-textarea-body, .sencha-dash-right-main-container .x-form-textarea-body, .sencha-dash-right-main-container .x-form-textarea, .x-window .x-form-textarea{
+    height: 100% !important;
+}
+
+/* fix for scroll bars showing up in dialogs and warnings where the didn't previously */
+.x-window .x-box-layout-ct{
+	overflow:visible !important;
+}
+
+/* disabled ui buttons, etc - needs to override all other styles */
+
+.sencha-dash-right-main-container .x-btn-disabled .x-btn-icon-el,
+.x-btn-disabled .x-btn-icon-el,
+.sencha-dash-right-main-container .x-toolbar-default .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.x-window .x-toolbar-default .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.x-toolbar-default .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.x-btn-default-small.x-btn-disabled .x-btn-inner,
+.x-window .x-toolbar-default-docked-top .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.x-window .x-toolbar-default-docked-bottom .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.sencha-dash-right-main-container .x-toolbar-default-docked-top .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.sencha-dash-right-main-container .x-toolbar-default-docked-bottom .x-btn-default-small.x-btn-disabled .x-btn-inner,
+.sencha-dash-right-main-container .x-toolbar-default .x-btn-disabled .x-btn-inner,
+.x-window .x-toolbar-default .x-btn-disabled .x-btn-inner,
+.x-toolbar-default .x-btn-disabled .x-btn-inner,
+.x-btn-disabled .x-btn-inner,
+.x-window .x-toolbar-default-docked-top .x-btn-disabled .x-btn-inner,
+.x-window .x-toolbar-default-docked-bottom .x-btn-disabled .x-btn-inner,
+.sencha-dash-right-main-container .x-toolbar-default-docked-top .x-btn-disabled .x-btn-inner,
+.sencha-dash-right-main-container .x-toolbar-default-docked-bottom .x-btn-disabled .x-btn-inner {
+    color: #7F7F7F !important;
+}
+
+.sencha-dash-right-main-container .x-toolbar-default .x-btn-default-small.x-btn-disabled,
+.x-window .x-toolbar-default .x-btn-default-small.x-btn-disabled,
+.x-toolbar-default .x-btn-default-small.x-btn-disabled,
+.x-btn-default-small.x-btn-disabled,
+.x-window .x-toolbar-default-docked-top .x-btn-default-small.x-btn-disabled,
+.x-window .x-toolbar-default-docked-bottom .x-btn-default-small.x-btn-disabled,
+.sencha-dash-right-main-container .x-toolbar-default-docked-top .x-btn-default-small.x-btn-disabled,
+.sencha-dash-right-main-container .x-toolbar-default-docked-bottom .x-btn-default-small.x-btn-disabled,
+.sencha-dash-right-main-container .x-toolbar-default .x-btn-disabled,
+.x-window .x-toolbar-default .x-btn-disabled,
+.x-toolbar-default .x-btn-disabled,
+.x-btn-disabled,
+.x-window .x-toolbar-default-docked-top .x-btn-disabled,
+.x-window .x-toolbar-default-docked-bottom .x-btn-disabled,
+.sencha-dash-right-main-container .x-toolbar-default-docked-top .x-btn-disabled,
+.sencha-dash-right-main-container .x-toolbar-default-docked-bottom .x-btn-disabled {
+    background-color: #f6f6f6 !important;
+    box-shadow: 0 2px 0 #C3C3C3 !important;
+}
+/* end disabled ui buttons */
+
+/* hide old loading mask */
+.x-mask-msg-text{
+    display:none !important;
+}
+
+/* columns fix - form elements not sizing correctly */
+.x-form-item-body-default {
+	min-height: 26px !important;
+}
+
+/*fix issue with checkbox*/
+.x-window .x-panel-header .x-form-type-checkbox .x-form-checkbox:before,
+.x-window .x-window-header .x-form-type-checkbox .x-form-checkbox:before,
+.x-window .panel-header-with-elements .x-form-type-checkbox .x-form-checkbox:before,
+.sencha-dash-right-main-container .x-panel-header .x-form-type-checkbox .x-form-checkbox:before,
+.sencha-dash-right-main-container .panel-header-with-elements .x-form-type-checkbox .x-form-checkbox:before {
+    font-size:14px;
+}
+
+/*fix issue with radio buttons and their labels getting cut off at the bottom*/
+.x-form-radio,
+.x-form-cb-label{
+	margin-top:5px !important;
+}
+
+/*fix issue with radio buttons without labels appearing out of line with those thad do have labels (not a new issue, but it's taken care of anyway)*/
+/*removed this temporarily, it was causing other issues*/
+.x-form-item.x-form-item-no-label > .x-form-item-label{
+    /*display:unset !important;*/
+}
+
+/*upload form element*/
+.x-window .ts-upload-form-container,
+.sencha-dash-right-main-container .ts-upload-form-container{
+    background:#fff !important;
+}
+
+/*gray button - alternate to blue, NOT a disabled class button.  Use this for "destructive" actions like clear, cancel, etc - anything that would clear out a person's work*/
+.x-window .x-btn.ts-gray-btn,
+.x-window .x-btn-default-small.ts-gray-btn,
+.x-window .x-btn.x-btn-focus.ts-gray-btn,
+.sencha-dash-right-main-container .x-btn.ts-gray-btn,
+.sencha-dash-right-main-container .x-btn-default-small.ts-gray-btn,
+.sencha-dash-right-main-container .x-btn.x-btn-focus.ts-gray-btn {
+    background: #838383 !important;
+    -webkit-box-shadow: 0 2px 0 #606060 !important;
+    -moz-box-shadow: 0 2px 0 #606060 !important;
+    box-shadow: 0 2px 0 #606060 !important;
+}
+
+.x-window .x-btn.ts-gray-btn:hover,
+.x-window .x-btn-default-small.ts-gray-btn:hover,
+.x-window .x-btn.x-btn-focus.ts-gray-btn:hover,
+.sencha-dash-right-main-container .x-btn.ts-gray-btn:hover,
+.sencha-dash-right-main-container .x-btn-default-small.ts-gray-btn:hover,
+.sencha-dash-right-main-container .x-btn.x-btn-focus.ts-gray-btn:hover {
+    background: #565656 !important;
+    -webkit-box-shadow: 0 2px 0 #606060 !important;
+    -moz-box-shadow: 0 2px 0 #606060 !important;
+    box-shadow: 0 2px 0 #606060 !important;
+}
+
+.gm-style-iw .formField{
+    font-size:10pt !important;
+}
+
+.x-field-default,
+.x-window .x-field.x-form-type-text,
+.sencha-dash-right-main-container .x-field.x-form-type-text,
+.x-window .x-field.x-form-type-password,
+.sencha-dash-right-main-container .x-field.x-form-type-password,
+.x-window .x-field.x-form-type-password,
+.sencha-dash-right-main-container .x-field.x-form-type-password {
+    /*display:inline-block;*/
+}
+
+.ts-custom-link-style-btns-container .x-btn,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn,
+.ts-custom-link-style-btns-container .x-btn:hover,
+.x-window .ts-custom-link-style-btns-container .x-btn,
+.x-form-item .x-form-trigger,
+.x-form-item .x-btn,
+.x-window .x-panel-header .x-btn,
+.x-window .x-panel-header .x-btn:hover,
+.x-window .x-window-header .x-btn,
+.x-window .x-window-header .x-btn:hover,
+.x-window .panel-header-with-elements .x-btn,
+.x-window .panel-header-with-elements .x-btn:hover,
+.sencha-dash-right-main-container .x-panel-header .x-btn,
+.sencha-dash-right-main-container .x-panel-header .x-btn:hover,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn,
+.sencha-dash-right-main-container .panel-header-with-elements .x-btn:hover {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/*slider version 2*/
+.ts-main-view-menu-panl-generic{
+    box-shadow:0 3px 23px  0 rgba(0,0,0,0.36) !important;
+}
+#main-view-side-menu-panl, .main-view-side-menu-panl-generic{
+    position: absolute !important;
+    right:0 !important;
+    left:unset !important;
+    border-radius: 0 !important;
+    overflow: hidden;
+    padding:0 !important;
+}
+.main-view-side-menu-panl-generic-left, .main-view-side-menu-panl-generic-bottom{
+    right:unset !important;
+}
+.main-view-side-menu-panl-generic-bottom{
+    bottom:0 !important;
+    top:unset !important;
+}
+.main-view-side-menu-panl-generic-top{
+    top:0 !important;
+    bottom:unset !important;
+}
+
+#main-view-side-menu-panl-inner, .main-view-side-menu-panl-inner-generic{
+    position: absolute !important;
+    top:-20px !important;
+    left:0 !important;
+    width: 100% !important;
+    height: 200% !important;
+    padding-top:20px !important;
+    padding-left:20px !important;
+}
+.main-view-side-menu-panl-inner-generic-left, .main-view-side-menu-panl-generic-bottom{
+}
+.main-view-side-menu-panl-generic-bottom-right{
+    right:0 !important;
+    left:unset !important;
+}
+
+#main-view-side-menu-panl-inner-content, .main-view-side-menu-panl-inner-content{
+    width:358px;
+    position: relative;
+    left: -9px;
+}
+
+.ts-user-menu-avatar-container-img{
+    border:3px solid #fff;
+    border-radius:52px;
+    height:52px;
+    width:52px;
+    box-shadow: 0px 2px 0px 0px #e5e5e5;
+}
+
+#main-view-side-menu-panl-inner-body{
+    padding:7px 0 0 0;
+    color:#404040;
+    letter-spacing: -0.8px;
+}
+
+.ts-user-menu-avatar-user-name, .ts-user-menu-avatar-email{
+    text-overflow: ellipsis;
+}
+
+.ts-user-menu-avatar-user-name{
+    color:#3892d3;
+    font-size:15px;
+}
+
+.ts-user-menu-generic-val, .ts-user-menu-generic-title{
+    width:48px !important;
+    text-align: center;
+}
+
+.ts-user-menu-generic-val{
+    color:#3892d3;
+    font-size:14px;
+}
+
+#userMenuMessagesContainer{
+    border-radius: 6px;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+    border: 1px solid #3892d3 !important;
+}
+
+#userMenuMessagesContainer a{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item, .x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item{
+    background: #fff !important;
+    color:#3892d3 !important;
+    border-left: 1px solid #3892d3 !important;
+}
+
+.x-window #userMenuMessagesContainer .x-btn.x-btn-menu-active.x-btn-default-small, .x-window #userMenuMessagesContainer .x-btn.x-btn-pressed.x-btn-default-small{
+    background: #3892d3 !important;
+    color:#fff !important;
+    border-left: 1px solid #3892d3 !important;
+}
+
+.x-window #userMenuMessagesContainer .x-btn.x-btn-menu-active.x-btn-default-small .x-btn-inner, .x-window #userMenuMessagesContainer .x-btn.x-btn-pressed.x-btn-default-small .x-btn-inner{
+    color:#fff !important;
+}
+
+.x-window #userMenuMessagesContainer .x-btn-inner-default-small{
+    color:#3892d3 !important;
+}
+
+.x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item:hover .x-btn-inner-default-small, .x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item:hover .x-btn-inner-default-small{
+    color:orange !important;
+    transition: color 0.2s ease-in-out !important;
+}
+.x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item .x-btn-inner-default-small, .x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item .x-btn-inner-default-small{
+    transition: color 0.2s ease-in-out !important;
+}
+.x-window #userMenuMessagesContainer .x-btn.x-btn-default-small.x-segmented-button-item:first-child{
+    border-left: none !important;
+}
+
+.ts-user-menu-demo-container{
+    height:230px;
+    width:342px;
+}
+.ts-user-menu-demo-container:first-child{
+    border-bottom: 1px solid #ddd !important;
+}
+.ts-user-menu-demo-innerContainer{
+    position: relative;
+    width:330px;
+    height:60px;
+    margin-bottom:10px;
+}
+
+.ts-user-menu-demo-thumb{
+    position: absolute;
+    left:0;
+    top:0;
+    width:59px;
+    height:59px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.4);
+}
+
+.ts-user-menu-demo-txt{
+    position: absolute;
+    left:66px;
+    top:0;
+    width:252px;
+    height:60px;
+}
+.x-window #ts-user-menu-demo .ts-user-menu-demo-txt-title{
+    color:#4e5f6f !important;
+    font-size: 13px !important;
+    font-weight: 600;
+    margin:0 6px 12px 0 !important;
+}
+
+.x-window #ts-user-menu-demo .ts-user-menu-demo-txt-time-stamp{
+    color:#96a1a9 !important;
+    font-size: 11px !important;
+    font-weight: 600;
+}
+
+.x-window #ts-user-menu-demo .ts-user-menu-demo-txt-origin{
+    color:#96a1a9 !important;
+    font-size: 11px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0 0 12px 0 !important;
+}
+
+.x-window #ts-user-menu-demo .ts-user-menu-demo-txt-link{
+    color:#3892d3 !important;
+    font-size: 13px !important;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out !important;
+    cursor: pointer !important;
+}
+
+.x-window #ts-user-menu-demo .ts-user-menu-demo-innerContainer{
+    transition: background 0.3s ease-in-out !important;
+    cursor: pointer !important;
+}
+
+.x-window #ts-user-menu-demo .ts-user-menu-demo-innerContainer:hover{
+    background:#f7f7f7;
+    transition: background 0.2s ease-in-out !important;
+}
+.x-window #ts-user-menu-demo .ts-user-menu-demo-txt-link:hover{
+    color:#dd712a !important;
+    transition: color 0.2s ease-in-out !important;
+}
+
+.ts-user-menu-settings-link{
+    color:#3892d3 !important;
+    transition: color 0.3s ease-in-out !important;
+    text-decoration:none !important;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */    
+}
+.ts-user-menu-settings-link:hover{
+    color:#dd712a !important;
+    transition: color 0.2s ease-in-out !important;
+}
+
+/* switches */
+
+.ts-switch-container {
+  font: 15px/20px 'Raleway', Helvetica, Arial, sans-serif;
+  height: 18px;
+  top:2px;
+}
+.ts-switch-container > .switch {
+}
+.ts-switch-label-wrap{
+    font:normal 11px/6px 'raleMed', 'Open Sans', Arial, sans-serif !important;
+    color:#404040;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 56px;
+  height: 20px;
+  border-radius: 18px;
+  box-shadow: 0 1px 0px rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+.ts-switch-container .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.ts-switch-container .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  background: #f14b3e;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: opacity background;
+  -moz-transition-property: opacity background;
+  -o-transition-property: opacity background;
+  transition-property: opacity background;
+}
+.ts-switch-container .switch-label:before, .ts-switch-container .switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.ts-switch-container .switch-label:before {
+  content: attr(data-off);
+  right: 8px;
+  color: #fff;
+  font-weight:bold;
+}
+.ts-switch-container .switch-label:after {
+  content: attr(data-on);
+  left: 8px;
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-weight:bold;
+}
+.ts-switch-container .switch-input[aria-checked='true'] ~ .switch-label {
+  background: #3892d3;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.ts-switch-container .switch-input[aria-checked='true'] ~ .switch-label:before {
+  opacity: 0;
+}
+.ts-switch-container .switch-input[aria-checked='true'] ~ .switch-label:after {
+  opacity: 1;
+}
+
+.ts-switch-container .switch-handle {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -o-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.ts-switch-container .switch-handle:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+  background-image: -webkit-linear-gradient(top, #eeeeee, white);
+  background-image: -moz-linear-gradient(top, #eeeeee, white);
+  background-image: -o-linear-gradient(top, #eeeeee, white);
+  background-image: linear-gradient(to bottom, #eeeeee, white);
+}
+.ts-switch-container .switch-input[aria-checked='true'] ~ .switch-handle {
+  left: 37px !important;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ts-switch-container .switch-green > .switch-input[aria-checked='true'] ~ .switch-label {
+  background: #4fb845;
+}
+
+.ts-switch-label{
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    
+}
+
+.ts-switch-container .x-form-cb-label-default.x-form-cb-label-after{
+	padding-left:6px;
+}
+
+.ts-switch-container .x-form-cb-label-default.x-form-cb-label-before{
+	padding-right:6px;
+}
+
+.ts-switch-container .x-form-cb-label{
+	margin-top:6px;
+}
+
+.ts-headerHistoryBar{
+    background:transparent !important;
+}
+
+.ts-headerHistoryBar .x-btn{
+    border:none !important;
+    box-shadow:none !important;
+    border-bottom: 2px solid #3892d3 !important;
+    background:transparent !important;
+}
+
+.ts-headerHistoryBar .x-btn:hover{
+   
+}
+
+.ts-headerHistoryBar .x-btn:hover .x-btn-inner{
+  border:none !important;
+  box-shadow:none !important;
+  color:#a9f3fe !important;
+}
+
+.ts-headerHistoryBar .x-btn-inner{
+    color:#fff !important;
+    font-size: 13px !important;
+    font-weight:400;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.ts-headerHistoryBar .ts-headerHistoryBar-back-btn {
+    max-width: 16px;
+    max-height: 17px;
+    width: 16px;
+    height: 17px;
+    cursor: pointer;
+    margin:4px 0 0 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAQAAAB+puRPAAABiklEQVQoz0VRz0sCURAeZDEPYiLmFiIkZOcOnfwLQrEsCg91DAKliIKCQgo6RYRQIEiXku516dAh6FQEllJqRh7aIk1LTQtz1X3T21V3Zw5vfnwz8+YbQGirC2+xhqLweIdjnXjr0eMDYuJ6Kdi70eNfDMavKCyBhg5ASwqvaZ0f7GAChqoJ7F3rXJoUUSsBhFiaAweo2k21GEEbqGAkzQlxEeAiaHHLPzGSz8LXtkm0DaN0kBuqscukXM2SUibfPQ2MNF11kajewx8fXmunLaTCZfQeGQ4Hy7U6NMnucMslxXxZPa6kEWb6CUIDb2wtdydUJxhQ0gjP5iZCuVHytCkxrxw2BQwpgN+JSgMeue9zmbW+hRCFHHf88lnqDQKbdBmNDDHN7vM8DkmeGnFvC4CNZzGqtAWjxgc6yY4mP4ClhnWyXKGHUrqIezAYqfxYpySqgRmYe3+hg07RiTpKtQNPELPcoFckrFXDgNN3lEsJvHhtgc89zYfBBWopJwtLD+aFVapearGd8D+vOyNAu8L2TwAAAABJRU5ErkJggg==);
+}
+
+/* Updated header bar */
+.ts-menu-upper-container,.ts-menu-upper-container .x-panel-body-default, .ts-menu-upper-container-inner{
+    background:transparent !important;
+    background-color:transparent !important;
+}
+
+.ts-menu-lower-container{
+    background:#3388c6;
+}
+
+.ts-company-logo{
+    position: relative;
+    top:-2px;
+}
+
+/* fix for grid headers within windows not moving while being scrolled horizontally */
+.x-window .x-box-layout-ct.x-grid-header-ct{
+	overflow:hidden !important;
+}
+
+/* master feed - adding new look with dots, text colors, etc */
+/* now there are generic color codes - add the inline dot to add a bullet point to your selected text */
+/* you can use ONLY the ts-yourcolor-txt on its own if you just want a certain color text anywhere - just make sure it's readable where you place it */
+.ts-feed-txt:before, .ts-inline-dot-txt:before{
+    content: '\f111' !important; 
+    font-family: fontawesome;
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.mf-favorable-alt:not(.click-cell-text) .ts-feed-txt, .mf-favorable-alt .ts-feed-txt:before, .ts-green-txt:before, .ts-green-txt:not(.click-cell-text){
+    color:#77aa33 !important;
+}
+.mf-unfavorable-alt:not(.click-cell-text) .ts-feed-txt, .mf-unfavorable-alt .ts-feed-txt:before, .ts-pink-txt:before, .ts-pink-txt:not(.click-cell-text){
+    color:#ff99cc !important;
+}
+.mf-accepted-alt:not(.click-cell-text) .ts-feed-txt, .mf-accepted-alt .ts-feed-txt:before, .ts-lightGray-txt:before, .ts-lightGray-txt:not(.click-cell-text){
+    color:#8c8c8c !important;
+}
+.mf-expired-alt:not(.click-cell-text) .ts-feed-txt, .mf-expired-alt .ts-feed-txt:before, .ts-gold-txt:before, .ts-gold-txt:not(.click-cell-text){
+   color:#f5c155 !important;
+}
+.mf-missing-alt:not(.click-cell-text) .ts-feed-txt, .mf-missing-alt .ts-feed-txt:before, .ts-orange-txt:before, .ts-orange-txt:not(.click-cell-text){
+    color:#f18c3e !important;
+}
+.mf-disputed-alt:not(.click-cell-text) .ts-feed-txt, .mf-disputed-alt .ts-feed-txt:before, .ts-blue-txt:before, .ts-blue-txt:not(.click-cell-text){
+    color:#33CCFF !important;
+}  
+.mf-non-masterfeed-alt:not(.click-cell-text) .ts-feed-txt, .mf-non-masterfeed-alt .ts-feed-txt:before, .ts-red-txt:before, .ts-red-txt:not(.click-cell-text){
+    color:#f14b3e !important;
+}
+.ts-purple-txt:before, .ts-purple-txt:before, .ts-purple-txt:not(.click-cell-text){
+    color:#9f54e8 !important;
+}
+.ts-teal-txt:before, .ts-teal-txt:not(.click-cell-text){
+   color:#3abe88 !important;
+}
+.mf-match-alt:not(.click-cell-text) .ts-feed-txt, .mf-match-alt .ts-feed-txt:before, .ts-darkGray-txt:before, .ts-darkGray-txt:not(.click-cell-text){
+    color:#3e3e3e !important;
+}
+.mf-new-alt:not(.click-cell-text) .ts-feed-txt, .mf-new-alt .ts-feed-txt:before, .ts-yellow-txt:not(.click-cell-text){
+    color:#ccca86;
+}
+.ts-darkBlue-txt:not(.click-cell-text) .ts-feed-txt, .ts-darkBlue-txt .ts-feed-txt:before, .ts-darkBlue-txt:not(.click-cell-text){
+    color:#2a9af5 !important;
+}
+.ts-darkOrange-txt:not(.click-cell-text) .ts-feed-txt, .ts-darkOrange-txt .ts-feed-txt:before, .ts-darkOrange-txt:not(.click-cell-text){
+    color:#dd712a !important;
+}
+.mf-suspense-alt:not(.click-cell-text) .ts-feed-txt, .mf-suspense-alt .ts-feed-txt:before, .ts-darkViolet-txt:before, .ts-darkViolet-txt:not(.click-cell-text){
+    color:#c500ac;
+}
+.ts-darkGreen-txt:before, .ts-darkGreen-txt:not(.click-cell-text){
+    color:#3d813e;
+}
+
+.sencha-dash-right-main-container .click-cell-text.x-grid-cell .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-cell.x-grid-item-focused .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-cell.x-grid-item-selected .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-cell.x-grid-item .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-cell .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-item-focused.x-grid-cell .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-item-selected.x-grid-cell .ts-feed-text,
+.sencha-dash-right-main-container .click-cell-text.x-grid-item.x-grid-cell .ts-feed-text,
+* .click-cell-text.x-grid-item-focused .ts-feed-text,
+.click-cell-text.x-grid-item-focused .ts-feed-text,
+.x-grid-item-focused.click-cell-text .ts-green-txt,
+.x-grid-item-focused.click-cell-text .ts-pink-txt,
+.x-grid-item-focused.click-cell-text .ts-lightGray-txt,
+.x-grid-item-focused.click-cell-text .ts-gold-txt,
+.x-grid-item-focused.click-cell-text .ts-orange-txt,
+.x-grid-item-focused.click-cell-text .ts-blue-txt,
+.x-grid-item-focused.click-cell-text .ts-red-txt,
+.x-grid-item-focused.click-cell-text .ts-purple-txt,
+.x-grid-item-focused.click-cell-text .ts-teal-txt,
+.x-grid-item-focused.click-cell-text .ts-darkGray-txt,
+.x-grid-item-focused.click-cell-text .ts-yellow-txt,
+.x-grid-item-focused.click-cell-text .ts-darkBlue-txt,
+.x-grid-item-focused.click-cell-text .ts-darkOrange-txt,
+.x-grid-item-focused.click-cell-text .ts-darkGreen-txt,
+.x-grid-item-focused.click-cell-text .ts-darkViolet-txt,
+.click-cell-text .ts-green-txt,
+.click-cell-text .ts-pink-txt,
+.click-cell-text .ts-lightGray-txt,
+.click-cell-text .ts-gold-txt,
+.click-cell-text .ts-orange-txt,
+.click-cell-text .ts-blue-txt,
+.click-cell-text .ts-red-txt,
+.click-cell-text .ts-purple-txt,
+.click-cell-text .ts-teal-txt,
+.click-cell-text .ts-darkGray-txt,
+.click-cell-text .ts-yellow-txt,
+.click-cell-text .ts-darkBlue-txt,
+.click-cell-text .ts-darkOrange-txt,
+.click-cell-text.ts-green-txt,
+.click-cell-text.ts-pink-txt,
+.click-cell-text.ts-lightGray-txt,
+.click-cell-text.ts-gold-txt,
+.click-cell-text.ts-orange-txt,
+.click-cell-text.ts-blue-txt,
+.click-cell-text.ts-red-txt,
+.click-cell-text.ts-purple-txt,
+.click-cell-text.ts-teal-txt,
+.click-cell-text.ts-darkGray-txt,
+.click-cell-text.ts-yellow-txt,
+.click-cell-text.ts-darkBlue-txt,
+.click-cell-text.ts-darkOrange-txt,
+.click-cell-text.ts-darkGreen-txt,
+.click-cell-text.ts-darkViolet-txt{
+    color:#3892D3 !important;
+}
+
+.mf-favorable-alt .ts-feed-txt:before, .ts-green-txt:before{
+    color:#77aa33 !important;
+}
+
+.mf-unfavorable-alt .ts-feed-txt:before, .ts-pink-txt:before{
+    color:#ff99cc !important;
+}
+.mf-accepted-alt .ts-feed-txt:before, .ts-lightGray-txt:before{
+    color:#8c8c8c !important;
+}
+
+.mf-expired-alt .ts-feed-txt:before, .ts-gold-txt:before{
+   color:#f5c155 !important;
+}
+
+.mf-missing-alt .ts-feed-txt:before, .ts-orange-txt:before{
+    color:#f18c3e !important;
+}
+
+.mf-disputed-alt .ts-feed-txt:before, .ts-blue-txt:before{
+    color:#33CCFF !important;
+}
+
+.mf-non-masterfeed-alt .ts-feed-txt:before, .ts-red-txt:before{
+    color:#f14b3e !important;
+}
+
+.ts-purple-txt:before{
+    color:#9f54e8 !important;
+}
+
+.ts-teal-txt:before{
+   color:#3abe88 !important;
+}
+
+.mf-match-alt .ts-feed-txt:before, .ts-darkGray-txt:before{
+    color:#3e3e3e !important;
+}
+
+.mf-new-alt .ts-feed-txt:before, .ts-yellow-txt:before{
+    color:#ccca86 !important;;
+}
+
+.ts-darkBlue-txt:before{
+    color:#2a9af5 !important;
+}
+
+.ts-darkOrange-txt:before{
+    color:#dd712a !important;
+}
+
+.mf-suspense-alt .ts-feed-txt:before, .ts-darkViolet-txt:before{
+    color:#c500ac;
+}
+
+.mf-xxxxxx-alt .ts-feed-txt:before, .ts-darkGreen-txt:before{
+    color:#3d813e;
+}
+
+/*updated master feed and custom background colors code - leaving the text color code for devs to use as universal text and icon colors*/
+.ts-colored-cell{
+}
+
+.ts-colored-cell .ts-feed-txt:before{
+    content: '';
+}
+
+.ts-colored-cell .x-grid-cell-inner{
+    text-align:center !important;
+    border:none !important;
+    color:#fff !important;
+}
+
+.ts-colored-cell .x-grid-cell-inner:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0 !important;
+    width:14px;
+    height:100%;
+    border:none !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.17+0,0.05+54,0+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0.17) 0%, rgba(0,0,0,0.05) 54%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0.17) 0%,rgba(0,0,0,0.05) 54%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0.17) 0%,rgba(0,0,0,0.05) 54%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+.ts-colored-cell .x-grid-cell-inner:after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:14px;
+    height:100%;
+    border:none !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.05+46,0.17+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 46%, rgba(0,0,0,0.17) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 46%,rgba(0,0,0,0.17) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 46%,rgba(0,0,0,0.17) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#2b000000',GradientType=1 ); /* IE6-9 */
+}
+
+/*master feed and color text - override default to only give colored dots and colored text*/
+
+.x-legend-panel, .x-legend-panel .x-legend{
+    background: transparent !important;
+}
+
+.x-legend-item, .x-legend-container{
+    background: transparent !important
+}
+
+.x-legend.x-docked-top .x-legend-item:first-child, 
+.x-legend.x-docked-bottom .x-legend-item:first-child, 
+.x-legend-panel.x-docked-top .x-legend-item:first-child, 
+.x-legend-panel.x-docked-bottom .x-legend-item:first-child{
+    border-left:none !important;
+}
+
+.x-legend.x-docked-top .x-legend-item, .x-legend.x-docked-bottom .x-legend-item, .x-legend-panel.x-docked-top .x-legend-item, .x-legend-panel.x-docked-bottom .x-legend-item{
+    border-left:1px solid #cccccc !important;
+}
+
+/*there's a subtle shadow on this element by default, not part of the design so away it goes */
+.x-legend-container{
+    box-shadow:none !important;
+}
+
+/*rounding off padding, ext apparently thinks 10.400px padding is totally fine - it isn't, it causes rendering issues*/
+/*also fixing border color, ext was putting in a transparent rgba value for some reason*/
+.x-legend-item{
+    padding-bottom:10px !important;
+    border-color:#555555 !important;
+}
+/*Fixing issue with the theme coloring this text by default - delete this later, this menu is going to be replaced with the sliding panel*/
+.x-menu-item.x-menu-item-plain{
+	color:#3892d3 !important;
+}
+
+/*finally a fix for the html editor buttons! */
+.x-html-editor-tb .x-btn{
+    border-radius:3px !important;
+    box-shadow:0 2px 0 #3174a4 !important;
+}
+.x-html-editor-tb .x-btn:before{
+  content: ' ';
+  background: #3892d3;
+  position: absolute !important;
+  width:100% !important;
+  height:100% !important;
+  left:0 !important;
+  top:0;
+  transition: background 500ms ease-in-out !important;
+}
+
+.x-html-editor-tb .x-btn:hover:before{
+  background: #3dabe4;
+  transition: background 300ms ease-in-out !important;
+}
+
+.x-html-editor-tb .x-btn-arrow-right:after{
+     z-index: 999 !important;
+     color:#fff !important;
+}
+
+/* custom split button */
+
+.ts-split-btn,
+.ts-split-btn .x-btn-inner {
+    overflow:visible !important;
+    white-space: nowrap !important;
+    text-overflow: clip;
+}
+.ts-split-btn:after{
+  content: ' ';
+  position: absolute !important;
+  width:24px !important;
+  height:100% !important;
+  right:0 !important;
+  top:0;
+  z-index:1 !important;
+  transition: background 500ms ease-in-out !important;
+  border-radius: 0 4px 4px 0;
+}
+
+.x-window .x-btn-menu-active.ts-split-btn:after,
+.sencha-dash-right-main-container .x-btn-menu-active.ts-split-btn:after,
+.ts-split-btn:hover:after{
+  background: #65b9f6;
+}
+
+.ts-split-btn .x-btn-split-right:after{
+    z-index:99 !important;
+}
+
+.x-btn-wrap-default-toolbar-small.x-btn-split-right > .x-btn-button:after{
+    border:none !important;
+}
+
+/* custom arrow style button, use this for next, prev, and back */
+
+.ts-btn-arrow {
+  min-width: 10px;
+  min-height: 16px;
+  border-radius: 4px 4px 4px 3px !important;
+  padding-left:0 !important;
+  overflow:unset !important;
+}
+.x-window .x-btn-menu-active.ts-btn-arrow,
+.sencha-dash-right-main-container .x-btn-menu-active.ts-btn-arrow,
+.x-window .x-btn-menu-active.ts-btn-arrow:before,
+.sencha-dash-right-main-container .x-btn-menu-active.ts-btn-arrow:before,
+.ts-btn-arrow:hover,
+.ts-btn-arrow:hover:before {
+  background: #3dabe4 !important;
+  transition: background-color 0.2s ease-in-out !important;
+}
+
+.ts-btn-arrow:before {
+  background: #3892d3;
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 3px;
+  left: -8px;
+  transform: rotate(45deg);
+  border-radius: 4px !important;
+  box-shadow: 0 2px 0 #3174a4 !important;
+  transition: background-color 0.2s ease-in-out !important;
+  z-index: -1;
+}
+
+.ts-btn-arrow-right:before {
+  left: unset;
+  right: -8px;
+  border-radius: 4px !important;
+  box-shadow: 1px 1px 0 #3174a4 !important;
+}
+
+.ts-btn-arrow-right {
+    border-radius: 4px 3px 4px 4px !important;
+}
+
+/* additions to animate.css, these are custom alterations to existing elements */
+/* these are overrides for specific elements and should not affect any stock animations */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s
+}
+
+.animated.bounceIn,
+.animated.bounceOut,
+.animated.flipOutX,
+.animated.flipOutY {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInLeft, .ts-summary-flx-list-item {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft
+}
+
+.ts-number-stats-outer{
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.ts-number-stats-title{
+  padding:7px 4px;
+  font-size:18px;
+}
+.ts-summary-flx-list-item:nth-child(1) { 
+  animation-delay: 0.4s;
+}
+
+.ts-summary-flx-list-item:nth-child(2) { 
+  animation-delay: 0.7s;
+}
+
+.ts-summary-flx-list-item:nth-child(3) { 
+  animation-delay: 1.0s;
+}
+
+.ts-summary-flx-list-item:nth-child(4) { 
+  animation-delay: 1.3s;
+}
+
+.ts-summary-flx-list-item:nth-child(5) { 
+  animation-delay: 1.6s;
+}
+
+.ts-summary-flx-list-item:nth-child(6) { 
+  animation-delay: 1.9s;
+}
+
+.ts-summary-flx-list-item:nth-child(7) { 
+  animation-delay: 2.2s;
+}
+
+.ts-summary-flx-list-item:nth-child(8) { 
+  animation-delay: 2.5s;
+}
+
+.ts-summary-flx-list-item:nth-child(9) { 
+  animation-delay: 2.8s;
+}
+
+.ts-summary-flx-list-item:nth-child(10) { 
+  animation-delay: 3.1s;
+}
+
+.ts-summary-flx-list-item:nth-child(n+11) { 
+  animation-delay: 3.4s;
+}
+
+.ts-flex-grid {
+  display: flex;
+}
+.ts-col {
+}
+
+.ts-number-stats-inner-container{
+  border-bottom:1px solid #e4e4e4;
+  padding: 11px 7px;
+}
+.ts-number-stats-inner-container:last-child{
+  border-bottom:none;
+}
+
+.ts-number-stats-count{
+  font-size:43px;
+  font-weight:700;
+  padding-right:7px;
+  line-height:33px;
+  text-align:center;
+  min-width:100px;
+}
+.ts-number-stats-txt{
+  font-size: 14px;
+  font-weight:500;
+  color:#404040;
+  line-height:20px;
+  flex:1;
+}
+.ts-number-stats-btn{
+  text-align:right;
+  padding:3px 0 0 4px;
+}
+.ts-btn-temp{
+  white-space:nowrap;
+}
+
+
+@media (max-width: 600px) {
+  .ts-flex-grid {
+    display: block;
+  }
+  .ts-number-stats-btn{
+    text-align:left;
+    padding:0 0 7px 0;
+  }
+  .ts-number-stats-txt{
+    flex: 4;
+    padding:12px 0 12px 0;
+  }
+  .ts-number-stats-count{
+    text-align:left;
+  }
+}
+
+/* remove pointer cursor from icons next to page titles */
+.ts-nav-icon{
+    cursor: default !important;
+}
+
+
+/* new search bar look */
+.ts-search-bar{
+    border-bottom:1px solid #3892d3;
+}
+
+.ts-search-bar .x-form-trigger-wrap-default{
+    border:none;
+}
+
+.ts-search-bar .x-form-text-default{
+    background-color:transparent;
+}
+
+.ts-search-bar .ts-search-bar-label{
+    position: absolute;
+    left:3px;
+    top:6px;
+    font-size:18px;
+    display: inline-block !important;
+}
+
+.ts-search-bar .x-form-field{
+    position: absolute;
+    left:18px;
+    top:1px;
+    padding-top:0;
+    width:166px;
+}
+
+/* Not sure why but this stops working when you combine selectors */
+.ts-search-bar ::-webkit-input-placeholder {
+   color: #cadeec;
+}
+
+.ts-search-bar :-moz-placeholder { /* Firefox 18- */
+   color: #cadeec;  
+}
+
+.ts-search-bar ::-moz-placeholder {  /* Firefox 19+ */
+   color: #cadeec;  
+}
+
+.ts-search-bar :-ms-input-placeholder {  
+   color: #cadeec;  
+}
+
+.ts-search-bar input {
+    color: #2484c6;
+}
+
+#guideManagerSearch ::-webkit-input-placeholder {
+    color: #2484c6;
+ }
+ 
+ #guideManagerSearch :-moz-placeholder { /* Firefox 18- */
+    color: #2484c6;  
+ }
+ 
+ #guideManagerSearch ::-moz-placeholder {  /* Firefox 19+ */
+    color: #2484c6;  
+ }
+ 
+ #guideManagerSearch :-ms-input-placeholder {  
+    color: #2484c6;  
+ }
+
+ #guideManagerSearch .x-form-field{
+    position: absolute;
+    left:18px;
+    top:1px;
+    padding-top:0;
+    width:232px;
+}
+ 
+.ts-summary-flx-outer-container{
+  text-align: center;
+  padding:21px;
+}
+
+/* flex version of the summary layout */
+.ts-summary-flx-outer-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ts-summary-flx-outer-container{
+  text-align: center;
+  padding:0;
+}
+
+.ts-summary-flx-header-container{
+  flex-shrink:0;
+  margin: 5px auto;
+  width:68px;
+  height:71px;
+  background-repeat: no-repeat; 
+  background-position: 0 0;
+ background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQwLjMgMjQxLjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0MC4zIDI0MS44OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzM4N0FCODt9LnN0MXtmaWxsOiMyNDNGNEY7fS5zdDJ7ZmlsbDojQkRDM0M3O30uc3Qze2ZpbGw6IzlEQTBBMzt9LnN0NHtmaWxsOiNGRkZGRkY7fS5zdDV7ZmlsbDojRTNFNUU0O30uc3Q2e2ZpbGw6I0ZGQjY1Rjt9LnN0N3tmaWxsOiNGMDlENDk7fS5zdDh7ZmlsbDojRkZDMDc4O308L3N0eWxlPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMzksMTIwLjljMCw2NS42LTUzLjIsMTE4LjgtMTE4LjgsMTE4LjhjLTY1LjYsMC0xMTguOC01My4yLTExOC44LTExOC44QzEuNCw1NS4zLDU0LjYsMi4xLDEyMC4yLDIuMUMxODUuOCwyLjEsMjM5LDU1LjMsMjM5LDEyMC45TDIzOSwxMjAuOXogTTIzOSwxMjAuOSIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yMzguNiwxMTEuOWwtNjEuMy02MS4zbC0xMTQsMTQxLjFsNDcuOCw0Ny44YzMsMC4yLDYsMC4zLDksMC4zYzY1LjYsMCwxMTguOC01My4yLDExOC44LTExOC44QzIzOSwxMTcuOSwyMzguOCwxMTQuOCwyMzguNiwxMTEuOUwyMzguNiwxMTEuOXogTTIzOC42LDExMS45Ii8+PHBhdGggY2xhc3M9InN0MiIgZD0iTTY4LjQsMTkzLjVoMTAzLjVjNC4yLDAsNy42LTMuNCw3LjYtNy42VjU1LjljMC00LjItMy40LTcuNi03LjYtNy42SDY4LjRjLTQuMiwwLTcuNiwzLjQtNy42LDcuNnYxMjkuOUM2MC44LDE5MC4xLDY0LjIsMTkzLjUsNjguNCwxOTMuNUw2OC40LDE5My41eiBNNjguNCwxOTMuNSIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNzEuOSw0OC4zaC01Mi40djE0NS4yaDUyLjRjNC4yLDAsNy42LTMuNCw3LjYtNy42VjU1LjlDMTc5LjYsNTEuNywxNzYuMSw0OC4zLDE3MS45LDQ4LjNMMTcxLjksNDguM3ogTTE3MS45LDQ4LjMiLz48cmVjdCB4PSI3MC42IiB5PSI1OC45IiBjbGFzcz0ic3Q0IiB3aWR0aD0iOTkuMiIgaGVpZ2h0PSIxMjQiLz48cmVjdCB4PSIxMTkuNSIgeT0iNTguOSIgY2xhc3M9InN0NSIgd2lkdGg9IjUwLjMiIGhlaWdodD0iMTI0Ii8+PHBhdGggY2xhc3M9InN0NiIgZD0iTTE0MS43LDQxLjdoLTguM2MwLTcuMy01LjktMTMuMi0xMy4yLTEzLjJjLTcuMywwLTEzLjIsNS45LTEzLjIsMTMuMmgtOC4zYy0yLjcsMC00LjksMi4yLTQuOSw0Ljl2MTYuN2MwLDIuNywyLjIsNC45LDQuOSw0LjloNDMuMWMyLjcsMCw0LjktMi4yLDQuOS00LjlWNDYuNkMxNDYuNiw0My45LDE0NC40LDQxLjcsMTQxLjcsNDEuN0wxNDEuNyw0MS43eiBNMTQxLjcsNDEuNyIvPjxwYXRoIGNsYXNzPSJzdDciIGQ9Ik0xNDEuNyw0MS43aC04LjNjMC03LjMtNS45LTEzLjItMTMuMi0xMy4yYy0wLjIsMC0wLjQsMC0wLjcsMHYzOS42aDIyLjJjMi43LDAsNC45LTIuMiw0LjktNC45VjQ2LjZDMTQ2LjYsNDMuOSwxNDQuNCw0MS43LDE0MS43LDQxLjdMMTQxLjcsNDEuN3ogTTE0MS43LDQxLjciLz48cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMTI1LjgsNDEuN2MwLDMuMS0yLjUsNS42LTUuNiw1LjZjLTMuMSwwLTUuNi0yLjUtNS42LTUuNmMwLTMuMSwyLjUtNS42LDUuNi01LjZDMTIzLjMsMzYuMSwxMjUuOCwzOC42LDEyNS44LDQxLjdMMTI1LjgsNDEuN3ogTTEyNS44LDQxLjciLz48cGF0aCBjbGFzcz0ic3Q4IiBkPSJNOTAuNiw4Ni45YzAsMi40LTIsNC40LTQuNCw0LjRjLTIuNCwwLTQuNC0yLTQuNC00LjRjMC0yLjQsMi00LjQsNC40LTQuNEM4OC42LDgyLjUsOTAuNiw4NC41LDkwLjYsODYuOUw5MC42LDg2Ljl6IE05MC42LDg2LjkiLz48cGF0aCBjbGFzcz0ic3Q4IiBkPSJNOTAuNiwxMTIuMWMwLDIuNC0yLDQuNC00LjQsNC40Yy0yLjQsMC00LjQtMi00LjQtNC40czItNC40LDQuNC00LjRDODguNiwxMDcuNyw5MC42LDEwOS43LDkwLjYsMTEyLjFMOTAuNiwxMTIuMXogTTkwLjYsMTEyLjEiLz48cGF0aCBjbGFzcz0ic3Q4IiBkPSJNOTAuNiwxMzguNWMwLDIuNC0yLDQuNC00LjQsNC40Yy0yLjQsMC00LjQtMi00LjQtNC40YzAtMi40LDItNC40LDQuNC00LjRDODguNiwxMzQuMSw5MC42LDEzNi4xLDkwLjYsMTM4LjVMOTAuNiwxMzguNXogTTkwLjYsMTM4LjUiLz48cGF0aCBjbGFzcz0ic3Q4IiBkPSJNOTAuNiwxNjMuN2MwLDIuNC0yLDQuNC00LjQsNC40Yy0yLjQsMC00LjQtMi00LjQtNC40YzAtMi40LDItNC40LDQuNC00LjRDODguNiwxNTkuMyw5MC42LDE2MS4zLDkwLjYsMTYzLjdMOTAuNiwxNjMuN3ogTTkwLjYsMTYzLjciLz48cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTUwLjYsODkuN2gtNDYuNGMtMS41LDAtMi44LTEuMy0yLjgtMi44czEuMy0yLjgsMi44LTIuOGg0Ni40YzEuNSwwLDIuOCwxLjMsMi44LDIuOFMxNTIuMSw4OS43LDE1MC42LDg5LjdMMTUwLjYsODkuN3ogTTE1MC42LDg5LjciLz48cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTUwLjYsMTE0LjloLTQ2LjRjLTEuNSwwLTIuOC0xLjMtMi44LTIuOGMwLTEuNSwxLjMtMi44LDIuOC0yLjhoNDYuNGMxLjUsMCwyLjgsMS4zLDIuOCwyLjhDMTUzLjQsMTEzLjYsMTUyLjEsMTE0LjksMTUwLjYsMTE0LjlMMTUwLjYsMTE0Ljl6IE0xNTAuNiwxMTQuOSIvPjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTAuNiwxNDEuM2gtNDYuNGMtMS41LDAtMi44LTEuMy0yLjgtMi44YzAtMS41LDEuMy0yLjgsMi44LTIuOGg0Ni40YzEuNSwwLDIuOCwxLjMsMi44LDIuOEMxNTMuNCwxNDAsMTUyLjEsMTQxLjMsMTUwLjYsMTQxLjNMMTUwLjYsMTQxLjN6IE0xNTAuNiwxNDEuMyIvPjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTAuNiwxNjYuNWgtNDYuNGMtMS41LDAtMi44LTEuMy0yLjgtMi44YzAtMS41LDEuMy0yLjgsMi44LTIuOGg0Ni40YzEuNSwwLDIuOCwxLjMsMi44LDIuOEMxNTMuNCwxNjUuMiwxNTIuMSwxNjYuNSwxNTAuNiwxNjYuNUwxNTAuNiwxNjYuNXogTTE1MC42LDE2Ni41Ii8+PC9nPjwvc3ZnPg==);
+
+}
+
+.ts-summary-flx-user-info-header{
+  cursor: pointer;
+  border-radius:85px;
+  width:85px;
+  height:85px;
+  border:3px solid #fff;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABVCAMAAADt90MRAAACK1BMVEUna50pbqAqcKQrc6csdqsteK4ue7IvfbYxgrwyhMAzh8M0icY2jc03kNA4ktMna504ktMna504ktMna504ktMna50na504ktM4ktMna504ktMna504ktM4ktMna504ktMna504ktM4ktMna504ktMna50na504ktM4ktM4ktMna504ktM4ktM4ktMna504ktM4ktMna504ktM4ktM4ktMna504ktM4ktMna504ktMna504ktM4ktMna50na504ktMna504ktM4ktMna504ktM4ktMteK4na504ktM4ktMna504ktMna504ktM4ktM4ktM4ktMna504ktMna504ktM4ktMna504ktMna504ktM4ktMna50na50na50na504ktM4ktM4ktMna504ktMna504ktMna504ktM4ktM4ktMna504ktM4ktMna504ktM4ktMna504ktM4ktMna504ktM4ktMna504ktM4ktMna504ktMna504ktM4ktM4ktM4ktM4ktMna504ktMna504ktMna504ktMna504ktM4ktMna504ktMna504ktM4ktM4ktMna50zh8M4ktMna504ktMna50na504ktM4ktMna50na504ktMna504ktM4ktM4ktMna504ktMna50na504ktMna504ktMna50na50pbqAqcKQrc6csdqsteK4ue7IvfbYwgLkxgrwyhMAzh8M0icY1i8k2jc03kNA4ktPXvqQGAAAAqHRSTlMAAAAAAAAAAAAAAAAAAAABAQICAwMGCAgJCgoMDA4PDxAQEhQWFxoaGxwdHR8gISEnKCgqLC0tMDE1Nzg8PkhITU1OUFBRUlVVV1lZX19iZGh0dHl5eoCAg4SFh46Tm5uen6CgoaGkpKWmrKyxs7S4ubm6vLy+wMPFxsbLy9XZ2tvc3d/f4ODh4ePk5OXl5+nr6+vt7u/w8PHy9PT39/j5+vr7/Pz9/f6KSZUbAAADy0lEQVR42q3YCX8TRRzG8X+rIFUaq6IcgoCiUBBBrirFAwQBsYoYRFEQrchN8agcQpW7UBCIHNraIlrC5tpkSbJ5Xp6hFGYmM7O7M/J9Ab/P7uzs7sxQLMSsFRu2HTrWh6q+Y4e2bVg+KxYiMDl5VXs3JN3tqybbJccs3TUAjf5dS8cYJyeu60ag7nUTjZIT4tcQ6lp8QuRk05rziOT8mqZoyTmdEPjFQiFb5Ra8UgWiH+dESbb1gVN0Uw4v4/ng9bWFJsduBed22pG5YnTr2ODk9MNg/KyjVgDv8PSg5LxTYEopRycrjOmpefrkogRfdAJkhGZikS65gC+WU04QF0JzgTo5uwdMJeME88Drma1KTjoCTt4JUwbvyCQ52bQXwkCGykKwt0lKrgcv64QrQrC+Ntk6KF2k4WUOtorJcV3guU4UZQi6xgnJjRCkIiU9iDbyybk3wPOdSHIQ3ZjLJXcDpkPJBpPZzZKtsE6KWu8nOx5UsuNesgU1KoZjybQMJ9tRK1qyAEn73eTUftTKmE0ipn/qUHItJNlIyRJka4eS+yHJG749zP47yWlJSAqRklBITqsm2yDzrJNoqya3w/bGfShsryZ7IEubPnGmJ0bNYCymuqyZlkFWNn8hmWUUh0K0ZB4qcfoKjOHbcxsqW6gTD/aJo5O6oFCMUkxD6QwloGI/lEhSEiqu8SvOEBjb1YactLzMcmDSZrZnoMPG0vA19/TJBNRyZp90JsnmpeFXGDrXqRNqJduhvExbwBh84Fzo/EJxaGRD1qs637Hvpdn/pwKdz6gZGr7dfeN19u+RuDZTCIPsD2l0mTlonWD/cZPRTFWg9SVbbZg89CL05rM1kcF0z0DvD7ZyM/l2eNDbwdaXJndegt7LmlWwffJX3VrdPrlas6OwTyZ0+x775IfC7swg6UHjN2EPaTKJ8tB4S9rpSnyzqX5A2o9LKjmjv+P15zWnBixYSOlXWF4Fkg+CzzZQdJ1guSJE3weewJTzaSdcKl8Gc+FJ1TmRQU86ehyYoTvN8j2pF2kABpdoztwu5RwL6YKfXB5TJRtH1S+86Fi5+e5jiuTokXVE9OpJm+I/bxLVN7DkcJDueuln82Lva0Q0FGXJxkfovme+MS0enULD6h+9l2yoI977vUbFzcR5ePSdZOMIqvHKD9GDv79BgrqGavIhkjz+3rlowX83PUG1RsZIafzHV8ODt/a9QAqjSOPZj06HzJw9L5Kpp97e+Zc2ePbTp8nKcyu/Pq24vqNfzKT/Y+Y7n3x78Mqtodjffx7/6fPFFOI/B3L6hFAIYMwAAAAASUVORK5CYII=);
+}
+
+.ts-summary-flx-list-container{
+    flex:5;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x:auto;
+}
+
+.ts-summary-flx-header-title{
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    animation-delay:0.5s;
+}
+.ts-summary-flx-xl .ts-summary-flx-header-title{
+  font-size:18px;
+}
+.ts-summary-flx-list-item{
+    font-size: 12px;
+    margin: 0 4px 10px 4px;
+    color:#4e5f6f;
+}
+.ts-summary-flx-xl .ts-summary-flx-list-item{
+  font-size:13px;
+  font-weight:600;
+}
+.ts-summary-flx-list-title{
+    text-transform: uppercase;
+    font-weight: 600;    
+    color: #96a1a9;
+    margin: 0 15px 0 0;
+    flex-grow:0;
+}
+.ts-summary-flx-table-container{
+  flex:1;
+}
+.ts-summary-flx-table{
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+.ts-summary-flx-table td{
+    text-align: center;
+    line-height: 14px;
+}
+.ts-summary-flx-td-amount{
+    font-size: 24px;
+    color: #2e73a4;
+    letter-spacing: -1px;
+}
+.ts-summary-flx-td-label{
+    text-transform: uppercase;
+    color: #404040;
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+.ts-summary-flx-td-left{
+    border-right:1px solid #d1d1d1;
+}
+
+.ts-custom-link-style-btns-container .x-btn,
+.ts-custom-link-style-btns-container .x-btn:hover,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn,
+.sencha-dash-right-main-container .ts-custom-link-style-btns-container .x-btn:hover,
+.x-window .ts-custom-link-style-btns-container .x-btn,
+.x-window .ts-custom-link-style-btns-container .x-btn:hover {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.x-box-scroller-body-horizontal{
+    
+}
+
+.x-window .x-progress.x-window-item.x-progress-default{
+    height:2px !important;
+}
+
+/* fix for labels getting cut off - will force label width to be 100% of its container */
+.sencha-dash-right-main-container .x-form-item-label-inner-default{
+    width:100% !important;
+} 
+
+/* fix for ext's bug where grid headers that are right aligned get cut off when right aligned (same amount of space) */
+.x-column-header-align-right .x-column-header-text{
+	margin-right:0 !important
+}
+.x-column-header-align-right .x-column-header-inner{
+    padding-right: 1px;
+}
+
+.x-grid-with-col-lines .x-grid-item-selected:first-child .ts-colored-cell .x-grid-cell-inner{
+
+    border-left: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.x-grid-with-col-lines .x-grid-item-selected:first-child .x-grid-cell-inner{
+   
+}
+
+.x-window .x-form-readonly,
+.sencha-dash-right-main-container .x-form-readonly {
+    border: 1px solid #cdcdcd;
+}
+
+.x-window .x-form-readonly,
+.sencha-dash-right-main-container .x-form-readonly {
+    background: #e8e8e8 !important;
+    color:#909090 !important;
+}
+
+/* Update to read only text boxes to make them extremely obvious even within field sets with gray backgrounds */
+.x-form-readonly .x-form-item-label-inner b,
+.sencha-dash-right-main-container .x-form-readonly .x-form-item-label-inner b,
+.x-window .x-form-readonly .x-form-item-label-inner b,
+.x-form-readonly .x-form-item-label-inner strong,
+.sencha-dash-right-main-container .x-form-readonly .x-form-item-label-inner strong,
+.x-window .x-form-readonly .x-form-item-label-inner strong,
+.x-form-readonly .x-form-item-label-inner,
+.sencha-dash-right-main-container .x-form-readonly .x-form-item-label-inner,
+.x-window .x-form-readonly .x-form-item-label-inner,
+.x-form-readonly .x-form-field
+.sencha-dash-right-main-container .x-form-readonly .x-form-field
+.x-window .x-form-readonly .x-form-field{
+    background: #e8e8e8 !important;
+    color:#909090 !important;
+}
+
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly .x-form-item-label-inner,
+.x-window .x-panel-header.x-header .x-form-readonly, 
+.x-window .x-panel-header.x-header .x-form-readonly .x-form-item-label-inner{
+    background: transparent !important;
+    border:none !important;
+}
+
+/* begin micro ui elements in headers */
+.x-window .ts-toolbar-inside-tab-header-outer .x-field:not(.x-form-checkbox):not(.x-checkboxgroup-form-item),
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-field:not(.x-form-checkbox):not(.x-checkboxgroup-form-item),
+.x-window .x-panel-header.x-header .x-field:not(.x-form-checkbox):not(.x-checkboxgroup-form-item):not(.x-tbar-page-number),
+.sencha-dash-right-main-container .x-panel-header.x-header .x-field:not(.x-form-checkbox):not(.x-checkboxgroup-form-item){
+    border:none !important;
+    height: 10px !important;
+    top:unset !important;
+    bottom:-35px !important;
+    box-shadow: none !important;
+
+}
+.x-window .x-panel-header.x-header .x-field.x-tbar-page-number{
+    border:none !important;
+    height: 10px !important;
+    bottom:-35px !important;
+    box-shadow: none !important;
+
+}
+.x-window .x-panel-header.x-header .x-field.ts-slider-container .x-form-item-label,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-field.ts-slider-container .x-form-item-label{
+        top:8px !important;
+    position:relative !important;
+}
+
+.x-window .x-panel-header.x-header .x-field.ts-slider-container .x-form-checkboxgroup,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-checkboxgroup{
+        top:unset !important;
+    bottom:-34px !important;
+}
+.x-window .x-panel-header.x-header .x-btn,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-btn{
+        top:unset !important;
+    bottom:-35px !important;
+}
+.sencha-dash-right-main-container .x-panel-header.x-header .x-field.x-field-after-title.x-form-type-checkswitch{
+    bottom: -30px !important;
+}
+.x-window .ts-toolbar-inside-tab-header-outer .x-checkboxgroup-form-item,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-checkboxgroup-form-item,
+.x-window .x-panel-header.x-header .x-checkboxgroup-form-item,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-checkboxgroup-form-item{
+    border:none !important;
+    height: 10px !important;
+    top:unset !important;
+}
+
+.x-window .x-panel-header.x-header .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body),
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body){
+    border-bottom:1px solid #616161 !important;
+    border-width:1px 1px 1px 1px !important;
+}
+
+.x-window .x-panel-header.x-header.ts-toolbar-inside-tab-header-outer .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body),
+.sencha-dash-right-main-container .x-panel-header.x-header.ts-toolbar-inside-tab-header-outer .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body){
+    border-bottom:1px solid #fff !important;
+    border-width:1px 1px 1px 1px !important;
+}
+
+.x-window .ts-toolbar-inside-tab-header-outer .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body),
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body){
+    border-bottom:1px solid #fff !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-text-wrap:not(.x-form-cb-label) input.x-form-text,
+.x-panel-header.x-header .x-form-text-wrap:not(.x-form-cb-label) input.x-form-text{
+    padding: 0 0 3px 0 !important;
+    font-size:13px !important;
+    max-height: 17px !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body):not(.x-form-file-wrap),
+.x-panel-header.x-header .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body):not(.x-form-file-wrap){
+    min-height:25px !important;
+    max-height:unset !important;
+    padding-top:8px !important;
+}
+.ts-toolbar-inside-tab-header-outer .x-form-file-wrap,
+.x-panel-header.x-header .x-form-file-wrap{
+    min-height:25px !important;
+    max-height:unset !important;
+
+}
+.x-panel-header.x-header .x-form-cb-label{
+    font-size:12px;
+    margin-top:4px !important;
+    color:#3892d3 !important;
+    white-space: nowrap;
+}
+.x-panel-header.x-header .x-ts-form-check-switch .x-form-cb-label{
+    margin-top:2px !important;
+}
+.x-panel-header.x-header.ts-toolbar-inside-tab-header-outer .x-field{
+    background:transparent !important
+}
+.x-panel-header.x-header.ts-toolbar-inside-tab-header-outer .x-form-trigger-default,
+.x-panel-header.x-header.ts-toolbar-inside-tab-header-outer .x-form-item-label-inner,
+.x-panel-header.x-header.ts-toolbar-inside-tab-header-outer .x-form-cb-label{
+    color:#fff !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-cb-label{
+    color:#fff !important;
+}
+
+.x-panel-header.x-header .x-form-checkbox-default{
+    color:#3892d3 !important;
+}
+.x-panel-header.x-header .x-form-file-wrap  .x-form-trigger-wrap .x-form-text-wrap{
+	padding-top:7px;
+}
+.ts-toolbar-inside-tab-header-outer  .x-form-checkbox-default{
+    color:#fff !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-item-label, .ts-toolbar-inside-tab-header-outer .x-form-checkboxgroup .x-form-item-label, .ts-toolbar-inside-tab-header-outer .x-form-type-checkbox .x-form-item-label, .ts-toolbar-inside-tab-header-outer .x-form-type-checkbox .x-form-item-label,
+.x-panel-header.x-header .x-form-item-label, .x-panel-header.x-header .x-form-checkboxgroup .x-form-item-label, .x-panel-header.x-header .x-form-type-checkbox .x-form-item-label, .x-panel-header.x-header .x-form-type-checkbox .x-form-item-label{
+    padding:5px !important;
+    vertical-align: top !important;       
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-horz:before,
+.x-panel-header.x-header .x-slider-horz:before{
+    height:2px;
+    border:none !important;
+    background-color:#cbcbcb;
+    top:17px !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-thumb,
+.x-panel-header.x-header .x-slider-thumb{
+    border:none !important;
+    background-color:transparent;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-thumb,
+.x-panel-header.x-header .x-slider-thumb{
+    border:none !important;
+    background-color:transparent;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-horz .x-slider-thumb,
+.x-panel-header.x-header .x-slider-horz .x-slider-thumb{
+    border:none !important;
+    background-color:transparent;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-horz .x-slider-thumb,
+.x-panel-header.x-header .x-slider-horz .x-slider-thumb{
+    top:2px;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-horz .x-slider-thumb:before,
+.x-panel-header.x-header .x-slider-horz .x-slider-thumb:before{
+    content:"" !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-field-body-default.x-slider-ct-horz,
+.x-panel-header.x-header .x-field-body-default.x-slider-ct-horz{
+    padding-top: 0 !important;
+    /* top: 5px !important; */
+    position: relative;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-horz .x-slider-thumb:before,
+.x-panel-header.x-header .x-slider-horz .x-slider-thumb:before{
+    content:"" !important;
+    background-color:#3892d3;
+    position:absolute;
+    width:7px;
+    height:10px;
+    left:30%;
+    top:6px;
+    border-radius: 2px !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-slider-horz .x-slider-thumb:before{
+    background-color:#fff;
+}
+
+.ts-toolbar-inside-tab-header-outer .ts-slider-container .x-form-item-label,
+.x-panel-header.x-header .ts-slider-container .x-form-item-label{
+    padding-top:8px !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-item-label-inner,
+.x-panel-header.x-header .x-form-item-label-inner{
+    padding-top:3px;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-type-checkbox .x-form-cb-wrap-inner,
+.x-panel-header.x-header .x-form-type-checkbox .x-form-cb-wrap-inner{
+    padding-top:3px;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-checkboxgroup .x-form-cb-wrap-inner,
+.x-panel-header.x-header .x-form-checkboxgroup .x-form-cb-wrap-inner{
+    padding-top:0 !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-trigger-spinner,
+.x-panel-header.x-header .x-form-trigger-spinner{
+    top:-7px;
+    position: relative;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-radio,
+.x-panel-header.x-header .x-form-radio{
+    font:15px/1 FontAwesome;
+    padding: 1px 0 0 3px;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-text-file,
+.x-panel-header.x-header .x-form-text-file{
+    min-height:30px !important;
+    
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-cb-default,
+.x-panel-header.x-header .x-form-cb-default{
+    margin-top:4px !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-field,
+.x-panel-header.x-header .x-field{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-trigger,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn:hover,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn:hover,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn,{
+    color:#fff !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-trigger,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn,{
+    color:#fff !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-form-checkbox-default:before,
+.ts-toolbar-inside-tab-header-outer *,
+.ts-toolbar-inside-tab-header-outer .x-form-text,
+.ts-toolbar-inside-tab-header-outer .x-form-spinner-default,
+.ts-toolbar-inside-tab-header-outer .x-form-date-trigger,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-form-date-trigger,
+.x-window .ts-toolbar-inside-tab-header-outer .x-form-date-trigger,
+.ts-toolbar-inside-tab-header-outer .x-form-item-label-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer,
+.ts-toolbar-inside-tab-header-outer .x-btn .x-btn-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn-wrap-default-small.x-btn-split-right::after,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn .ts-toolbar-inside-tab-header-outer .x-form-checkbox-default:before,
+.ts-toolbar-inside-tab-header-outer *,
+.ts-toolbar-inside-tab-header-outer .x-form-text,
+.ts-toolbar-inside-tab-header-outer .x-form-spinner-default,
+.ts-toolbar-inside-tab-header-outer .x-form-date-trigger,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-form-date-trigger,
+.x-window .ts-toolbar-inside-tab-header-outer .x-form-date-trigger,
+.ts-toolbar-inside-tab-header-outer .x-form-item-label-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer,
+.ts-toolbar-inside-tab-header-outer .x-btn .x-btn-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn-wrap-default-small.x-btn-arrow-right::after,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn-wrap-default-small.x-btn-split-right::after,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn .x-btn-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn .x-btn-icon-el,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn .x-btn-icon-el,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn .x-btn-inner{
+    color:#fff !important;
+    text-shadow:none !important;
+}
+
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn .x-btn-inner{
+    color:#fff !important;
+}
+
+
+.ts-toolbar-inside-tab-header-outer .x-field{
+    box-shadow:none !important;
+}
+
+.ts-toolbar-inside-tab-header-outer .x-btn.x-btn-focus,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn.x-btn-focus,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn.x-btn-focus{
+    -webkit-box-shadow:none !important;
+    -moz-box-shadow:none !important;
+    box-shadow:none !important;
+}
+
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn:hover .x-btn-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn:hover .x-btn-inner,
+.sencha-dash-right-main-container .ts-toolbar-inside-tab-header-outer .x-btn:hover .x-btn-icon-el,
+.x-window .ts-toolbar-inside-tab-header-outer .x-btn:hover .x-btn-icon-el{
+    color:#a9f3fe !important;
+}
+
+/* end micro ui elements in headers */
+.ts-no-border{
+    border:none !important;
+    border-width:0 !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+.ts-no-borders-inside *, .ts-no-borders-inside * *, .ts-no-borders-inside * * *, .ts-no-borders-inside * * * *{
+    border:none !important;
+    border-width:0 !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+.x-item-disabled.x-form-readonly{
+    opacity:1 !important;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/* faux header text override */
+.ts-header-text{
+	font-size: 16px !important;
+	color:#688092 !important;
+}
+
+/* begin major UI update */
+.ts-top-subnav-pnl-page-title{
+    font-size: 17px !important;
+}
+.ts-new-ui-update .ts-section-container, .ts-new-ui-update .ts-section-container-wrap-only{
+    background:#fff !important;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.13), 0px 0px 3px 0px rgba(0, 0, 0, 0.11) !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+.ts-new-ui-update .ts-section-container.x-collapsed, .ts-new-ui-update .ts-section-container-wrap-only.x-collapsed{
+    /*background:transparent !important;
+    box-shadow: none !important;*/
+}
+
+.ts-new-ui-update .ts-section-container-outer{
+    background:rgba(0, 0, 0, 0) !important;
+}
+
+.ts-new-ui-update .x-window .ts-section-container .x-tab-bar-horizontal .x-tab-default, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container .x-tab-bar-horizontal .x-tab-default{
+    height:36px !important;
+    background:#4b9dd8 !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin:0 0 0 5px !important;
+}
+
+.ts-new-ui-update .x-window .ts-section-container .x-tab-bar-horizontal .x-tab-default.x-tab-focus, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container .x-tab-bar-horizontal .x-tab-default.x-tab-focus{
+    -webkit-box-shadow: inset 0 0 0 2px #8cccfb !important;
+    -moz-box-shadow: inset 0 0 0 2px #8cccfb !important;
+    box-shadow: inset 0 0 0 2px #8cccfb !important;
+}
+
+.ts-new-ui-update .x-window .ts-section-container .x-tab-bar-horizontal .x-tab-default .x-tab-inner, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container .x-tab-bar-horizontal .x-tab-default .x-tab-inner{
+    color:#fff !important;
+    border: none !important;
+}
+
+.ts-new-ui-update .x-window .ts-section-container .x-tab-bar-horizontal .x-tab-active.x-tab-default, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container .x-tab-bar-horizontal .x-tab-active.x-tab-default{
+    background:#fff !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+    border: 1px solid #d1d1d1 !important;
+    border-width: 1px 1px 0 1px !important;
+}
+.ts-new-ui-update .x-window .ts-section-container .x-tab-bar-horizontal .x-tab-active.x-tab-default .x-tab-inner, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container .x-tab-bar-horizontal .x-tab-active.x-tab-default .x-tab-inner{
+    color:#044777 !important;
+    border: none !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+/*section container first tab section */
+.ts-new-ui-update .ts-section-container > .x-tab-bar-horizontal:first-child{
+    background:#3789c0 !important;
+    color:#fff;
+    border-radius: 4px 4px 0 0 !important;
+    border:none !important;
+}
+.ts-new-ui-update .x-window .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-default, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-default{
+    height:36px !important;
+    background:#4b9dd8 !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45), inset 0px -13px 8px -10px rgba(0, 0, 0, 0.5) !important;
+    margin:0 0 0 5px !important;
+    border: none !important;
+}
+
+.ts-new-ui-update .x-window .x-panel-header.ts-toolbar-inside-tab-header-outer,
+.ts-new-ui-update .sencha-dash-right-main-container .x-panel-header.ts-toolbar-inside-tab-header-outer {
+    border-bottom: none !important;
+}
+.ts-new-ui-update .x-window .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-default .x-tab-inner, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-default .x-tab-inner{
+    color:#fff !important;
+    border: none !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.ts-new-ui-update .x-window .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-active.x-tab-default, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-active.x-tab-default{
+    background:#fff !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+.ts-new-ui-update .x-window .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-active.x-tab-default .x-tab-inner, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-active.x-tab-default .x-tab-inner{
+    color:#044777 !important;
+    border: none !important;
+    -moz-border-radius: 4px 4px 0 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.ts-new-ui-update .x-window .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-default.x-tab-focus, .ts-new-ui-update .sencha-dash-right-main-container .ts-section-container > .x-tab-bar-horizontal:first-child .x-tab-default.x-tab-focus{
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45), inset 0px -13px 8px -10px rgba(0, 0, 0, 0.5), inset 0 0 0 2px #8cccfb !important;
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45), inset 0px -13px 8px -10px rgba(0, 0, 0, 0.5), inset 0 0 0 2px #8cccfb !important;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45), inset 0px -13px 8px -10px rgba(0, 0, 0, 0.5), inset 0 0 0 2px #8cccfb !important;
+}
+
+.ts-new-ui-update .ts-section-container .x-panel-header:nth-child(n+1):before{
+    content:'';
+	width: 100% !important;
+	height: 100% !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0) !important;
+	border-width:0px 0px 1px 0px !important;
+	position:absolute !important;
+	bottom:1px !important;
+    left:0 !important;
+}
+
+.ts-new-ui-update .ts-section-container-outer .x-panel-header:nth-child(n+1):before{
+	border:none !important;
+}
+
+.ts-new-ui-update .ts-section-container .x-title-text {
+    font-size:18px;
+}
+
+.ts-new-ui-update .ts-section-container .x-grid-header-ct {
+	border:1px solid #d8d8d8 !important;
+	border-width:0px 0px 1px 0px !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.x-window .ts-grid-row-focused .x-grid-cell,
+.sencha-dash-right-main-container .ts-grid-row-focused .x-grid-cell {
+    background: #fff6e7 !important;
+}
+
+.x-window .x-grid-item-focused,
+.sencha-dash-right-main-container .x-grid-item-focused {
+    background: #fff !important;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.x-window .x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-item-selected, {
+    background: #3892d3 !important;
+    border-bottom-width: 1px !important;
+    border-top-width: 1px !important;
+    border-bottom:1px solid #3892d3 !important;
+}
+.x-grid-with-row-lines .x-grid-item{
+    border-width:1px 1px 1px 4px !important;
+}
+
+.x-window .x-grid-item-selected,
+.x-window .x-grid-with-row-lines .x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-with-row-lines .x-grid-item-selected {
+    border-top-width: 1px !important;
+    border-top-color: #3892d3 !important;
+    border-top: 1px solid #3892d3 !important;
+    border-bottom-width: 1px !important;
+    border-bottom-color: #3892d3 !important;
+    border-bottom: 1px solid #3892d3 !important;
+}
+
+.x-window .x-grid-item-selected+.x-grid-item-selected,
+.x-window .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-item-selected+.x-grid-item-selected,
+.sencha-dash-right-main-container .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item-selected{
+    border-top-width: 1px !important;
+    border-top-color: rgba(0, 0, 0, 0) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0)!important;
+    border-bottom-width: 1px !important;
+    border-bottom-color: #3892d3 !important;
+    border-bottom: 1px solid #3892d3 !important;
+}
+
+.x-grid-td, .sencha-dash-right-main-container .x-grid-td.x-grid-item-focused {
+    margin:0 0 0 0 !important;
+    padding:0 0 0 0 !important;
+    margin-bottom:0 !important;
+    padding-top:0 !important;
+    margin-top:0 !important;
+    height:100% !important;
+}
+
+.sencha-dash-right-main-container .x-grid-td .x-grid-cell-inner:before {
+    /*max-height:27px !important;
+    min-height:27px !important;
+    height:27px !important;*/
+}
+
+.sencha-dash-right-main-container .ts-grid-row-focused .x-grid-td .x-grid-cell-inner:before,
+.sencha-dash-right-main-container .ts-grid-row-focused .x-grid-item-selected.x-grid-td .x-grid-cell-inner:before {
+    /*max-height:26px !important;
+    min-height:26px !important;
+    height:26px !important;*/
+}
+.dashboard-todo-list .ts-grid-row-focused .x-grid-td .x-grid-cell-inner:before,
+.dashboard-todo-list .x-grid-item-selected.x-grid-td .x-grid-cell-inner:before {
+    visibility: hidden !important;
+}
+.dashboard-todo-list .x-grid-td:nth-child(1) .x-grid-cell-inner,
+.dashboard-todo-list .ts-grid-row-focused:nth-child(1) .x-grid-td .x-grid-cell-inner,
+.dashboard-todo-list .x-grid-item-selected.x-grid-td:nth-child(1) .x-grid-cell-inner,
+.dashboard-todo-list .x-grid-td .x-grid-cell-inner,
+.dashboard-todo-list .ts-grid-row-focused .x-grid-td .x-grid-cell-inner,
+.dashboard-todo-list .x-grid-item-selected.x-grid-td .x-grid-cell-inner {
+    max-height:26px !important;
+    min-height:26px !important;
+    height:26px !important;
+    border-top:none !important;
+    border-left:none !important;
+    border:none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left:0px !important;
+}
+
+.x-window .x-grid-item-selected .x-grid-cell-inner:before,
+.x-window .x-grid-with-row-lines .x-grid-item-selected .x-grid-cell-inner:before,
+.sencha-dash-right-main-container .x-grid-item-selected .x-grid-cell-inner:before,
+.sencha-dash-right-main-container .x-grid-with-row-lines .x-grid-item-selected .x-grid-cell-inner:before {
+    /* max-height:25px !important; */
+    min-height:25px !important;
+    height: 100% !important;
+}
+
+.x-window .x-grid-item-selected+.x-grid-item-selected .x-grid-cell-inner:before,
+.x-window .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item-selected .x-grid-cell-inner:before,
+.sencha-dash-right-main-container .x-grid-item-selected+.x-grid-item-selected .x-grid-cell-inner:before,
+.sencha-dash-right-main-container .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item-selected .x-grid-cell-inner:before{
+    top:unset;
+}
+.x-window .x-btn.x-btn-focus,
+.sencha-dash-right-main-container .x-btn.x-btn-focus{
+    -webkit-box-shadow:0 2px 0 #3174a4, inset 0 0 0 2px #8cccfb !important;
+    -moz-box-shadow:0 2px 0 #3174a4, inset 0 0 0 2px #8cccfb !important;
+    box-shadow:0 2px 0 #3174a4, inset 0 0 0 2px #8cccfb !important;
+}
+
+.x-form-spinner-default{
+    background:none !important;
+}
+
+.ts-editable-cell > .x-grid-cell-inner:before{
+	content:"\e603" !important;
+	font:14px/1 ExtJS;
+	color:#3892d3;
+	position:absolute;
+	top:0 !important;
+	right:0 !important;
+    text-align: right !important;
+    z-index: 99 !important;
+    visibility: visible !important;
+    transition:color 500ms ease-in-out;
+}
+.ts-editable-cell.ts-editable-cell-disabled > .x-grid-cell-inner:before{
+	color:#ababab;
+    transition:color 300ms ease-in-out;
+}
+
+.x-grid-item-focused.ts-editable-cell > .x-grid-cell-inner:before{
+    
+}
+
+.sencha-dash-right-main-container .x-panel-header.x-header .x-field.x-ts-form-check-switch,
+.x-window .x-panel-header.x-header .x-field.x-ts-form-check-switch{
+    padding-top:0px !important;
+    top:unset !important;
+    margin:0 !important;
+    height:18px !important;
+    max-height:18px !important;
+    min-height:18px !important;
+    bottom:-20px !important;
+}
+
+.x-panel-header.x-header .x-form-search-trigger-default{
+    line-height:14px !important;
+    font-size:14px !important;
+}
+
+.x-panel-header.x-header .x-tool-img{
+    height:22px !important;
+}
+
+.sencha-dash-right-main-container .x-panel-header.x-header .x-ts-form-check-switch{
+    bottom:-24px !important;
+    padding-top:0px !important;
+}
+/* checkswitch - stop browsers from making the text labels selectable */
+.ts-checkswitch-no-title label{ 
+}
+.x-form-cb-label {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+.ts-new-ui-update .x-window .x-grid-item-focused .x-grid-cell-inner,
+.ts-new-ui-update .sencha-dash-right-main-container .x-grid-item-focused{
+    background: #fff !important;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4), inset 0 0 0 1px #3d91cf !important;
+    border:unset !important;
+}
+
+.x-grid-item-focused .x-grid-cell-inner:before{border:unset !important}
+/* end major UI update */
+
+.sencha-dash-right-main-container .x-grid-cell.fmsFinished{  background-color: #afafaf !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsWaiting{ background-color: #0000ff !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsAlert{ background-color: #CC0000 !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsInProgress{ background-color: #009900 !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsQuote{ background-color: #FF9400 !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsRecurring{ background-color: #800080 !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsApproval{ background-color: #BBBB00 !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsRejected{ background-color: #912E1C !important}
+.sencha-dash-right-main-container .x-grid-cell.fmsQuoteInProgress{ background-color: #FFA500 !important}
+.sencha-dash-right-main-container .x-grid-cell.portAssigned{ background-color: #CC0000 !important}
+.sencha-dash-right-main-container .x-grid-cell.portReserved{ background-color: #CCCC00 !important}
+.sencha-dash-right-main-container .x-grid-cell.portProductAssigned{ background-color: #AA00AA !important}
+.sencha-dash-right-main-container .x-grid-cell.portProductReserved{ background-color: #E251FF !important}
+.sencha-dash-right-main-container .x-grid-cell.portUnassigned{ background-color: #00CC00 !important}
+.sencha-dash-right-main-container .x-grid-cell.portManagement{ background-color: #0000CC !important}
+.sencha-dash-right-main-container .x-grid-cell.portBad{ background-color: #AAAAAA !important}
+.sencha-dash-right-main-container .x-grid-cell.portAssignedPrint{ background-color: #FFFFFF !important}
+.sencha-dash-right-main-container .x-grid-cell.portReservedPrint{ background-color: #BBBBBB !important}
+.sencha-dash-right-main-container .x-grid-cell.portUnassignedPrint{ background-color: #888888 !important}
+.sencha-dash-right-main-container .x-grid-cell.portManagementPrint{ background-color: #555555 !important}
+.sencha-dash-right-main-container .x-grid-cell.portBadPrint{ background-color: #333333 !important}
+.sencha-dash-right-main-container .x-grid-cell.yellowBackground{ background-color: #FFFD67 !important}
+
+.x-window .x-grid-cell.mf-favorable,
+.sencha-dash-right-main-container .x-grid-cell.mf-favorable,
+.x-window .x-grid-cell.ts-green-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-green-bg,
+.x-window .mf-favorable,
+.sencha-dash-right-main-container .mf-favorable,
+.x-window .ts-green-bg,
+.sencha-dash-right-main-container .ts-green-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-favorable,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-favorable,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-favorable,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-favorable,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-favorable,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-favorable,
+.x-window .x-grid-item-over.x-grid-item .ts-green-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-green-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-green-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-green-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-green-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-green-bg{
+  background:#8dc73f !important;
+}
+
+.x-window .x-grid-cell.mf-unfavorable,
+.sencha-dash-right-main-container .x-grid-cell.mf-unfavorable,
+.x-window .x-grid-cell.ts-pink-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-pink-bg,
+.x-window .mf-unfavorable,
+.sencha-dash-right-main-container .mf-unfavorable,
+.x-window .ts-pink-bg,
+.sencha-dash-right-main-container .ts-pink-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-unfavorable,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-unfavorable,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-unfavorable,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-unfavorable,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-unfavorable,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-unfavorable,
+.x-window .x-grid-item-over.x-grid-item .ts-pink-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-pink-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-pink-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-pink-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-pink-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-pink-bg{
+  background:#ff99cc !important;
+}
+
+.x-window .x-grid-cell.mf-accepted,
+.sencha-dash-right-main-container .x-grid-cell.mf-accepted,
+.x-window .x-grid-cell.ts-lightGray-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-lightGray-bg,
+.x-window .mf-accepted,
+.sencha-dash-right-main-container .mf-accepted,
+.x-window .ts-lightGray-bg,
+.sencha-dash-right-main-container .ts-lightGray-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-accepted,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-accepted,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-accepted,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-accepted,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-accepted,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-accepted,
+.x-window .x-grid-item-over.x-grid-item .ts-lightGray-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-lightGray-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-lightGray-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-lightGray-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-lightGray-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-lightGray-bg{
+  background:#a3a3a3 !important;
+}
+
+.x-window .x-grid-cell.mf-expired,
+.sencha-dash-right-main-container .x-grid-cell.mf-expired,
+.x-window .x-grid-cell.ts-gold-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-gold-bg,
+.x-window .mf-expired,
+.sencha-dash-right-main-container .mf-expired,
+.x-window .ts-gold-bg,
+.sencha-dash-right-main-container .ts-gold-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-expired,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-expired,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-expired,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-expired,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-expired,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-expired,
+.x-window .x-grid-item-over.x-grid-item .ts-gold-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-gold-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-gold-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-gold-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-gold-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-gold-bg{
+  background:#f5c155 !important;
+}
+
+.x-window .x-grid-cell.mf-missing,
+.sencha-dash-right-main-container .x-grid-cell.mf-missing,
+.x-window .x-grid-cell.ts-orange-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-orange-bg,
+.x-window .mf-missing,
+.sencha-dash-right-main-container .mf-missing,
+.x-window .ts-orange-bg,
+.sencha-dash-right-main-container .ts-orange-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-missing,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-missing,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-missing,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-missing,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-missing,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-missing,
+.x-window .x-grid-item-over.x-grid-item .ts-orange-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-orange-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-orange-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-orange-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-orange-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-orange-bg{
+  background:#f18c3e !important;
+}
+
+.x-window .x-grid-cell.mf-disputed,
+.sencha-dash-right-main-container .x-grid-cell.mf-disputed,
+.x-window .x-grid-cell.ts-blue-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-blue-bg,
+.x-window .mf-disputed,
+.sencha-dash-right-main-container .mf-disputed,
+.x-window .ts-blue-bg,
+.sencha-dash-right-main-container .ts-blue-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-disputed,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-disputed,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-disputed,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-disputed,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-disputed,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-disputed,
+.x-window .x-grid-item-over.x-grid-item .ts-blue-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-blue-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-blue-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-blue-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-blue-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-blue-bg{
+  background:#33ccff !important;
+}
+
+.x-window .x-grid-cell.mf-non-masterfeed,
+.sencha-dash-right-main-container .x-grid-cell.mf-non-masterfeed,
+.x-window .x-grid-cell.ts-red-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-red-bg,
+.x-window .mf-non-masterfeed,
+.sencha-dash-right-main-container .mf-non-masterfeed,
+.x-window .ts-red-bg,
+.sencha-dash-right-main-container .ts-red-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-non-masterfeed,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-non-masterfeed,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-non-masterfeed,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-non-masterfeed,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-non-masterfeed,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-non-masterfeed,
+.x-window .x-grid-item-over.x-grid-item .ts-red-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-red-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-red-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-red-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-red-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-red-bg{
+  background:#f14b3e !important;
+}
+
+.x-window .x-grid-cell.ts-purple-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-purple-bg,
+.x-window .ts-purple-bg,
+.sencha-dash-right-main-container .ts-purple-bg,
+.x-window .x-grid-item-over.x-grid-item .ts-purple-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-purple-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-purple-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-purple-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-purple-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-purple-bg{
+  background:#9f54e8 !important;
+}
+
+.x-window .x-grid-cell.ts-teal-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-teal-bg,
+.x-window .ts-teal-bg,
+.sencha-dash-right-main-container .ts-teal-bg,
+.x-window .x-grid-item-over.x-grid-item .ts-teal-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-teal-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-teal-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-teal-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-teal-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-teal-bg{
+  background:#5dd1a1 !important;
+}
+
+.x-window .x-grid-cell.mf-match,
+.sencha-dash-right-main-container .x-grid-cell.mf-match,
+.x-window .x-grid-cell.ts-darkGray-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-darkGray-bg,
+.x-window .mf-match,
+.sencha-dash-right-main-container .mf-match,
+.x-window .ts-darkGray-bg,
+.sencha-dash-right-main-container .ts-darkGray-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-match,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-match,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-match,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-match,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-match,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-match,
+.x-window .x-grid-item-over.x-grid-item .ts-darkGray-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-darkGray-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkGray-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-darkGray-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-darkGray-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkGray-bg{
+  background:#7d7d7d !important;
+}
+
+.x-window .x-grid-cell.ts-darkBlue-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-darkBlue-bg,
+.x-window .ts-darkBlue-bg,
+.sencha-dash-right-main-container .ts-darkBlue-bg,
+.x-window .x-grid-item-over.x-grid-item .ts-darkBlue-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-darkBlue-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkBlue-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-darkBlue-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-darkBlue-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkBlue-bg{
+  background:#2a9af5 !important;
+}
+
+.x-window .x-grid-cell.ts-darkOrange-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-darkOrange-bg,
+.x-window .ts-darkOrange-bg,
+.sencha-dash-right-main-container .ts-darkOrange-bg,
+.x-window .x-grid-item-over.x-grid-item .ts-darkOrange-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-darkOrange-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkOrange-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-darkOrange-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-darkOrange-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkOrange-bg{
+  background:#dd712a !important;
+}
+
+.x-window .x-grid-cell.mf-new,
+.sencha-dash-right-main-container .x-grid-cell.mf-new,
+.x-window .x-grid-cell.ts-yellow-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-yellow-bg,
+.x-window .mf-new,
+.sencha-dash-right-main-container .mf-new,
+.x-window .ts-yellow-bg,
+.sencha-dash-right-main-container .ts-yellow-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-new,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-new,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-new,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-new,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-new,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-new,
+.x-window .x-grid-item-over.x-grid-item .ts-yellow-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-yellow-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-yellow-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-yellow-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-yellow-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-yellow-bg{
+  background:#ccca86 !important;
+}
+
+.x-window .x-grid-cell.mf-suspense,
+.sencha-dash-right-main-container .x-grid-cell.mf-suspense,
+.x-window .x-grid-cell.ts-darkViolet-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-darkViolet-bg,
+.x-window .x-grid-cell.mf-suspense,
+.sencha-dash-right-main-container .x-grid-cell.mf-suspense,
+.x-window .mf-suspense,
+.sencha-dash-right-main-container .mf-suspense,
+.x-window .ts-darkViolet-bg,
+.sencha-dash-right-main-container .ts-darkViolet-bg,
+.x-window .x-grid-item-over.x-grid-item .mf-suspense,
+.x-window .x-grid-item-over.x-grid-item-alt .mf-suspense,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-suspense,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.mf-suspense,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.mf-suspense,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.mf-suspense,
+.x-window .x-grid-item-over.x-grid-item .ts-darkViolet-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-darkViolet-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkViolet-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-darkViolet-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-darkViolet-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkViolet-bg{
+  background:#c500ac !important;
+}
+
+.x-window .x-grid-cell.ts-darkGreen-bg,
+.sencha-dash-right-main-container .x-grid-cell.ts-darkGreen-bg,
+.x-window .ts-darkGreen-bg,
+.sencha-dash-right-main-container .ts-darkGreen-bg,
+.x-window .x-grid-item-over.x-grid-item .ts-darkGreen-bg,
+.x-window .x-grid-item-over.x-grid-item-alt .ts-darkGreen-bg,
+.x-window .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkGreen-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item.ts-darkGreen-bg,
+.sencha-dash-right-main-container .x-grid-item-over.x-grid-item-alt.ts-darkGreen-bg,
+.sencha-dash-right-main-container .x-grid-item.x-grid-item-selected:hover .x-grid-cell.ts-darkGreen-bg{
+  background:#3d813e !important;
+}
+
+/*hacky way to fix large button icon in mobility*/
+.ts-arrow-scroll-button-hack{
+  margin-top: -32px;
+}
+
+/*fix for grid cell editor
+.x-grid-row-editor .x-field,
+.x-grid-cell-editor .x-field{
+  margin:0px !important;
+  top:0 !important;
+}*/
+
+/*fix for textArea label padding issues*/
+.x-form-item-label-default.x-form-item-label-top > .x-form-item-label-inner{
+    padding:0 0 0 6px !important;
+}
+
+/*fix for drop shadows showing up in headers on check groups*/
+.x-header .x-form-check-group .x-field{
+    box-shadow:none !important;
+}
+
+/*begin read only and disabled support for form elements in headers*/
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly, 
+.x-window .x-panel-header.x-header .x-form-readonly,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly *|*, 
+.x-window .x-panel-header.x-header .x-form-readonly *|*{
+    color: #bababa !important;
+}
+
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly .x-form-item-body:not(.x-form-cb-wrap):not(.x-form-checkboxgroup-body){
+    border-bottom:1px solid #bababa !important;
+}
+
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly .ts-switch-container .switch-label,
+.x-window .x-panel-header.x-header .x-form-readonly .ts-switch-container .switch-label,
+.x-window .x-panel-header.x-header .x-form-readonly .x-slider-horz .x-slider-thumb:before,
+.sencha-dash-right-main-container .x-panel-header.x-header .x-form-readonly .x-slider-horz .x-slider-thumb:before{
+    background-color:#858585 !important;
+}
+/*end read only and disabled support for form elements in headers*/
+
+/*tv only - force 100% height for grid cell editor.  Need to restrict this to a specific grid*/
+#televisionMainPanel .x-grid-cell-editor{
+	top:0 !important;
+	height:100% !important;
+}
+
+#televisionMainPanel .x-grid-cell-editor .x-field,
+#televisionMainPanel .x-grid-cell-editor .x-form-item-body,
+#televisionMainPanel .x-grid-cell-editor textarea{
+	height:100% !important;
+}
+
+/*requested update - zebra striped forms*/
+.ts-zerba-stripes-form{
+    border:1px solid #bbbbbb !important;
+}
+.ts-zerba-stripes-form:after{
+    z-index:1;
+    content:"";
+    position:absolute;
+    left:0;
+    top:0 !important;
+    width:100%;
+    height:100%;
+    -webkit-shadow: inset 0 0 0 1px #fff, inset 0 0 25px 2px rgba(0,0,0,0.11);
+    -moz-shadow: inset 0 0 0 1px #fff, inset 0 0 25px 2px rgba(0,0,0,0.11);
+    box-shadow: inset 0 0 0 1px #fff, inset 0 0 25px 2px rgba(0,0,0,0.11);
+}
+.ts-zerba-stripes-form .x-form-trigger-wrap{
+    z-index:100;
+    position:absolute;
+}
+
+.ts-miniMask {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 2px;
+    display: none;
+    width: 100%;
+    background-color: #d8efff;
+    overflow: hidden;
+}
+
+.ts-miniMask-container .ts-miniMask{
+    display: block;
+}
+
+.ts-miniMask .ts-determinate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #26a69a;
+    transition: width .3s linear;
+}
+
+.ts-miniMask .ts-indeterminate {
+    background-color: #3892d3;
+}
+
+.ts-miniMask .ts-indeterminate:before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+.ts-miniMask .ts-indeterminate:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s;
+}
+
+@-webkit-keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%;
+    }
+    60% {
+        left: 100%;
+        right: -90%;
+    }
+    100% {
+        left: 100%;
+        right: -90%;
+    }
+}
+
+@keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%;
+    }
+    60% {
+        left: 100%;
+        right: -90%;
+    }
+    100% {
+        left: 100%;
+        right: -90%;
+    }
+}
+
+@-webkit-keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%;
+    }
+    60% {
+        left: 107%;
+        right: -8%;
+    }
+    100% {
+        left: 107%;
+        right: -8%;
+    }
+}
+
+@keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%;
+    }
+    60% {
+        left: 107%;
+        right: -8%;
+    }
+    100% {
+        left: 107%;
+        right: -8%;
+    }
+}
+
+.leftNavCls .x-segmented-button .x-btn{border-radius:0 !important;}
+.leftNavCls .x-segmented-button .x-btn:first-child:not(.ts-guide-me-txt-no-workflow-in-progress){border-radius:4px 0 0 4px !important;}
+.leftNavCls .x-segmented-button .x-btn:last-child{border-radius:0 4px 4px 0 !important;}
+
+.ts-guide-me-tooltip{
+    background:#fff !important;
+}
+body .leftNavCls .x-segmented-button .ts-guide-me-txt-no-workflow-in-progress{
+    border-radius:4px !important;
+}
+.x-spotlight{
+    background:rgba(0, 0, 0, 0.55);
+    position:relative;
+}
+.ts-guide-me-tooltip{
+    border-radius: 4px !important;
+    background:#fff !important;
+	position: fixed !important;
+    border:1px solid #fff !important;
+}
+.ts-guide-me-tooltip .x-tip-anchor-bottom{
+    border-top-color: #fff !important;
+}
+.ts-guide-me-tooltip .x-tip-anchor-top{
+    border-bottom-color: #fff !important;
+}
+.ts-guide-me-tooltip .x-tip-anchor-left{
+    border-right-color: #fff !important;
+}
+.ts-guide-me-tooltip .x-tip-anchor-right{
+    border-left-color: #fff !important;
+}
+.ts-guide-me-cover{
+    background: none !important;
+    border:2px solid #4599d6;
+    pointer-events:none;
+    touch-action:none;
+    -webkit-box-shadow:inset 0 0 18px 0px rgba(0,0,0,0.8) !important;
+    -moz-box-shadow:inset 0 0 18px 0px rgba(0,0,0,0.8) !important;
+    box-shadow:inset 0 0 18px 0px rgba(0,0,0,0.8) !important;
+
+}
+.ts-guide-me-cover .x-panel-body, .ts-guide-me-cover .x-panel{
+    background: none !important;
+    pointer-events:none;
+    touch-action:none;
+}
+.ts-guide-me-tooltip .x-tip-body-default, 
+.ts-guide-me-tooltip .x-panel-body, 
+.ts-guide-me-tooltip .x-panel, 
+.ts-guide-me-tooltip .x-autocontainer-innerCt, 
+.ts-guide-me-tooltip .x-autocontainer-outerCt{
+ background: none !important;
+ background-color: transparent !important;    
+}
+.ts-guide-me-tooltip .x-tip-body-default{
+ padding: 0 !important;
+}
+.ts-guide-me-tooltip-cards-count{
+    color:#7a7a7a;
+}
+.ts-guide-me-tooltip-cards-headline .x-autocontainer-innerCt{
+    color:#688092;
+    font-size:14px;
+    margin:0;
+    line-height:13px;
+    font-weight:normal; 
+    padding:16px 6px 6px 6px;
+    width:388px;
+}
+.ts-guide-me-tooltip-cards-headline, 
+.ts-guide-me-tooltip-cards-body,
+.ts-guide-me-tooltip-cards-headline *|*, 
+.ts-guide-me-tooltip-cards-body *|*{
+    overflow: visible !important;
+}
+.ts-guide-me-tooltip-cards-body .x-autocontainer-innerCt{
+    color:#404040;
+    font-size:13px;
+    line-height: 19px;
+    padding:20px 6px 6px 6px;
+    margin:0;
+    width:388px;
+}
+.ts-guide-me-tooltip-cards-btn{
+    font-size:13px;
+    border:none !important;
+    background-color: transparent !important;
+}
+
+.ts-guide-me-tooltip-cards-btn .x-btn-inner, .ts-guide-me-tooltip-cards-btn:hover .x-btn-inner{
+    color:#3892d3 !important;
+}
+
+.ts-guidewindow{
+    visibility:hidden !important;
+    box-shadow:none !important;
+}
+
+.ts-guide-me-tooltip .x-panel-body{
+    border:none !important;
+}
+
+.ts-guide-me-tooltip{
+    -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.89) !important;
+    -moz-box-shadow: 0 0 16px rgba(0,0,0,0.89) !important;
+    box-shadow: 0 0 16px rgba(0,0,0,0.89) !important;
+}
+
+.ts-header-pager .x-box-inner{
+    top:-7px;
+}
+
+.sencha-dash-right-main-container .x-panel-header.x-header .ts-header-pager .x-tbar-page-number .x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default{
+    padding-top:0px !important;
+    padding:0 0 0 0 !important;
+}
+
+.x-window .x-panel-header.x-header .ts-header-pager .x-field.x-tbar-page-number.x-form-item.x-form-item-default{
+    top:-1px !important;
+    position:relative;
+}
+
+.ts-checkswitch-no-border{
+    border:none !important;
+    box-shadow:none !important;
+}
+
+.ts-checkswitch-no-border .x-ts-form-check-switch{
+    position: absolute;
+    top:0;
+    right:0;
+} 
+.ts-guide-me-workflows-available-dot::after,
+.ts-user-icon-new-messages-dot::after,
+.ts-user-menu-new-messages-dot .x-btn-inner::after{
+    font-family:"Ionicons";
+    content:'\f21b';
+    color:#f0a023;
+    font-size:6px;
+    position: absolute;
+    top:-3px;
+    right:4px;
+}
+
+/* begin actions section */
+
+/* allow clicks, hovers, other mouse events */
+.ts-pass-through{
+    pointer-events:none;
+    touch-action:none;
+}
+
+/* hide this element and take up no space - removes the element entirely from the inline flow*/
+.ts-hide-me{
+    display:none !important;
+}
+
+/* unhide this element - I would strongly suggest running a removeCls ts-hide-me rather than using this - may cause layout related issues */
+body .ts-unhide-me{
+    display:block !important;
+}
+
+/* make this element invisible but still takes up space in the document flow - so there will be a hole where this element should be */
+.ts-cloak-me{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0 !important;
+}
+
+/* uncloak this element */
+.ts-uncloak-me{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1 !important;
+}
+
+/* hide this element's children - anything inside this element */
+.ts-hide-my-kids *,
+.ts-hide-my-kids *|*{
+    display:none !important;
+}
+
+/* unhide this element's children - anything inside this element */
+.ts-unhide-my-kids *,
+.ts-unhide-my-kids *|*{
+    display:unset !important;
+}
+
+/* cloak this element's children */
+.ts-cloak-my-kids *,
+.ts-cloak-my-kids *|*{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0 !important;
+}
+
+/* uncloak this element's children */
+.ts-uncloak-my-kids *,
+.ts-uncloak-my-kids *|*{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1 !important;
+}
+
+/* end actions section */
+
+/* selectionator and selectionator cover */
+.ts-guide-factory-selection{
+    border:2px solid #fb7b2e !important;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.32) !important;
+    -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.32) !important;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.32) !important;
+    border-radius:0 !important;
+}
+.ts-guide-factory-selection .x-tool-close:before{ content:' ' !important;}
+
+.ts-guide-factory-selection,
+.ts-guide-factory-selection *{
+    background:transparent !important;
+} 
+
+.ts-selectionator-move-handle:before{
+    font-size:32px;
+    color:#fff !important;
+}
+
+.ts-selectionator{
+    border-radius:unset !important;
+    background-color:rgba(0, 0, 0, 0.4) !important;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zMCwxNmwtNiw2di00LjhoLTYuOGwwLjEsNi44SDIybC02LDZsLTYtNmg0Ljh2LTYuOEg4VjIybC02LTZsNi02djQuOGg2LjhWOEgxMGw2LTZsNiw2aC00Ljh2Ni44SDI0VjEwDQoJCUwzMCwxNnoiLz4NCjwvZz4NCjwvc3ZnPg0K);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 32px 32px; 
+    border:1px dotted #fff !important;
+}
+
+.ts-selectionator .x-window-body{
+    background:none !important;
+}
+
+body .ts-selectionator .x-resizable-handle::before{
+    width:10px;
+    height:10px;
+    position:absolute;
+    top:0;
+    left:0;
+    content: " " !important;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,1);
+    z-index:999999 !important;
+    background:rgba(0, 0, 0, 0) !important;
+}
+
+body .ts-selectionator .x-window-handle{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    opacity:1;
+    background:none;
+}
+
+.ts-guide-me-factory-step-list-icon:before{
+    color:#404040 !important;
+    font-size:15px !important;
+    margin:1px 2px 0px 4px !important;
+    width:18px !important;
+    height:18px !important;
+    white-space: nowrap !important;
+    text-overflow: clip !important;
+    overflow: hidden !important;
+}
+
+.ts-guide-me-factory-step-list-icon{
+    white-space: nowrap !important;
+    text-overflow: clip !important;
+    overflow: hidden;
+}
+.ts-guide-me-factory-step-list-icon *,
+.ts-guide-me-factory-step-list-icon *|*{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.ts-guide-me-factory-dropdown-container .x-grid-item-alt,
+.ts-guide-me-factory-dropdown-container .x-grid-item {
+    background: transparent !important;
+}
+body .ts-guide-me-factory-footer-container {
+    background:#d6d6d6 !important;
+    position: fixed !important;
+    bottom:0 !important;
+    -webkit-box-shadow: 0 -12px 49px -11px rgba(0,0,0,.61);
+    -moz-box-shadow: 0 -12px 49px -11px rgba(0,0,0,.61);
+    box-shadow: 0 -12px 49px -11px rgba(0,0,0,.61);
+    transition:height 500ms ease-in-out;
+}
+body .ts-guide-me-factory-footer-container .x-toolbar{
+    background:#d6d6d6 !important;
+}
+body .ts-guide-me-factory-footer-container a .x-btn-inner:hover{
+    color:#fff !important;
+}
+
+.ts-guide-me-factory-footer-container .x-window-body{
+    background:#d6d6d6 !important;
+}
+
+body .ts-guide-me-factory-footer-container .x-btn-pressed,
+body .ts-guide-me-factory-footer-container .x-btn-pressed.x-btn-over:not(.x-form-file-btn){
+    background:#2a6e9e !important;
+    -webkit-box-shadow: 0 2px 0 #1e4058 !important;
+    -moz-box-shadow: 0 2px 0 #1e4058 !important;
+    box-shadow: 0 2px 0 #1e4058 !important;
+}
+.click-cell-text.ts-guide-me-dropdown-action-btn .x-grid-cell-inner{
+    font-size:12px !important;
+    text-align:center !important;
+}
+.guide-me-dropdown-grid-title{
+    text-transform:uppercase;
+    font-size:12px !important;
+    letter-spacing:-0.3px;
+}
+body #ts-guidemeviewer-body{
+    border:none !important;
+    border-radius: 0 !important;
+}
+/* end selectionator */
+
+.ts-dropdown-separator{
+    border-bottom:1px solid #bfbfbf !important;
+}
+
+.ts-custom-dropdown{
+    background:#fff !important;
+}
+
+/* guide mode */
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .switch-handle{
+    width:14px;
+	height:14px;
+    left:-2px;
+    top:-2px;
+}
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .switch{
+    width:24px;
+	height:10px;
+}
+
+.ts-menu-bar-guide-mode-switch{
+    top:17px !important;
+}
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .x-form-cb-label{
+    top:-2px;
+	position:relative;
+}
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .switch-input[aria-checked='true']~.switch-handle{
+    left:12px !important;
+}
+
+.ts-menu-bar-guide-mode-switch .x-form-cb-label{
+    color:#a5a5a5 !important;
+    transition:color 350ms ease-in-out;
+}
+
+.ts-menu-bar-guide-mode-switch.x-form-cb-checked .x-form-cb-label{
+    color:#2484c6 !important;
+    transition:color 350ms ease-in-out;
+}
+
+.x-form-cb-label{
+    cursor: pointer !important;
+}
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .switch-label{
+    background:#d5d5d5 !important;
+    box-shadow:none !important;
+}
+
+.ts-menu-bar-guide-mode-switch .switch{
+    box-shadow:none !important;
+}
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .switch-handle{
+    background:#fff !important;
+    box-shadow:0 0 1px rgba(0,0,0,.2), 0 1px 1px rgba(0,0,0,.3) !important;
+    -webkit-transition: color 350ms ease-in-out, left 0.15s ease-out;
+    -moz-transition: color 350ms ease-in-out, left 0.15s ease-out;
+    -o-transition: color 350ms ease-in-out, left 0.15s ease-out;
+    transition: color 350ms ease-in-out, left 0.15s ease-out;
+}
+.ts-menu-bar-guide-mode-switch.x-form-cb-checked .ts-switch-container .switch-handle{
+    background:#3892d3 !important;
+    -webkit-transition: color 350ms ease-in-out, left 0.15s ease-out;
+    -moz-transition: color 350ms ease-in-out, left 0.15s ease-out;
+    -o-transition: color 350ms ease-in-out, left 0.15s ease-out;
+    transition: color 350ms ease-in-out, left 0.15s ease-out;
+}
+
+.ts-menu-bar-guide-mode-switch .ts-switch-container .switch-handle:before{
+    background:none !important;
+    box-shadow:none !important;
+}
+
+.ts-guide-mode-fab{
+    background:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjIwMC4yIDM4My4xIDEzLjYgMjcuOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAyMDAuMiAzODMuMSAxMy42IDI3Ljg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGNEY2Rjk7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMDAuMiwzODl2Mi40YzAsMCwwLDAsMCwwYzAsMC4xLDAsMC4xLDAsMC4yYzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwbDMuNSw3djExLjdjMCwwLjMsMC4zLDAuNiwwLjYsMC42aDUuOQ0KCQljMC4zLDAsMC42LTAuMywwLjYtMC42di0xMS43bDIuOS03YzAsMCwwLDAsMCwwbDAsMGMwLTAuMSwwLTAuMiwwLTAuMlYzODljMC0wLjMtMC4zLTAuNi0wLjYtMC42aC0xMi40DQoJCUMyMDAuNSwzODguNCwyMDAuMiwzODguNywyMDAuMiwzODl6IE0yMTIuNiwzODkuNnYxLjJoLTExLjJ2LTEuMkgyMTIuNnoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjA3LjMsMzg2Ljd2LTNjMC0wLjMtMC4zLTAuNi0wLjYtMC42Yy0wLjMsMC0wLjYsMC4zLTAuNiwwLjZ2M2MwLDAuMywwLjMsMC42LDAuNiwwLjYNCgkJQzIwNywzODcuMiwyMDcuMywzODcsMjA3LjMsMzg2Ljd6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTIwMy43LDM4Ni43YzAtMC4xLDAtMC4yLTAuMS0wLjNsLTEuOC0zYy0wLjItMC4zLTAuNS0wLjQtMC44LTAuMmMtMC4zLDAuMi0wLjQsMC41LTAuMiwwLjhsMS44LDMNCgkJYzAuMiwwLjMsMC41LDAuNCwwLjgsMC4yQzIwMy42LDM4NywyMDMuNywzODYuOSwyMDMuNywzODYuN3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjExLjUsMzgzLjRsLTEuOCwzYy0wLjIsMC4zLTAuMSwwLjYsMC4yLDAuOGMwLjMsMC4yLDAuNiwwLjEsMC44LTAuMmwxLjgtM2MwLjEtMC4xLDAuMS0wLjIsMC4xLTAuMw0KCQljMC0wLjItMC4xLTAuNC0wLjMtMC41QzIxMi4xLDM4MywyMTEuNywzODMuMSwyMTEuNSwzODMuNHoiLz4NCjwvZz4NCjwvc3ZnPg0K') !important;
+    background-color:#3892d3 !important;
+    background-repeat: no-repeat !important; 
+    background-position: 50% 50% !important;
+    background-size: 14px 28px !important;
+    border-radius: 56px !important;
+    cursor: pointer !important;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
+    -ms-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+}
+.ts-guide-mode-fab:hover{
+    background-color:#047dd5 !important;
+}
+
+.ts-guide-mode-fab.ts-guide-mode-fab-guides-available{
+    background-color:#fb7b2e !important;
+}
+.ts-guide-mode-fab.ts-guide-mode-fab-guides-available:hover{
+    background-color:#ed5900 !important;
+}
+
+.ts-guide-mode-fab.ts-guide-mode-fab-menu-open-animation {
+    transform: translateX(-80px);
+    animation: xAxis 200ms 1 ease-out;
+  }
+  
+  .ts-guide-mode-fab.ts-guide-mode-fab-menu-open-animation::before {
+    /* Render dot */
+    transform: translateY(-80px);
+    animation: yAxis 200ms 1 ease-in;
+  }
+  
+  @keyframes xAxis {
+    0% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateX(-80px);
+    }
+  }
+  
+  @keyframes yAxis {
+    0% {
+      animation-timing-function: ease-in;
+      transform: translateY(0px);
+    }
+    100% {
+      animation-timing-function: ease-in;
+      transform: translateY(-80px);
+    }
+  }
+
+.ts-guide-mode-fab .x-window-body{
+    background:transparent !important;
+}
+
+.ts-guide-me-mode-menu {
+    transition:width 500ms ease-in-out;
+}
+
+/* end guide mode */
+
+#main-view-detail-wrap.ts-guide-me-screenshot-mode *|*{
+    z-index:unset !important;
+}
+
+#main-view-detail-wrap.ts-guide-me-screenshot-mode .ts-top-subnav-pnl{
+    z-index:2 !important;
+}
+.ts-guide-me-screenshot-mode .ts-guide-factory-selection{
+    display:none !important;
+}
+
+/* begin updated window sectioning */
+.ts-new-ui-update .ts-window-section-container-outer{
+    background:#ededee;
+}
+
+.ts-new-ui-update .ts-window-section-container-outer > .x-window-body-default,
+.ts-new-ui-update .ts-window-section-container-outer .x-panel-default-framed,
+.ts-new-ui-update .ts-window-section-container-outer .x-panel-body{
+    background:transparent !important;
+}
+
+.ts-new-ui-update .ts-window-section-container-outer .ts-window-section-container{
+    box-shadow:0  0 6px  0 rgba(0,0,0,.13), 0  0 3px  0 rgba(0,0,0,.11), 0 3px 9px -5px rgba(0,0,0,.7) !important;
+}
+
+.ts-window-section-container-outer .ts-section-container {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.ts-window-section-container-outer .ts-section-container .ts-section-container {
+    background: #fff !important;
+    box-shadow:0  0 6px  0 rgba(0,0,0,.13), 0  0 3px  0 rgba(0,0,0,.11), 0 3px 9px -5px rgba(0,0,0,.7) !important;
+}
+
+.ts-window-section-container-outer .ts-window-section-tab{
+    top:10px !important;
+}
+/* end updated window sectioning */
+
+.x-css-shadow,
+.x-css-shadow *,
+.x-css-shadow *|*,
+.ts-tip-pass-through:not(.ts-guide-me-tooltip),
+.ts-tip-pass-through:not(.ts-guide-me-tooltip) *,
+.ts-tip-pass-through:not(.ts-guide-me-tooltip) *|*{
+    pointer-events:none !important;
+    touch-action:none !important;
+}
+
+.ts-tip-pass-through:not(.ts-guide-me-tooltip){
+    background:rgba(16, 16, 16, 0.6) !important;
+    border:none !important;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.20);
+}
+/* end updated window sectioning */
+
+/* block clicks, hovers, other mouse events - you'd generally only need this to counteract ts-pass-through or ts-tip-pass-through */
+.ts-cover,
+.ts-cover.ts-tip-pass-through,
+.ts-cover.ts-tip-pass-through *,
+.ts-cover.ts-tip-pass-through *|*{
+    pointer-events:unset !important;
+    touch-action:unset !important;
+}
+
+/* fix for disappearing checkboxes on grid column headers */
+.sencha-dash-right-main-container .x-column-header .x-form-item-body:not(.x-form-textarea-body):not(.x-slider-ct-horz):not(.x-ts-form-check-switch):not(.x-form-checkboxgroup-body){
+    overflow:visible;
+}
+
+/* updated styling for grid column headers */
+.sencha-dash-right-main-container .x-column-header .x-panel-body *|*{
+	border:none !important;
+	border-left:none !important;
+	border-right:none !important;
+	background:transparent !important;
+	background-color:transparent !important;
+	box-shadow:none !important;
+}
+/* end updated styling for grid column headers */
+
+/* grid header updates */
+.x-grid-header-ct,
+.ts-new-ui-update .ts-section-container-wrap-only .x-grid-header-ct,
+.ts-new-ui-update .ts-section-container .x-grid-header-ct,
+.ts-new-ui-update .ts-section-container .x-grid-header-ct{
+    border-color:#cfcfcf !important;
+    border-top:1px solid #cfcfcf !important;
+}
+.x-grid-header-ct .x-form-type-text,
+.ts-new-ui-update .ts-section-container-wrap-only .x-grid-header-ct .x-form-type-text,
+.ts-new-ui-update .ts-section-container .x-grid-header-ct .x-form-type-text,
+.ts-new-ui-update .ts-section-container .x-grid-header-ct .x-form-type-text{
+    top:1px !important;
+}
+/* end grid header updates */
+
+/*date panel fix*/
+.ts-date-panel .x-field{
+  top:0 !important;
+}
+
+.x-window .x-form-cb-wrap,
+.sencha-dash-right-main-container .x-form-cb-wrap {
+    margin: 0 0 0 6px;
+}
+
+.x-window .x-form-item-label,
+.sencha-dash-right-main-container .x-form-item-label {
+    clear: both !important;
+    vertical-align: unset;
+    height: 16px !important;
+    overflow: hidden;
+    margin: 0 0 0 0 !important;
+}
+
+/*flex madness start*/
+
+.x-form-text-field-body.x-form-text-field-body-default {
+    min-width: none;
+    max-width: none;
+    width: 100%;
+}
+
+/*flex madness end*/

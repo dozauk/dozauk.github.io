@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'raleMed';
+  src: url('../fonts/raleway-medium-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-medium-webfont.svg#raleway-medium-webfont') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleMed';
+  src: url('../fonts/raleway-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-bold-webfont.svg#raleway-medium-webfont') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'raleMed';
+  src: url('../fonts/raleway-semibold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-semibold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-semibold-webfont.svg#raleway-medium-webfont') format('svg'); /* Legacy iOS */
+	font-weight: 100;
+	font-style: normal;
+}
